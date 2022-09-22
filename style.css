@@ -1,16 +1,24 @@
 body{
-	background-color: gray;
+	background-color: rgb(200, 205, 200);
 }
 
 h1{
-	color: white;
+	color: red;
 	font-size: 40px;
+	text-decoration: underline;
 }
 
-br{
-	margin: 20px;
+h2{
+	color: blue;
+	text-decoration: underline;
 }
 
-#confidentialite{
+br {
+   display: block;
+   margin: 10px 0;
+}
+
+.titre2{
 	color: yellow;
+	text-decoration: underline;
 }

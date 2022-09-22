@@ -1,4 +1,41 @@
 .menu>li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 30px;
+    text-align: center 
+}
+
+.menu{
+	border: 1px black;
+	background: white;
+}
+
+.bouton1{
+	justify-content: center;
+	border: 1px black;
+	background: black;
+	color: white;
+	padding: 15px 30px 15px 30px;
+	border-radius: 5px;
+}
+
+hr{
+	display: block;
+	margin: 0px 25px 0px 25px
+}
+
+p{
+	display: block;
+	margin: 25px 25px 25px 25px
+}
+
+a{
+	color:rgb(194,216,239)
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+#lireaussi{
+	color:rgb(175,86,23)
 }

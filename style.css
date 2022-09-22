@@ -1,3 +1,16 @@
-p{
-	line-height: 300%;
+body{
+	background-color: gray;
+}
+
+h1{
+	color: white;
+	font-size: 40px;
+}
+
+br{
+	margin: 20px;
+}
+
+#confidentialite{
+	color: yellow;
 }

@@ -18,6 +18,10 @@
 	border-radius: 5px;
 }
 
+.titre{
+	font-size: 25px;
+}
+
 hr{
 	display: block;
 	margin: 0px 25px 0px 25px

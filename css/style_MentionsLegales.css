@@ -18,7 +18,21 @@ br {
    margin: 10px 0;
 }
 
+p strong{
+	text-decoration: underline;
+}
+
+hover:strong{
+}
+
 .titre2{
 	color: yellow;
 	text-decoration: underline;
+}
+
+#pub{
+	font-weight: bold;
+	margin: 25px auto;
+	width: 200px;
+	display: block;
 }

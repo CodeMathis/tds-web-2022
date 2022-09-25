@@ -1,45 +1,95 @@
-.menu>li {
-	display: inline-block;
-	margin: 0 30px;
-    text-align: center 
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 .menu{
+	display: block;
+	padding: 20px 15px;
+	background-color: white;
+	border-bottom: 1px solid;
+	border-bottom-color: #D9D9D9;
+	box-shadow: 1px 1px 1px #D9D9D9;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.menu>li {
+	display: inline-block;
+	margin: 0px 25px 0px auto;
+    text-align: center;
+	height: 30px;
 	border: 1px black;
-	background: white;
+	font-size: 14px;
 }
 
 .bouton1{
+	display: block;
 	justify-content: center;
 	border: 1px black;
 	background: black;
 	color: white;
 	padding: 15px 30px 15px 30px;
-	border-radius: 5px;
+	border-radius: 3px;
+	margin: 25px auto 25px 250px;
 }
 
 .titre{
 	font-size: 25px;
 }
 
-hr{
-	display: block;
-	margin: 0px 25px 0px 25px
+.ver{
+	border-left: 1px solid #D9D9D9;
+	height: 30px;
 }
 
-p{
-	display: block;
-	margin: 25px 25px 25px 25px
-}
-
-a{
-	color:rgb(194,216,239)
+nav{
+	position: sticky;
 }
 
 body{
 	font-family: 'Roboto', sans-serif;
+	background: #F7F7F7;
+}
+
+p{
+	display: block;
+	margin: 25px 250px 25px 25px;
+	line-height: 1.5;
+}
+
+hr{
+	display: block;
+	margin: 25px 250px 25px 25px;
+	color: #D9D9D9;
+	background-color: #D9D9D9;
+}
+
+a{
+	color: rgb(194,216,239);
+}
+
+li{
+	margin: 5px 250px 5px 60px;
+}
+
+div {
+  margin-bottom:10px;
+  margin: 10px 250px 10px 25px;
+}
+
+div span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #BBCCE3;
+  color: #fff;
+  font-size: 25px;
 }
 
 #lireaussi{
-	color:rgb(175,86,23)
+	color: rgb(175,86,23);
 }

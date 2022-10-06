@@ -10,5 +10,5 @@ foreach (range(0,10) as $number){
 	echo "<br>$max";
 }
 foreach (range(1,$max) as $number){
-	echo "<h$number>$prenom</h$number>";
+	echo "<br><h$number>$prenom</h$number>";
 }

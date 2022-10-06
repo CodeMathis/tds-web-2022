@@ -12,8 +12,9 @@ foreach (range(0,5) as $number){
 	echo "<br>$max";
 }
 foreach (range(1,$max) as $number){
-    if ($number > 6){
+    if ($number > 4){
         echo "<br>";
     }
 	echo "<h$number, style='color: $color;background-color: $bgcolor'>$prenom</h$number>";
 }
+?>

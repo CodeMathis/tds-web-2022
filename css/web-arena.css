@@ -11,13 +11,17 @@ body {
 }
 
 header {
-
+  margin: 0px 22%;
 }
- 
+
 main {
   flex: 1;
   background-color: white;
   text-align: center;
+}
+
+ul{
+  display: flex;
 }
 
 footer {
@@ -32,7 +36,6 @@ p {
 
 h1 {
   margin-top: 5%;
-  text-align: center;
   font-weight: normal;
   font-size: 32px;
 }
@@ -47,6 +50,11 @@ main > p {
   color: gray;
 }
 
+footer > p {
+  font-size: 12px;
+  color: white;
+}
+
 .read_more_bouton {
   background-color: white;
   color: black;
@@ -55,12 +63,9 @@ main > p {
   font-weight: bold;
 }
 
-.logo_partner {
-}
-
 .menu > li {
   display: inline-flex;
-  margin: auto 1% auto auto;
+  margin: auto 1%;
   text-align: center;
   height: 30px;
   border: 1px black;
@@ -69,7 +74,15 @@ main > p {
   font-weight: bold;
 }
 
-footer > p {
-  font-size: 12px;
-  color: white;
+.menu > li > img {
+  width: 150px;
+  height: 40px;
+}
+
+.menu_centre {
+  padding: 2% 0px 0px 0px ;
+}
+
+#droite_menu {
+  padding: 2% 0px 0px 46% ;
 }

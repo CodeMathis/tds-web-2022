@@ -22,10 +22,6 @@ $liste = $_SESSION["todolist"]??[];
         echo "<li class='list-group-item'>$item <a href='delete.php?num=$index'>X</a></li>";
     }
     ?>
-    <a href="ajouterelement.php" class="btn btn-dark"></a>
-    <a href="ajouterelement.php" class="btn btn-dark"></a>
-    <a href="ajouterelement.php" class="btn btn-dark"></a>
-    <a href="ajouterelement.php" class="btn btn-dark"></a>
-    <a href="deco.php" class="btn btn-dark">Deconnexion</a>
+    <a href="deco.php" class="btn btn-outline-danger">Deconnexion</a>
 </body>
 </html>

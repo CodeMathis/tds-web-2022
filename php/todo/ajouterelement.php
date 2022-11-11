@@ -1,6 +1,8 @@
 <form method="post">
-    <input type="text" name="item">
+    <label for="item">Quoi rajouter: </label>
+    <input id="item" type="text" name="item">
 </form>
+
 <?php
 session_start();
 if(isset($_POST["item"])){

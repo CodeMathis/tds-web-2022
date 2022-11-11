@@ -1,14 +1,12 @@
-<?php
-session_start();
-?>
-
 <form method="post">
-    <input type="text" name="username">
+    <label for="user">Note ton prénom: </label>
+    <input id="user" type="text" name="user">
 </form>
 
 <?php
-if(isset($_POST["username"])){
-    $_SESSION["user"]=$_POST["username"];
-    var_dump($_SESSION);
+session_start();
+if(isset($_POST["user"])){
+    $_SESSION["username"]=$_POST["user"];
 }
+include "index.php";
 ?>

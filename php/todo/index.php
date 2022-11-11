@@ -3,6 +3,7 @@ if(!isset($_SESSION)){
     session_start();
 }
 $liste = $_SESSION["todolist"]??[];
+$username = $_SESSION["username"]??"";
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,13 +16,17 @@ $liste = $_SESSION["todolist"]??[];
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <h1>Todo liste</h1>
-    <a href="ajouterelement.php" class="btn btn-dark">Ajouter un élément</a>
+    <?php
+        echo "<h1><a href='index.php' class='display-1' style='text-decoration:none'>$username Todo liste</a></h1>";
+    ?>
+
+    <a href="connection.php" class="btn btn-outline-success">Connexion</a>
+    <a href="ajouterelement.php" class="btn btn-outline-dark">Ajouter un élément</a>
+    <a href="deco.php" class="btn btn-outline-danger">Deconnexion</a>
     <?php
     foreach ($liste as $index=>$item) {
-        echo "<li class='list-group-item'>$item <a href='delete.php?num=$index'>X</a></li>";
+        echo "<li class='list-group-item'>$item <a href='modifier.php?num=$index'>?</a> <a href='delete.php?num=$index'>X</a></li>";
     }
     ?>
-    <a href="deco.php" class="btn btn-outline-danger">Deconnexion</a>
 </body>
 </html>

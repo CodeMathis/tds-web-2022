@@ -26,7 +26,7 @@ $data = yaml_parse_file('yaml/infos.yaml');
 		
 		<main>
 			<div id="background1">
-                		<p class="numeros_alignes_droite">1</p>
+                	<p class="numeros_alignes_droite">1</p>
 			<div id="numero_1">
 				<p class="numerotation_droite">1</p>
 				<h1>Bienvenue Sur le Site D’Un Étudiant</h1>
@@ -44,7 +44,7 @@ $data = yaml_parse_file('yaml/infos.yaml');
 			</div>
 			
 			<div id="background2">
-               			<p class="numeros_alignes_gauche">2</p>
+               		<p class="numeros_alignes_gauche">2</p>
 			<div id="numero_2">
 				<h2 class="titre_gauche">À propos de moi</h2>
 				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Ambitions</span><br>
@@ -63,7 +63,7 @@ $data = yaml_parse_file('yaml/infos.yaml');
 			</div>
 			
 			<div id="background3">
-                		<p class="numeros_alignes_droite">3</p>
+                	<p class="numeros_alignes_droite">3</p>
 			<div id="numero_3">
 				<h2 class="titre_droite">Travaux</h2>
 				<p class="boite_travaux"><img src="img/prime.png" alt="image prime nuit du code">Ambitions</p>
@@ -74,7 +74,7 @@ $data = yaml_parse_file('yaml/infos.yaml');
 			</div>
 
 			<div id="background4">
-                		<p class="numeros_alignes_gauche">4</p>
+                	<p class="numeros_alignes_gauche">4</p>
 			<div id="numero_4">
 				<h2 class="titre_gauche">Projets</h2>
 				<p class="projets_gauche">Apprende le Python</p>

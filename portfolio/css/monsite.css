@@ -187,8 +187,8 @@ ul{
 	min-height: 1024px;
 }
 
-#numero_2 .numeros_alignes{
-
+#background2 .numeros_alignes{
+	margin: auto 0;
 }
 
 #numero_3{

@@ -1,3 +1,7 @@
+<?php
+$data = yaml_parse_file('yaml/infos.yaml');
+?>
+
 <!doctype html>
 <html lang="fr">
 	<head>
@@ -22,22 +26,25 @@
 		
 		<main>
 			<div id="background1">
+                <p class="numeros_alignes_droite">1</p>
 			<div id="numero_1">
 				<p class="numerotation_droite">1</p>
 				<h1>Bienvenue Sur le Site D’Un Étudiant</h1>
 				<p id="citation">«Tout Le Monde Peut Peindre Un Beau Tableau Avec L’aide D’un Bon Peintre»</p>
 				<div id="logo_aligne">
 					<img src="img/instagram.png" alt="logo instagram">
-					<img src="img/facebook.png" alt="logo facebook">
+					<img src="img/fbk.png" alt="logo facebook">
 					<img src="img/discord.png" alt="logo discord">
 					<img src="img/mail.png" alt="logo mail">
-					<p id="boite_nouveaute"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span><br>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum curabitur vitae nunc sed velit dignissim.</p>
+					<?php
+					    echo '<p id="boite_nouveaute"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span><br>'.$data["nouveaute"].'</p>';
+                    ?>
 				</div>
 			</div>
 			</div>
 			
 			<div id="background2">
+                <p class="numeros_alignes_gauche">2</p>
 			<div id="numero_2">
 				<h2 class="titre_gauche">À propos de moi</h2>
 				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Ambitions</span><br>
@@ -53,10 +60,10 @@
 				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Philosophie</span><br>
 				Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie</p>
 			</div>
-				<p class="numeros_alignes">2</p>
 			</div>
 			
 			<div id="background3">
+                <p class="numeros_alignes_droite">3</p>
 			<div id="numero_3">
 				<h2 class="titre_droite">Travaux</h2>
 				<p class="boite_travaux"><img src="img/prime.png" alt="image prime nuit du code">Ambitions</p>
@@ -67,6 +74,7 @@
 			</div>
 
 			<div id="background4">
+                <p class="numeros_alignes_gauche">4</p>
 			<div id="numero_4">
 				<h2 class="titre_gauche">Projets</h2>
 				<p class="projets_gauche">Apprende le Python</p>

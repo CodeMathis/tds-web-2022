@@ -62,20 +62,6 @@ body{
 	background-size: cover;
 }
 
-/**
-.numerotation_droite{
-	display: flex;
-	align-items: bottom;
-	justify-content: flex-end;
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	background-color: #BBCCE3;
-	margin-right: 50% 90%;
-	color: #fff;
-	font-size: 25px;
-}
-**/
 
 
 header{
@@ -123,53 +109,35 @@ ul{
 }
 
 
-/**
-.test:nth-child(even):before{
-	content: counter(section);
-	right: 90%; 
-	margin: 512px -30px;
+.numeros_alignes_droite{
 	position: absolute;
+	margin: 512px calc(95% - 36px);
 	border-radius: 50%;
-	padding: 10px;
+	padding: 15px;
 	height: 35px;
 	width: 35px;
-	background-color: blue;
+	background-color: #1c9c94;
 	text-align:center;
 	color: white;
-	font-size: 110%;
+	font-size: 30px;
 }
 
-.test:nth-child(odd):before{
-	content: counter(section);
-	left: 90%; 
-    margin: 512px -30px;
-    position: absolute;
-    border-radius: 50%;
-    padding: 10px;
-    height: 35px;
+.numeros_alignes_gauche{
+	position: absolute;
+	margin: 512px calc(5% - 28px);
+	border-radius: 50%;
+	padding: 15px;
+	height: 35px;
 	width: 35px;
-    background-color: blue;
-    text-align:center;
-    color: white;
-    font-size: 110%;
+	background-color: #3f5b65;
+	text-align:center;
+	color: white;
+	font-size: 30px;
 }
-
-.test:nth-child(even) {
-    border-left: 4px solid;
-    border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
-}
-
-.test:nth-child(odd) {
-    border-right: 4px solid;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;	
-}
-**/
 
 #numero_1{
-	border-right: 8px solid;
-	border-bottom: 4px solid;
+	border-right: 8px solid #1c9c94;
+	border-bottom: 4px solid #1c9c94;
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
@@ -177,9 +145,9 @@ ul{
 }
 
 #numero_2{
-	border-top: 4px solid;
-	border-left: 8px solid;
-	border-bottom: 4px solid;
+	border-top: 4px solid #1c9c94;
+	border-left: 8px solid #6dada6;
+	border-bottom: 4px solid #6dada6;
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
@@ -187,14 +155,10 @@ ul{
 	min-height: 1024px;
 }
 
-#background2 .numeros_alignes{
-	margin: auto 0;
-}
-
 #numero_3{
-	border-top: 4px solid;
-	border-right: 8px solid;
-	border-bottom: 8px solid;
+	border-top: 4px solid #6dada6;
+	border-right: 8px solid #6e8b7f;
+	border-bottom: 8px solid #6e8b7f;
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
@@ -202,8 +166,8 @@ ul{
 }
 
 #numero_4{
-	border-top: 8px solid;
-	border-left: 8px solid;
+	border-top: 8px solid #6e8b7f;
+	border-left: 8px solid #6e8b7f;
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
@@ -240,9 +204,10 @@ ul{
 	padding: 20px;
 	border-radius: 25px;
 	width: 350px;
-	height: 350px;
 	min-width: 350px;
 	min-height: 350px;
+	max-width: 350px;
+	max-height: 650px;
 	font-weight: 600;
 	font-size: 22px;
 	margin: 20px 40px 20px 40px;

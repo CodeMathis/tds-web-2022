@@ -139,7 +139,7 @@ ul{
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
-	min-height: 1024px;
+	min-height: 512px;
 }
 
 #numero_2{
@@ -150,7 +150,7 @@ ul{
 	margin: 0 5%;
 	padding-bottom: 60px;
 	margin-top: -20px;
-	min-height: 1024px;
+	min-height: 512px;
 }
 
 #numero_3{
@@ -249,6 +249,7 @@ ul{
 	display: flex;
 	align-items: center;
     text-align: center;
+	margin-bottom: 40px;
 	margin-top: 25px;
 }
 
@@ -266,7 +267,7 @@ ul{
 	align-items: center;
     text-align: center;
 	padding-left: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	margin-top: 25px;
 }
 
@@ -305,6 +306,43 @@ ul{
 	margin: 10px 15px -20px 10px;
 	width: 70px;
 	height: 70px;
+}
+
+
+
+.projets_gauche{
+	display: flex;
+	text-align: center;
+	color: white;
+	background-color: rgba(33, 48, 61, 0.85);
+	padding: 10px 20px 30px 20px;
+	border-radius: 25px;
+	width: 250px;
+	height: 30px;
+	min-width: 250px;
+	min-height: 30px;
+	font-weight: 600;
+	font-size: 22px;
+	margin: 50px -5% auto 10%;
+	flex-wrap: wrap;
+}
+
+.projets_droite{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	color: white;
+	background-color: rgba(33, 48, 61, 0.85);
+	padding: 10px 20px 30px 20px;
+	border-radius: 25px;
+	width: 250px;
+	height: 30px;
+	min-width: 250px;
+	min-height: 30px;
+	font-weight: 600;
+	font-size: 22px;
+	margin: 50px -5% auto 80%;
+	flex-wrap: wrap;
 }
 
 

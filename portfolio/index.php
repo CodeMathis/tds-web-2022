@@ -15,10 +15,11 @@ $data = yaml_parse_file('yaml/infos.yaml');
 		<header>
 			<ul id="menu">
 				<li><a href="#background1">MATHIS CODE</a></li>
-				<li><a href="#background5">Contact</a></li>
-				<li><a href="#background4">Projets</a></li>
-				<li><a href="#background3">Travaux</a></li>
-				<li><a href="#background2">À propos de moi</a></li>
+				<li><a href="#background6">Contact</a></li>
+				<li><a href="#background5">Formation</a></li>
+                <li><a href="#background4">Expérience</a></li>
+				<li><a href="#background3">Compétences</a></li>
+				<li><a href="#background2">À propos</a></li>
 				<li><a href="#background1">Accueil</a></li>
 			</ul>
 			<hr>
@@ -36,9 +37,7 @@ $data = yaml_parse_file('yaml/infos.yaml');
 					<img src="img/fbk.png" alt="logo facebook">
 					<img src="img/discord.png" alt="logo discord">
 					<img src="img/mail.png" alt="logo mail">
-					<?php
-					    echo '<p id="boite_nouveaute"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span><br>'.$data["nouveaute"].'</p>';
-                    ?>
+					<?php echo '<p id="boite_nouveaute"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span><br>'.$data["nouveaute"].'</p>';?>
 				</div>
 			</div>
 			</div>
@@ -61,11 +60,24 @@ $data = yaml_parse_file('yaml/infos.yaml');
 				Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie</p>
 			</div>
 			</div>
+
+            <div id="background3">
+                <p class="numeros_alignes_droite">3</p>
+                <div id="numero_3">
+                    <h2 class="titre_droite">Compétences</h2>
+                    <p class="projets_gauche">Apprende le Python</p>
+                    <p class="projets_gauche">Apprendre le HTML & CSS</p>
+                    <p class="projets_droite">Apprendre le PHP</p>
+                    <p class="projets_droite">Apprendre le Java</p>
+                    <p class="projets_gauche">Apprendre les cmd Linux</p>
+                    <p class="projets_gauche">Savoir les bases en réseau</p>
+                </div>
+            </div>
 			
-			<div id="background3">
-                	<p class="numeros_alignes_droite">3</p>
-			<div id="numero_3">
-				<h2 class="titre_droite">Travaux</h2>
+			<div id="background4">
+                	<p class="numeros_alignes_gauche">4</p>
+			<div id="numero_4">
+				<h2 class="titre_gauche">Expérience</h2>
 				<p class="boite_travaux"><img src="img/prime.png" alt="image prime nuit du code">Ambitions</p>
 				<p class="boite_travaux"><img src="img/keysholder.png" alt="image programme keyholder">Ambitions</p>
 				<p class="boite_travaux"><img src="img/jeu_de_nim.png" alt="image jeu de nim">Ambitions</p>
@@ -73,10 +85,10 @@ $data = yaml_parse_file('yaml/infos.yaml');
 			</div>
 			</div>
 
-			<div id="background4">
-                	<p class="numeros_alignes_gauche">4</p>
-			<div id="numero_4">
-				<h2 class="titre_gauche">Projets</h2>
+			<div id="background5">
+                	<p class="numeros_alignes_droite">5</p>
+			<div id="numero_5">
+				<h2 class="titre_droite">Formation</h2>
 				<p class="projets_gauche">Apprende le Python</p>
 				<p class="projets_gauche">Apprendre le HTML & CSS</p>
 				<p class="projets_droite">Apprendre le PHP</p>
@@ -86,7 +98,7 @@ $data = yaml_parse_file('yaml/infos.yaml');
 			</div>
 			</div>
 			
-			<div id="background5">
+			<div id="background6">
 				<hr id="separation_contact">
 				<h2 class="titre_gauche">Contact</h2>
 				<p class="info_contact"><img src="img/instagram.png" alt="logo instagram">met_meza</p>

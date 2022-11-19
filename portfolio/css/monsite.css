@@ -18,46 +18,44 @@ body{
 #background1{
 	display: box;
 	background: url("../img/background1.png");
-	min-height: 1024px;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	counter-increment: section;
 	margin-top: -300px;
 }
 
 #background2{
 	display: box;
 	background: url("../img/background2.png");
-	min-height: 1024px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 20px;
-	counter-increment: section;
 }
 
 #background3{
 	display: box;
 	background: url("../img/background3.png");
-	min-height: 1024px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	counter-increment: section;
 }
 
 #background4{
 	display: box;
 	background: url("../img/background4.png");
-	min-height: 1024px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	counter-increment: section;
 }
 
 #background5{
 	display: box;
 	background: url("../img/background5.png");
-	min-height: 1024px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#background6{
+	display: box;
+	background: url("../img/background6.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -116,7 +114,7 @@ ul{
 	padding: 15px;
 	height: 35px;
 	width: 35px;
-	background-color: #1c9c94;
+	background-color: #3f5b65;
 	text-align:center;
 	color: white;
 	font-size: 30px;
@@ -129,7 +127,7 @@ ul{
 	padding: 15px;
 	height: 35px;
 	width: 35px;
-	background-color: #3f5b65;
+	background-color: #1c9c94;
 	text-align:center;
 	color: white;
 	font-size: 30px;
@@ -157,8 +155,8 @@ ul{
 
 #numero_3{
 	border-top: 4px solid #6dada6;
-	border-right: 8px solid #6e8b7f;
-	border-bottom: 8px solid #6e8b7f;
+	border-right: 8px solid #1c9c94;
+	border-bottom: 4px solid #1c9c94;
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
@@ -166,8 +164,19 @@ ul{
 }
 
 #numero_4{
-	border-top: 8px solid #6e8b7f;
-	border-left: 8px solid #6e8b7f;
+	border-top: 8px solid #1c9c94;
+	border-left: 8px solid #6dada6;
+	border-bottom: 4px solid #6dada6;
+	border-image-slice: 1;
+	margin: 0 5%;
+	padding-bottom: 60px;
+	margin-top: -20px;
+	min-height: 1024px;
+}
+
+#numero_5{
+	border-top: 8px solid #6dada6;
+	border-right: 8px solid #6e8b7f;
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
@@ -240,6 +249,7 @@ ul{
 	display: flex;
 	align-items: center;
     text-align: center;
+	margin-top: 25px;
 }
 
 .titre_droite:after{
@@ -256,6 +266,11 @@ ul{
 	align-items: center;
     text-align: center;
 	padding-left: 100%;
+	margin-bottom: 40px;
+	margin-top: 25px;
+}
+
+#background4 .titre_gauche{
 	margin-bottom: 50px;
 }
 
@@ -302,7 +317,7 @@ ul{
 	max-height: 425px;
 	font-weight: 500;
 	font-size: 22px;
-	margin: 40px -9% auto 10%;
+	margin: 40px -5% auto 10%;
 	flex-wrap: wrap;
 }
 

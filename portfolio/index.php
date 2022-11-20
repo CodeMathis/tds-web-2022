@@ -65,12 +65,12 @@ $data = yaml_parse_file('yaml/infos.yaml');
                 <p class="numeros_alignes_droite">3</p>
                 <div id="numero_3">
                     <h2 class="titre_droite">Compétences</h2>
-                    <div id="barre_python"><div class="projets_gauche"><p>Apprende le Python</p></div></div>
-                    <div id="barre_html"><div class="projets_gauche"><p>Apprendre le HTML & CSS</p></div></div>
-                    <div id="barre_php"><div class="projets_droite"><p>Apprendre le PHP</p></div></div>
-                    <div id="barre_java"><div class="projets_droite"><p>Apprendre le Java</p></div></div>
-                    <div id="barre_linux"><div class="projets_gauche"><p>Apprendre les cmd Linux</p></div></div>
-                    <div id="barre_reseau"><div class="projets_gauche"><p>Savoir les bases en réseau</p></div></div>
+                    <div class="barre_competence"><div id="barre_python_background"><div class="projets_gauche"><p>Apprende le Python</p></div></div><div id="barre_python"></div></div>
+                    <div class="barre_competence" id="barre_html"><div class="projets_gauche"><p>Apprendre le HTML & CSS</p></div></div>
+                    <div class="barre_competence" id="barre_php"><div class="projets_droite"><p>Apprendre le PHP</p></div></div>
+                    <div class="barre_competence" id="barre_java"><div class="projets_droite"><p>Apprendre le Java</p></div></div>
+                    <div class="barre_competence" id="barre_linux"><div class="projets_gauche"><p>Apprendre les cmd Linux</p></div></div>
+                    <div class="barre_competence" id="barre_reseau"><div class="projets_gauche"><p>Savoir les bases en réseau</p></div></div>
                 </div>
             </div>
 			

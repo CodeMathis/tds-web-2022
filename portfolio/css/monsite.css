@@ -359,25 +359,59 @@ ul{
 #barre_python{
 	background: linear-gradient(90deg, rgba(0,113,188,1) 0%, rgba(255,255,0,1) 100%);
 	height: 90px;
-	width: 70%;
+	width: 50%;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
 
-#barre_html{
+#barre_html_background{
+	background: rgba(235,91,39,1);
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
 
+#barre_html{
+	background: linear-gradient(90deg, rgba(235,91,39,1) 0%, rgba(0,113,188,1) 100%);
+	height: 90px;
+	width: 40%;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#barre_php_background{
+	background: rgba(235,91,39,1);
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
 #barre_php{
+	background: linear-gradient(90deg, rgba(76,75,154,1) 0%, rgba(99,49,138,1) 100%);
+}
 
+#barre_java_background{
+	background: rgba(235,91,39,1);
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
 #barre_java{
+	background: linear-gradient(90deg, rgba(249,176,61,1) 0%, rgba(212,21,91,1) 100%);
+}
 
+#barre_linux_background{
+	background: rgba(235,91,39,1);
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
 #barre_linux{
 
+}
+
+#barre_reseau_background{
+	background: rgba(235,91,39,1);
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
 #barre_reseau{

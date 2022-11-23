@@ -63,7 +63,7 @@ $data = yaml_parse_file('yaml/infos.yaml');
                     <h2 class="titre_droite">Compétences</h2>
                     <div class="barre_competence"><div id="barre_python_background"><div class="projets_gauche"><p>Apprende le Python</p></div></div><div id="barre_python"></div></div>
                     <div class="barre_competence"><div id="barre_html_background"><div class="projets_gauche"><p>Apprendre le HTML & CSS</p></div></div><div id="barre_html"></div></div>
-                    <div class="barre_competence" id="barre_php"><div class="projets_droite"><p>Apprendre le PHP</p></div></div>
+                    <div class="barre_competence"><div id="barre_php_background"><div class="projets_droite"><p>Apprendre le PHP</p></div></div><div id="barre_php"></div></div>
                     <div class="barre_competence" id="barre_java"><div class="projets_droite"><p>Apprendre le Java</p></div></div>
                     <div class="barre_competence" id="barre_linux"><div class="projets_gauche"><p>Apprendre les cmd Linux</p></div></div>
                     <div class="barre_competence" id="barre_reseau"><div class="projets_gauche"><p>Savoir les bases en réseau</p></div></div>

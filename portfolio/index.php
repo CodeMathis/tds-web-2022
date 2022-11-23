@@ -46,18 +46,14 @@ $data = yaml_parse_file('yaml/infos.yaml');
                		<p class="numeros_alignes_gauche">2</p>
 			<div id="numero_2">
 				<h2 class="titre_gauche">À propos de moi</h2>
-				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Ambitions</span><br>
-				Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité</p>
-				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Méthodes</span><br>
-				Même si je travaille souvent seul, je n’ai aucun problème avec le travail en équipe. Au contraire, travailler en équipe permet parfois de me débloquer plus facilement ou approfondir mes connaissances</p>
-				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Philosophie</span><br>
-				Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie</p>
-				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Ambitions</span><br>
-				Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité</p>
-				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Méthodes</span><br>
-				Même si je travaille souvent seul, je n’ai aucun problème avec le travail en équipe. Au contraire, travailler en équipe permet parfois de me débloquer plus facilement ou approfondir mes connaissances</p>
-				<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Philosophie</span><br>
-				Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie</p>
+                <?php
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["ambitions"][0].'</span><br>'.$data["ambitions"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["methodes"][0].'</span><br>'.$data["methodes"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["philosophie"][0].'</span><br>'.$data["philosophie"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["gouts"][0].'</span><br>'.$data["gouts"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["origines"][0].'</span><br>'.$data["origines"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["loisirs"][0].'</span><br>'.$data["loisirs"][1].'</p>';
+                ?>
 			</div>
 			</div>
 

@@ -63,7 +63,7 @@ body{
 
 
 header{
-	margin: auto 10%;
+	margin: auto calc(10% + 10px);
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
@@ -114,7 +114,7 @@ ul{
 	padding: 15px;
 	height: 35px;
 	width: 35px;
-	background-color: #3f5b65;
+	background-color: #1c9c94;
 	text-align:center;
 	color: white;
 	font-size: 30px;
@@ -127,7 +127,7 @@ ul{
 	padding: 15px;
 	height: 35px;
 	width: 35px;
-	background-color: #1c9c94;
+	background-color: #6dada6;
 	text-align:center;
 	color: white;
 	font-size: 30px;
@@ -215,8 +215,6 @@ ul{
 	width: 350px;
 	min-width: 350px;
 	min-height: 350px;
-	max-width: 350px;
-	max-height: 650px;
 	font-weight: 600;
 	font-size: 22px;
 	margin: 20px 40px 20px 40px;
@@ -281,7 +279,6 @@ ul{
 	padding: 20px;
 	border-radius: 25px;
 	width: 350px;
-	height: 350px;
 	min-width: 350px;
 	min-height: 350px;
 	font-weight: 600;
@@ -553,7 +550,8 @@ h2{
 	display: flex;
 	font-size: 32px;
 	font-weight: 600;
-	padding: 25px 20px 0 0;
+	padding-top: 20px;
+	margin: 0 20px;
 	color: white;
 	text-align: center;
 }

@@ -13,8 +13,8 @@ document.getElementById("bouton_afficher").addEventListener("click", function ()
 */
 
 document.getElementById("bouton_generer").addEventListener("click", function (){
-    max = Math.ceil(parseInt(document.forms[0].max_number.value);
+    max = Math.ceil(parseInt(document.forms[0].max_number.value));
     min = Math.floor(parseInt(document.forms[0].min_number.value));
-    let random_truc = Math.floor(Math.random() * (max - min) + min);
+    let random_truc = Math.floor(Math.random() * (max - min + 1) + min);
     document.getElementById("nbr_random_afficher").innerHTML = random_truc;
 });

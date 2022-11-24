@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Un site</title>
+	</head>
+	<body>
+		<form id="userform">
+			<input type="text" id="nom" placeholder="Votre nom">
+			<input type="text" id="prenom" placeholder="Votre prenom">
+		</form>
+		<div id="unediv">Bonsoir</div>
+	</body>
+	<script type="text/javascript">
+		/*alert("hello world!");
+		var nom = "DOE"; //var = utilisable partout
+		let prenom = "John"; //let mieux
+		let nomcomplet = `${nom} ${prenom}`;
+		console.log(nomcomplet);
+		console.log(document.getElementById("unediv"));
+		document.getElementById("unediv").innerHTML = nomcomplet;*/
+
+		document.getElementById("userform").addEventListener("change");
+		let nom = document.forms[0].nom.value;
+		let prenom = document.forms[0].prenom.value;
+		let nomcomplet = `${nom} ${prenom}`;
+		console.log(nomcomplet);
+		console.log(document.getElementById("unediv"));
+		document.getElementById("unediv").innerHTML = nomcomplet;
+	</script>
+</html>

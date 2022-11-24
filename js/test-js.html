@@ -8,6 +8,7 @@
 		<form id="userform">
 			<input type="text" id="nom" placeholder="Votre nom">
 			<input type="text" id="prenom" placeholder="Votre prenom">
+			<input id="bouton_afficher" type="button" value="Afficher">
 		</form>
 		<div id="unediv">Bonsoir</div>
 	</body>
@@ -20,12 +21,11 @@
 		console.log(document.getElementById("unediv"));
 		document.getElementById("unediv").innerHTML = nomcomplet;*/
 
-		document.getElementById("userform").addEventListener("change");
-		let nom = document.forms[0].nom.value;
-		let prenom = document.forms[0].prenom.value;
-		let nomcomplet = `${nom} ${prenom}`;
-		console.log(nomcomplet);
-		console.log(document.getElementById("unediv"));
-		document.getElementById("unediv").innerHTML = nomcomplet;
+		document.getElementById("bouton_afficher").addEventListener("click", function (){
+			let nom = document.forms[0].nom.value;
+			let prenom = document.forms[0].prenom.value;
+			let nomcomplet = `${nom} ${prenom}`;
+			document.getElementById("unediv").innerHTML = nomcomplet;
+		});
 	</script>
 </html>

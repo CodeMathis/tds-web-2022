@@ -15,14 +15,10 @@ include 'php/master.php';
 		<header>
 			<ul id="menu">
 				<?php
-				echo '<li><a href="#background1">'.$barmenu["nom_site"].'</a></li>';
-				echo '<li><a href="#background6">'.$barmenu["menu_titre1"].'</a></li>';
-				echo '<li><a href="#background5">'.$barmenu["menu_titre2"].'</a></li>';
-                echo '<li><a href="#background4">'.$barmenu["menu_titre3"].'e</a></li>';
-				echo '<li><a href="#background3">'.$barmenu["menu_titre4"].'</a></li>';
-				echo '<li><a href="#background2">'.$barmenu["menu_titre5"].'</a></li>';
-				echo '<li><a href="#background1">'.$barmenu["menu_titre6"].'</a></li>';
-				?>
+                foreach($barmenu["text_barmenu"] AS $index=>$titre) {
+                    echo '<li><a href="#background'.$index.'">'.$titre.'</a></li>';
+                }
+                ?>
 			</ul>
 			<hr>
 		</header>
@@ -38,10 +34,9 @@ include 'php/master.php';
                 ?>
 				<div id="logo_aligne">
                     <?php
-					echo '<img src="'.$background1["logos"]["image1"]["src"].'" alt="'.$background1["logos"]["image1"]["alt"].'">';
-                    echo '<img src="'.$background1["logos"]["image2"]["src"].'" alt="'.$background1["logos"]["image2"]["alt"].'">';
-                    echo '<img src="'.$background1["logos"]["image3"]["src"].'" alt="'.$background1["logos"]["image3"]["alt"].'">';
-                    echo '<img src="'.$background1["logos"]["image4"]["src"].'" alt="'.$background1["logos"]["image4"]["alt"].'">';
+                    foreach($background1["logos"] AS $logo) {
+                        echo '<img src="' . $logo['src'] . '" alt="' . $logo["alt"] . '">';
+                    }
 					echo '<p id="boite_nouveaute"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span><br>'.$background1["nouveaute"].'</p>';
                     ?>
 				</div>
@@ -53,12 +48,9 @@ include 'php/master.php';
 			<div id="numero_2">
                 <?php
 				echo '<h2 class="titre_gauche">'.$background2["titre"].'</h2>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["ambitions"][0].'</span><br>'.$background2["ambitions"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["methodes"][0].'</span><br>'.$background2["methodes"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["philosophie"][0].'</span><br>'.$background2["philosophie"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["gouts"][0].'</span><br>'.$background2["gouts"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["origines"][0].'</span><br>'.$background2["origines"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["loisirs"][0].'</span><br>'.$background2["loisirs"][1].'</p>';
+                foreach ($background2["boites"] AS $contenu) {
+                    echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$contenu["titre_boite"].'</span><br>'.$contenu["texte_boite"].'</p>';
+                }
                 ?>
 			</div>
 			</div>
@@ -81,7 +73,9 @@ include 'php/master.php';
 			<div id="background4">
                 	<p class="numeros_alignes_gauche">4</p>
 			<div id="numero_4">
-				<h2 class="titre_gauche">Expérience</h2>
+				<?php
+				echo '<h2 class="titre_gauche">'.$background4["titre"].'</h2>';
+                ?>
 				<p class="boite_travaux"><img src="img/prime.png" alt="image prime nuit du code">Ambitions</p>
 				<p class="boite_travaux"><img src="img/keysholder.png" alt="image programme keyholder">Ambitions</p>
 				<p class="boite_travaux"><img src="img/jeu_de_nim.png" alt="image jeu de nim">Ambitions</p>
@@ -92,7 +86,9 @@ include 'php/master.php';
 			<div id="background5">
                 	<p class="numeros_alignes_droite">5</p>
 			<div id="numero_5">
-				<h2 class="titre_droite">Formation</h2>
+				<?php
+                echo '<h2 class="titre_droite">'.$background5["titre"].'</h2>';
+                ?>
 				<p class="projets_gauche">Apprende le Python</p>
 				<p class="projets_gauche">Apprendre le HTML & CSS</p>
 				<p class="projets_droite">Apprendre le PHP</p>
@@ -104,7 +100,9 @@ include 'php/master.php';
 			
 			<div id="background6">
 				<hr id="separation_contact">
-				<h2 class="titre_gauche">Contact</h2>
+                <?php
+                echo '<h2 class="titre_gauche">'.$background6["titre"].'</h2>';
+                ?>
 				<p class="info_contact"><img src="img/instagram.png" alt="logo instagram">met_meza</p>
 				<p class="info_contact"><img src="img/facebook.png" alt="logo facebook">Met Meza</p>
 				<p class="info_contact"><img src="img/discord.png" alt="logo discord">met meza#6393</p>

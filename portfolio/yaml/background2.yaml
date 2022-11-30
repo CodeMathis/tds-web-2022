@@ -1,25 +1,20 @@
 titre: 'À propos de moi'
 
-ambitions:
-  - 'Ambitions'
-  - 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
+boites:
+  - titre_boite: 'Ambitions'
+    texte_boite: 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
 
-methodes:
-  - 'Méthodes'
-  - 'Même si je travaille souvent seul, je n’ai aucun problème avec le travail en équipe. Au contraire, travailler en équipe permet parfois de me débloquer plus facilement ou approfondir mes connaissances'
+  - titre_boite: 'Méthodes'
+    texte_boite: 'Même si je travaille souvent seul, je n’ai aucun problème avec le travail en équipe. Au contraire, travailler en équipe permet parfois de me débloquer plus facilement ou approfondir mes connaissances'
 
-philosophie:
-  - 'Philosophie'
-  - 'Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie'
+  - titre_boite: 'Philosophie'
+    texte_boite: 'Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie'
 
-gouts:
-  - 'Goûts'
-  - 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
+  - titre_boite: 'Goûts'
+    texte_boite: 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
 
-origines:
-  - 'Origines'
-  - 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
+  - titre_boite: 'Origines'
+    texte_boite: 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
 
-loisirs:
-  - 'Loisirs'
-  - 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
+  - titre_boite: 'Loisirs'
+    texte_boite: 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'

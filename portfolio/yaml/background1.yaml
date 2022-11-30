@@ -3,20 +3,16 @@ titre_principal: 'Bienvenue Sur le Site D’Un Étudiant'
 citation: '«Tout Le Monde Peut Peindre Un Beau Tableau Avec L’aide D’un Bon Peintre»'
 
 logos:
-  image1:
-    src: 'img/instagram.png'
+  - src: 'img/instagram.png'
     alt: 'logo instagram'
 
-  image2:
-    src: 'img/fbk.png'
+  - src: 'img/fbk.png'
     alt: 'logo facebook'
 
-  image3:
-    src: 'img/discord.png'
+  - src: 'img/discord.png'
     alt: 'logo discord'
 
-  image4:
-    src: 'img/mail.png'
+  - src: 'img/mail.png'
     alt: 'logo mail'
 
 nouveaute: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum curabitur vitae nunc sed velit dignissim.'

@@ -1,5 +1,5 @@
 <?php
-$data = yaml_parse_file('yaml/infos.yaml');
+include 'php/master.php';
 ?>
 
 <!doctype html>
@@ -14,13 +14,15 @@ $data = yaml_parse_file('yaml/infos.yaml');
 	<body>
 		<header>
 			<ul id="menu">
-				<li><a href="#background1">MATHIS CODE</a></li>
-				<li><a href="#background6">Contact</a></li>
-				<li><a href="#background5">Formation</a></li>
-                <li><a href="#background4">Expérience</a></li>
-				<li><a href="#background3">Compétences</a></li>
-				<li><a href="#background2">À propos</a></li>
-				<li><a href="#background1">Accueil</a></li>
+				<?php
+				echo '<li><a href="#background1">'.$barmenu["nom_site"].'</a></li>';
+				echo '<li><a href="#background6">'.$barmenu["menu_titre1"].'</a></li>';
+				echo '<li><a href="#background5">'.$barmenu["menu_titre2"].'</a></li>';
+                echo '<li><a href="#background4">'.$barmenu["menu_titre3"].'e</a></li>';
+				echo '<li><a href="#background3">'.$barmenu["menu_titre4"].'</a></li>';
+				echo '<li><a href="#background2">'.$barmenu["menu_titre5"].'</a></li>';
+				echo '<li><a href="#background1">'.$barmenu["menu_titre6"].'</a></li>';
+				?>
 			</ul>
 			<hr>
 		</header>
@@ -30,14 +32,18 @@ $data = yaml_parse_file('yaml/infos.yaml');
                 	<p class="numeros_alignes_droite">1</p>
 			<div id="numero_1">
 				<p class="numerotation_droite">1</p>
-				<h1>Bienvenue Sur le Site D’Un Étudiant</h1>
-				<p id="citation">«Tout Le Monde Peut Peindre Un Beau Tableau Avec L’aide D’un Bon Peintre»</p>
+				<?php
+                echo '<h1>'.$background1["titre_principal"].'</h1>';
+                echo '<p id="citation">'.$background1["citation"].'</p>';
+                ?>
 				<div id="logo_aligne">
-					<img src="img/instagram.png" alt="logo instagram">
-					<img src="img/fbk.png" alt="logo facebook">
-					<img src="img/discord.png" alt="logo discord">
-					<img src="img/mail.png" alt="logo mail">
-					<?php echo '<p id="boite_nouveaute"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span><br>'.$data["nouveaute"].'</p>';?>
+                    <?php
+					echo '<img src="'.$background1["logos"]["image1"]["src"].'" alt="'.$background1["logos"]["image1"]["alt"].'">';
+                    echo '<img src="'.$background1["logos"]["image2"]["src"].'" alt="'.$background1["logos"]["image2"]["alt"].'">';
+                    echo '<img src="'.$background1["logos"]["image3"]["src"].'" alt="'.$background1["logos"]["image3"]["alt"].'">';
+                    echo '<img src="'.$background1["logos"]["image4"]["src"].'" alt="'.$background1["logos"]["image4"]["alt"].'">';
+					echo '<p id="boite_nouveaute"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span><br>'.$background1["nouveaute"].'</p>';
+                    ?>
 				</div>
 			</div>
 			</div>
@@ -45,14 +51,14 @@ $data = yaml_parse_file('yaml/infos.yaml');
 			<div id="background2">
                		<p class="numeros_alignes_gauche">2</p>
 			<div id="numero_2">
-				<h2 class="titre_gauche">À propos de moi</h2>
                 <?php
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["ambitions"][0].'</span><br>'.$data["ambitions"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["methodes"][0].'</span><br>'.$data["methodes"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["philosophie"][0].'</span><br>'.$data["philosophie"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["gouts"][0].'</span><br>'.$data["gouts"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["origines"][0].'</span><br>'.$data["origines"][1].'</p>';
-                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$data["loisirs"][0].'</span><br>'.$data["loisirs"][1].'</p>';
+				echo '<h2 class="titre_gauche">'.$background2["titre"].'</h2>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["ambitions"][0].'</span><br>'.$background2["ambitions"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["methodes"][0].'</span><br>'.$background2["methodes"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["philosophie"][0].'</span><br>'.$background2["philosophie"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["gouts"][0].'</span><br>'.$background2["gouts"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["origines"][0].'</span><br>'.$background2["origines"][1].'</p>';
+                echo '<p class="boite_a_propos"><img src="img/content.png" alt="icon feuille"><span class="titre_des_boites">'.$background2["loisirs"][0].'</span><br>'.$background2["loisirs"][1].'</p>';
                 ?>
 			</div>
 			</div>
@@ -60,13 +66,15 @@ $data = yaml_parse_file('yaml/infos.yaml');
             <div id="background3">
                 <p class="numeros_alignes_droite">3</p>
                 <div id="numero_3">
-                    <h2 class="titre_droite">Compétences</h2>
-                    <div class="barre_competence"><div id="barre_python_background"><div class="projets_gauche"><p>Apprende le Python</p></div></div><div id="barre_python"></div></div>
-                    <div class="barre_competence"><div id="barre_html_background"><div class="projets_gauche"><p>Apprendre le HTML & CSS</p></div></div><div id="barre_html"></div></div>
-                    <div class="barre_competence"><div id="barre_php_background"><div class="projets_droite"><p>Apprendre le PHP</p></div></div><div id="barre_php"></div></div>
-                    <div class="barre_competence" id="barre_java"><div class="projets_droite"><p>Apprendre le Java</p></div></div>
-                    <div class="barre_competence" id="barre_linux"><div class="projets_gauche"><p>Apprendre les cmd Linux</p></div></div>
-                    <div class="barre_competence" id="barre_reseau"><div class="projets_gauche"><p>Savoir les bases en réseau</p></div></div>
+                    <?php
+                    echo '<h2 class="titre_droite">'.$background3["titre"].'</h2>';
+                    echo '<div class="barre_competence"><div id="barre_python_background"><div class="projets_gauche"><p>'.$background3["progress_bar1"].'</p></div></div><div id="barre_python"></div></div>';
+                    echo '<div class="barre_competence"><div id="barre_html_background"><div class="projets_gauche"><p>'.$background3["progress_bar2"].'</p></div></div><div id="barre_html"></div></div>';
+                    echo '<div class="barre_competence"><div id="barre_php_background"><div class="projets_droite"><p>'.$background3["progress_bar3"].'</p></div></div><div id="barre_php"></div></div>';
+                    echo '<div class="barre_competence" id="barre_java"><div class="projets_droite"><p>'.$background3["progress_bar4"].'</p></div></div>';
+                    echo '<div class="barre_competence" id="barre_linux"><div class="projets_gauche"><p>'.$background3["progress_bar5"].'</p></div></div>';
+                    echo '<div class="barre_competence" id="barre_reseau"><div class="projets_gauche"><p>'.$background3["progress_bar6"].'</p></div></div>';
+                    ?>
                 </div>
             </div>
 			

@@ -6,11 +6,15 @@
 </head>
 <body>
 <form id="alea_form">
-    <input type="text" id="min_number" placeholder="min random">
-    <input type="text" id="max_number" placeholder="max random">
+    <label for="min_number">Min: </label>
+    <input type="text" id="min_number" placeholder="Min random">
+    <label for="max_number">Max: </label>
+    <input type="text" id="max_number" placeholder="Max random">
+    <label for="pronostic">Pronostic: </label>
+    <input type="text" id="pronostic" placeholder="Pronostic">
     <input id="bouton_generer" type="button" value="generer">
 </form>
-<h1 id="nbr_random_afficher"></h1>
+<h1 style="color: black; transition-duration: 2s; transition-property: color; transition: font-size 2s, color 1s;" id="nbr_random_afficher"></h1>
 </body>
 <script src="test.js"></script>
 </html>

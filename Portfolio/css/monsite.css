@@ -95,6 +95,7 @@ ul{
 	margin: 40px 0 0 0;
 	padding: 15px 15px 0 15px;
 	overflow: hidden;
+	float: top;
 }
 
 #aligne_droite_barmenu{

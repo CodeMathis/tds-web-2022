@@ -7,4 +7,5 @@ $background4 = yaml_parse_file('yaml/background4.yaml');
 $background5 = yaml_parse_file('yaml/background5.yaml');
 $background6 = yaml_parse_file('yaml/background6.yaml');
 $footer = yaml_parse_file('yaml/footer.yaml');
+$secret_data = yaml_parse_file('/home/user/info_mail_secret_apache.yaml');
 ?>

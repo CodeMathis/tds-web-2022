@@ -26,7 +26,7 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
     ];
 
     $mail->SMTPAuth = true;  // Authentification SMTP active
-    $mail->Username = $data["mail"];
+    $mail->Username = $data["mail_source"];
     $mail->Password = $data["pass"];
 
     echo $special_mail;
@@ -41,7 +41,7 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
 }
 
 try{
-    sendMail($data["mail_source"], $data["mail_cible"], $prenom, $objet, $message);
+    sendMail($data["mail_cible"], $data["mail_source"], $prenom, $objet, $message);
     echo 'Message envoyé';
     sleep(1);
     header('Location: ../index.php');

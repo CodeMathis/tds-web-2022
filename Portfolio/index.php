@@ -10,7 +10,8 @@ include 'php/master.php';
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
-        <script src="js/animation.js https://www.google.com/recaptcha/api.js”"></script>
+        <script src="js/animation.js"></script>
+        <script src=”https://www.google.com/recaptcha/api.js” async defer></script>
 	</head>
 	<body>
 		<header>
@@ -137,14 +138,14 @@ include 'php/master.php';
                             //Below is your secret key
                             $secret = '6LfTPlUUAAAAANgJTPa67hlDAXu4ppK2FgSbSOO6';
                             //get verify response data
-                            $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_data["site_secret_key"].'&response='.$_POST['g-recaptcha-response']);
-                                $responseData = json_decode($captchaResponse);
+                            $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_data["site_secret_key"] . '&response=' . $_POST['g-recaptcha-response']);
+                            $responseData = json_decode($captchaResponse);
                             if ($responseData->success) {
                                 echo "succès";
-                            }
                             } else {
                                 echo "Erreur";
                             }
+                        }
                         ?>
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">

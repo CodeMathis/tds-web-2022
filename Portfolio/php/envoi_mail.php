@@ -41,7 +41,7 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
 }
 
 try{
-    sendMail("mathisravier.code@gmail.com", "mathisravier.code@gmail.com", $prenom, $objet, $message);
+    sendMail($data["mail_source"], $data["mail_cible"], $prenom, $objet, $message);
     echo 'Message envoyé';
     sleep(1);
     header('Location: ../index.php');

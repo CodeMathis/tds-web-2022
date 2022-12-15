@@ -1,4 +1,5 @@
 <?php
+include_once '../phpmailer/vendor/autoload.php';
 $prenom = $_POST["nom_prenom"]??"Anonyme";
 $mail = $_POST["mail"];
 $objet = $_POST["objet"]??"SITE WEB";

@@ -10,7 +10,7 @@ include 'php/master.php';
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
-        <script src="js/animation.js"></script>
+        <script src="js/animation.js https://www.google.com/recaptcha/api.js”"></script>
 	</head>
 	<body>
 		<header>

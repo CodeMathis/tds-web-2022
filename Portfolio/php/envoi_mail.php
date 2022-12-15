@@ -33,7 +33,7 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
     $mail->isHTML(true);
     $mail->SetFrom($from, $from_name);
     $mail->Subject = $subject;
-    $mail->Body = $body;
+    $mail->Body = "De '".$from."' : ".$body;
     $mail->AddAddress($to);
     $mail->Send();
 }

@@ -551,8 +551,8 @@ ul{
 	border: solid 2px;
 	color: #6dada6;
 	background-color: rgba(33, 48, 61, 1);
-	margin: 0 100%;
-	padding: 10px 20px;
+	margin: 0 auto;
+	padding: 10px 100%;
 	border-radius: 25px;
 	text-align: center;
 	flex-wrap: wrap;

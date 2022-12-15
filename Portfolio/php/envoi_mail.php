@@ -25,12 +25,12 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
     ]
     ];
 
+    echo $data["mail_source"];
+    echo $data["pass"];
+
     $mail->SMTPAuth = true;  // Authentification SMTP active
     $mail->Username = $data["mail_source"];
     $mail->Password = $data["pass"];
-
-    echo $data["mail_source"];
-    echo $data["pass"];
 
     $mail->isHTML(true);
     $mail->SetFrom($from, $from_name);

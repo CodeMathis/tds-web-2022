@@ -29,8 +29,8 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
     $mail->Username = $data["mail_source"];
     $mail->Password = $data["pass"];
 
-    echo $special_mail;
-    echo $special_password;
+    echo $data["mail_source"];
+    echo $data["pass"];
 
     $mail->isHTML(true);
     $mail->SetFrom($from, $from_name);

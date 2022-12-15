@@ -1,6 +1,6 @@
 <?php
 include_once '../phpmailer/vendor/autoload.php';
-include_once '/home/user/info_mail_secret_apache.php';
+include '/home/user/info_mail_secret_apache.php';
 use PHPMailer\PHPMailer\PHPMailer;
 
 $prenom = $_POST["nom_prenom"]??"Anonyme";

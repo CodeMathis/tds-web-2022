@@ -11,6 +11,7 @@ include 'php/master.php';
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
         <script src="js/animation.js https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src=”https://www.google.com/recaptcha/api.js” async defer></script>
 	</head>
 	<body>
 		<header>

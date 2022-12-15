@@ -54,12 +54,11 @@ body{	/*Valeurs de bases*/
 
 
 header{
-	margin: 0 10% -100px 10%;
+	margin: 0 10%;
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	background: rgba(0, 0, 0, 0.5);
 	animation: fade-top 1s ease;
-	overflow: hidden;
 	top: 0;
 }
 

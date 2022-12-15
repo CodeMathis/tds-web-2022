@@ -41,7 +41,7 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
 }
 
 try{
-    sendMail($data["mail_cible"], $data["mail_source"], $prenom, $objet, $message);
+    sendMail($data["mail_cible"], $mail_user, $prenom, $objet, $message);
     echo 'Message envoyé';
     sleep(1);
     header('Location: ../index.php');

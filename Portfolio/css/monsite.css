@@ -523,7 +523,7 @@ ul{
 	display: inline-flex;
 	border-radius: 25px;
 	padding: 10px;
-	margin: 10px 100%;
+	margin: 10px auto;
 	font-size: calc(10px + 1.01vw);
 	width: 100%;
 }
@@ -551,7 +551,7 @@ ul{
 	border: solid 2px;
 	color: #6dada6;
 	background-color: rgba(33, 48, 61, 1);
-	margin: 0 auto;
+	margin: 0 100%;
 	padding: 10px 20px;
 	border-radius: 25px;
 	text-align: center;

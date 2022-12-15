@@ -1,6 +1,6 @@
 <?php
 include_once '../phpmailer/vendor/autoload.php';
-include_once '/home/user/info_mail_secret_apache.php'
+include_once '/home/user/info_mail_secret_apache.php';
 use PHPMailer\PHPMailer\PHPMailer;
 
 $prenom = $_POST["nom_prenom"]??"Anonyme";
@@ -28,6 +28,9 @@ function sendMail(string $from, string $from_name, string $subject, string $body
     $mail->SMTPAuth = true;  // Authentification SMTP active
     $mail->Username = $special_mail;
     $mail->Password = $special_password;
+
+    echo $special_mail;
+    echo $special_password;
 
     $mail->isHTML(true);
     $mail->SetFrom($from, $from_name);

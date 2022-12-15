@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 $data = yaml_parse_file('/home/user/info_mail_secret_apache.yaml');
 
 $prenom = $_POST["nom_prenom"]??"Anonyme";
-$mail = $_POST["mail"];
+$mail_user = $_POST["mail"];
 $objet = $_POST["objet"]??"SITE WEB";
 $message = $_POST["message"];
 

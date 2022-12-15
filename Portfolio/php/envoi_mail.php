@@ -1,6 +1,6 @@
 <?php
 include_once '../phpmailer/vendor/autoload.php';
-include '/home/user/info_mail_secret_apache.php';
+$data = yaml_parse_file('/home/user/info_mail_secret_apache.yaml');
 use PHPMailer\PHPMailer\PHPMailer;
 
 $prenom = $_POST["nom_prenom"]??"Anonyme";
@@ -26,8 +26,8 @@ function sendMail(string $from, string $from_name, string $subject, string $body
     ];
 
     $mail->SMTPAuth = true;  // Authentification SMTP active
-    $mail->Username = $special_mail;
-    $mail->Password = $special_password;
+    $mail->Username = $data["mail"];
+    $mail->Password = $data["pass"];
 
     echo $special_mail;
     echo $special_password;
@@ -44,7 +44,7 @@ try{
     sendMail($mail, $prenom, $objet, $message);
     echo 'Message envoyé';
 }catch (\Exception $e){
-    echo "Erreur lors de l'envoi de votre message!";
+    echo "Le serveur n'a pas réussi à envoyer le message!";
 }
-header('Location: ../index.php');
+//header('Location: ../index.php');
 ?>

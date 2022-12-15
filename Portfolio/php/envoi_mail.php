@@ -41,7 +41,6 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
 try{
     sendMail($data["mail_cible"], $mail_user, $prenom, $objet, $message, $data);
     echo 'Message envoyé';
-    sleep(1);
     header('Location: ../index.php#background6');
 }catch (\Exception $e){
     echo "Le serveur n'a pas réussi à envoyer le message!";

@@ -133,9 +133,9 @@ include 'php/master.php';
                         </p>
                         <div class=”g-recaptcha” data-sitekey=”6LcRs4IjAAAAABfov2W5mKbD-k2QnRFQuXQGOQlj”></div>
                         <?php
-                        if (isset($_POST[‘g-recaptcha-response’]) && !empty($_POST[‘g-recaptcha-response’])) {
+                        if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
                             //Below is your secret key
-                            $secret = ‘6LfTPlUUAAAAANgJTPa67hlDAXu4ppK2FgSbSOO6’;
+                            $secret = '6LfTPlUUAAAAANgJTPa67hlDAXu4ppK2FgSbSOO6';
                             //get verify response data
                             $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_data["site_secret_key"].'&response='.$_POST['g-recaptcha-response']);
                                 $responseData = json_decode($captchaResponse);

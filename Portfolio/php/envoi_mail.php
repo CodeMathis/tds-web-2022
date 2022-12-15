@@ -11,7 +11,7 @@ $message = $_POST["message"];
 function sendMail(string $from, string $from_name, string $subject, string $body) {
     $mail = new PHPMailer(true);  // Crée un nouvel objet PHPMailer
     $mail->IsSMTP(); // active SMTP
-    $mail->SMTPDebug = 0;  // debogage: 1 = Erreurs et messages, 2 = messages seulement
+    $mail->SMTPDebug = 1;  // debogage: 1 = Erreurs et messages, 2 = messages seulement
     $mail->SMTPSecure = 'tls'; //or ssl
     $mail->Host = 'smtp.gmail.com';
     $mail->Port = 587;
@@ -24,8 +24,6 @@ function sendMail(string $from, string $from_name, string $subject, string $body
     "allow_self_signed"=>true
     ]
     ];
-
-    echo $mail;
 
     $mail->SMTPAuth = true;  // Authentification SMTP active
     $mail->Username = $data["mail"]??"probleme";

@@ -136,13 +136,13 @@ include 'php/master.php';
                         <?php
                         if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
                             //get verify response data
-                            $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_data["site_secret_key"].'&response='.$_POST['g-recaptcha-response']);
+                            $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_data["site_secret_key"] . '&response=' . $_POST['g-recaptcha-response']);
                             $responseData = json_decode($captchaResponse);
                             if ($responseData->success) {
                                 echo "succès";
+                            } else {
+                                echo "Erreur";
                             }
-                        } else {
-                            echo "Erreur";
                         }
                         ?>
                         <p>

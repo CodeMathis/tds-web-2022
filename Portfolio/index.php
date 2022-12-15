@@ -137,7 +137,7 @@ include 'php/master.php';
                             //Below is your secret key
                             $secret = ‘6LfTPlUUAAAAANgJTPa67hlDAXu4ppK2FgSbSOO6’;
                             //get verify response data
-                            $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_data["site_key"].'&response='.$_POST['g-recaptcha-response']);
+                            $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_data["site_secret_key"].'&response='.$_POST['g-recaptcha-response']);
                                 $responseData = json_decode($captchaResponse);
                             if ($responseData->success) {
                                 echo "succès";

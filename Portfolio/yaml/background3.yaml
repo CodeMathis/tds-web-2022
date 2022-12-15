@@ -1,0 +1,20 @@
+titre: 'Compétences'
+
+progress:
+  - barre_nom: 'Apprende le Python'
+    nom: "python"
+
+  - barre_nom: 'Apprendre le HTML & CSS'
+    nom: "html"
+
+  - barre_nom: 'Apprendre le PHP'
+    nom: "php"
+
+  - barre_nom: 'Apprendre le Java'
+    nom: "java"
+
+  - barre_nom: 'Apprendre les cmd Linux'
+    nom: "linux"
+
+  - barre_nom: 'Savoir les bases en réseau'
+    nom: "reseau"

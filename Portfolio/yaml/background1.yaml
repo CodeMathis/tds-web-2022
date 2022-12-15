@@ -1,0 +1,23 @@
+titre_principal: 'Bienvenue Sur le Site D’Un Étudiant'
+
+citation: '«Tout Le Monde Peut Peindre Un Beau Tableau Avec L’aide D’un Bon Peintre»'
+
+logos:
+  - src: 'img/instagram.png'
+    alt: 'logo instagram'
+    link: 'https://www.instagram.com'
+
+  - src: 'img/fbk.png'
+    alt: 'logo facebook'
+    link: 'https://www.facebook.com'
+
+  - src: 'img/discord.png'
+    alt: 'logo discord'
+    link: 'https://discord.com'
+
+  - src: 'img/mail.png'
+    alt: 'logo mail'
+    link: 'https://mail.google.com'
+
+nouveaute: "- Recherche d'un stage de 5 semaines<br>- Mise à jour de la page 'Voir tout' pour mes expériences et travaux<br>- Recherche d'hébergeur pour le site"
+nouveaute_img: "img/news.png"

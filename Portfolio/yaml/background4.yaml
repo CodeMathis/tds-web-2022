@@ -1,0 +1,14 @@
+titre: 'Expérience'
+
+images:
+  - src: 'img/prime.png'
+    alt: 'image prime nuit du code'
+    texte: '— Primé nuit du c0de 2022 —'
+
+  - src: 'img/keysholder.png'
+    alt: 'image programme keyholder'
+    texte: '— Keyholder, un logiciel permettant de spam ou de maintenir des clics et des touches de clavier. Disponible sans interface (temporairement) sur github —'
+
+  - src: 'img/jeu_de_nim.png'
+    alt: 'image jeu de nim'
+    texte: '— Jeu de nim, 2 joueurs ou 1 joueur avec difficultés ajustables —'

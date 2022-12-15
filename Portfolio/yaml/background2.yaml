@@ -1,0 +1,26 @@
+titre: 'À propos de moi'
+
+boites:
+  - titre_boite: 'Ambitions'
+    texte_boite: 'Pour l’instant, je vise des études jusqu’à bac+3 ou bac+5 dans le développement d’applications. En revanche, si je change d’avis, je peux à tout moment me reconvertir dans la cybersécurité'
+    img_boite: 'img/graph_up.png'
+
+  - titre_boite: 'Méthodes'
+    texte_boite: 'Même si je travaille souvent seul, je n’ai aucun problème avec le travail en équipe. Au contraire, travailler en équipe permet parfois de me débloquer plus facilement ou approfondir mes connaissances'
+    img_boite: 'img/methode.png'
+
+  - titre_boite: 'Philosophie'
+    texte_boite: 'Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie'
+    img_boite: 'img/brain-icon.png'
+
+  - titre_boite: 'Goûts'
+    texte_boite: "Étant donné mes études, j’aime tout ce qui touche à l’informatique, même si j’ai une préférence pour le développement. Mes matières préférées au lycée étaient: la NSI, les mathématiques, l’anglais et la philosophie. Sinon le badminton, la pêche et les bonnes blagues me suffisent comme loisirs"
+    img_boite: 'img/hearts.png'
+
+  - titre_boite: 'Origines'
+    texte_boite: 'À 11 ans, avec mon premier ordinateur portable je regardais majoritairement des vidéos Youtube et je jouais à Minecraft. Même si je bidouillais dessus, je ne comprenais pas trop ce que je faisais. C’est uniquement depuis mes 15 ans, grâce à mon nouvel ordinateur fixe et la NSI au lycée, que j’ai commencé à m’intéresser plus profondément à tout ce qui se passe derrière les interfaces'
+    img_boite: 'img/origines.png'
+
+  - titre_boite: 'Loisirs'
+    texte_boite: '.................................'
+    img_boite: 'img/loisirs.png'

@@ -1,0 +1,30 @@
+text_footer:
+  colonne_1:
+    - "<p>MathisCode</p>"
+    - "<p>Merci de votre visite</p>"
+    - "<hr>"
+
+  colonne_2:
+    - "<p>Compétences</p>"
+    - "<p>Python</p>"
+    - "<p>HTML/CSS</p>"
+    - "<p>PHP</p>"
+    - "<p>...</p>"
+
+  colonne_3:
+    - "<p>Liens</p>"
+    - "<a href='#background1'>Accueil</a>"
+    - "<a href='#background2'>À propos</a>"
+    - "<a href='#background3'>Compétences</a>"
+    - "<a href='#background4'>Expérience</a>"
+    - "<a href='#background5'>Formation</a>"
+    - "<a href='#background6'>Contact</a>"
+
+  colonne_4:
+    - "<p>Contact</p>"
+    - "<p>Instagram: met_meza</p>"
+    - "<p>Facebook: met_meza</p>"
+    - "<p>Discord: met_meza#6393</p>"
+    - "<p>Mél : mathis.ravier@sts-sio-caen.info</p>"
+
+copyright: "Copyright © 2022. All rights reserved."

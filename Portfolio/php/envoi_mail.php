@@ -25,9 +25,11 @@ function sendMail(string $from, string $from_name, string $subject, string $body
     ]
     ];
 
+    echo $mail;
+
     $mail->SMTPAuth = true;  // Authentification SMTP active
-    $mail->Username = $data["mail"];
-    $mail->Password = $data["pass"];
+    $mail->Username = $data["mail"]??"probleme";
+    $mail->Password = $data["pass"]??"probleme";
 
     echo $special_mail;
     echo $special_password;
@@ -43,8 +45,9 @@ function sendMail(string $from, string $from_name, string $subject, string $body
 try{
     sendMail($mail, $prenom, $objet, $message);
     echo 'Message envoyé';
+    sleep(1);
+    header('Location: ../index.php');
 }catch (\Exception $e){
     echo "Le serveur n'a pas réussi à envoyer le message!";
 }
-//header('Location: ../index.php');
 ?>

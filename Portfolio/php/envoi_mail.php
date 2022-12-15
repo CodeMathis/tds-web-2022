@@ -26,8 +26,8 @@ function sendMail(string $from, string $from_name, string $subject, string $body
     ];
 
     $mail->SMTPAuth = true;  // Authentification SMTP active
-    $mail->Username = $data["mail"]??"probleme";
-    $mail->Password = $data["pass"]??"probleme";
+    $mail->Username = $data["mail"];
+    $mail->Password = $data["pass"];
 
     echo $special_mail;
     echo $special_password;
@@ -36,7 +36,7 @@ function sendMail(string $from, string $from_name, string $subject, string $body
     $mail->SetFrom($from, $from_name);
     $mail->Subject = $subject;
     $mail->Body = $body;
-    $mail->AddAddress($to);
+    $mail->AddAddress($data["mail"]);
     $mail->Send();
 }
 

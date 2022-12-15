@@ -10,7 +10,7 @@ include 'php/master.php';
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
-        <script src="js/animation.js https://www.google.com/recaptcha/api.js”"></script>
+        <script src="js/animation.js"></script>
 	</head>
 	<body>
 		<header>
@@ -132,7 +132,7 @@ include 'php/master.php';
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir ici un message."></textarea>
                         </p>
                         <div class=”g-recaptcha” data-sitekey=”6LcRs4IjAAAAABfov2W5mKbD-k2QnRFQuXQGOQlj”></div>
-                        
+
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">
                             <input class="envoyer_annuler" type="reset" value="Annuler">

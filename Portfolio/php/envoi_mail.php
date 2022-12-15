@@ -12,7 +12,7 @@ $message = $_POST["message"];
 function sendMail(string $to, string $from, string $from_name, string $subject, string $body, $data) {
     $mail = new PHPMailer(true);  // Crée un nouvel objet PHPMailer
     $mail->IsSMTP(); // active SMTP
-    $mail->SMTPDebug = 1;  // debogage: 1 = Erreurs et messages, 2 = messages seulement
+    $mail->SMTPDebug = 0;  // debogage: 1 = Erreurs et messages, 2 = messages seulement
     $mail->SMTPSecure = 'tls'; //or ssl
     $mail->Host = 'smtp.gmail.com';
     $mail->Port = 587;
@@ -42,7 +42,7 @@ try{
     sendMail($data["mail_cible"], $mail_user, $prenom, $objet, $message, $data);
     echo 'Message envoyé';
     sleep(1);
-    header('Location: ../index.php');
+    header('Location: ../index.php#background6');
 }catch (\Exception $e){
     echo "Le serveur n'a pas réussi à envoyer le message!";
 }

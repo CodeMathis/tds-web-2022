@@ -1,7 +1,6 @@
 <?php
 include_once '../phpmailer/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
-$data = yaml_parse_file('/home/user/info_mail_secret_apache.yaml');
 
 $prenom = $_POST["nom_prenom"]??"Anonyme";
 $mail_user = $_POST["mail"];
@@ -9,6 +8,7 @@ $objet = $_POST["objet"]??"SITE WEB";
 $message = $_POST["message"];
 
 function sendMail(string $to, string $from, string $from_name, string $subject, string $body) {
+    $data = yaml_parse_file('/home/user/info_mail_secret_apache.yaml');
     $mail = new PHPMailer(true);  // Crée un nouvel objet PHPMailer
     $mail->IsSMTP(); // active SMTP
     $mail->SMTPDebug = 1;  // debogage: 1 = Erreurs et messages, 2 = messages seulement
@@ -25,8 +25,8 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
     ]
     ];
 
-    echo $data["mail_source"];
-    echo $data["pass"];
+    echo '<p>'.$data["mail_source"].'</p>';
+    echo '<p>'.$data["pass"].'</p>';
 
     $mail->SMTPAuth = true;  // Authentification SMTP active
     $mail->Username = $data["mail_source"];

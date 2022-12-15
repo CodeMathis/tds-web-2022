@@ -4,6 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 $data = yaml_parse_file('/home/user/info_mail_secret_apache.yaml');
 
+echo '<p>'.$data["mail_source"].'</p>';
+echo '<p>'.$data["pass"].'</p>';
+
 $prenom = $_POST["nom_prenom"]??"Anonyme";
 $mail_user = $_POST["mail"];
 $objet = $_POST["objet"]??"SITE WEB";
@@ -25,9 +28,6 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
     "allow_self_signed"=>true
     ]
     ];
-
-    echo '<p>'.$data["mail_source"].'</p>';
-    echo '<p>'.$data["pass"].'</p>';
 
     $mail->SMTPAuth = true;  // Authentification SMTP active
     $mail->Username = $data["mail_source"];

@@ -132,18 +132,7 @@ include 'php/master.php';
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir ici un message."></textarea>
                         </p>
                         <div class=”g-recaptcha” data-sitekey=”6LcRs4IjAAAAABfov2W5mKbD-k2QnRFQuXQGOQlj”></div>
-                        <?php
-                        if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
-                            //get verify response data
-                            $captchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_data["site_secret_key"].'&response='.$_POST['g-recaptcha-response']);
-                                $responseData = json_decode($captchaResponse);
-                            if ($responseData->success) {
-                                echo "succès";
-                            }
-                            } else {
-                                echo "Erreur";
-                            }
-                        ?>
+                        
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">
                             <input class="envoyer_annuler" type="reset" value="Annuler">

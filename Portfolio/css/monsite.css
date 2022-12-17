@@ -517,6 +517,9 @@ ul{
 	margin: 10px auto;
 	font-size: calc(10px + 1.01vw);
 	width: 48%;
+	border: 6px solid #4efcee;
+	background-color: rgba(222, 222, 222, 0.1);
+	color: #66fcf0;
 }
 
 .cadre_input_et_textarea{
@@ -525,7 +528,10 @@ ul{
 	border-radius: 25px;
 	padding: 10px;
 	margin: 10px auto;
+	border: 4px solid;
 	font-size: calc(10px + 1.01vw);
+	background-color: #141619;
+	color: #1c9c94;
 	width: 100%;
 }
 
@@ -540,7 +546,8 @@ ul{
 #cadre_global_formulaire form{
 	display: flex;
 	flex-direction: row;
-	border: solid 2px;
+	flex-wrap: wrap;
+	border: solid 4px;
 	color: white;
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 0;
@@ -557,7 +564,6 @@ ul{
 	background-color: rgba(33, 48, 61, 1);
 	margin: 0 auto;
 	padding: 10px 20px;
-	width: 100%;
 	border-radius: 25px;
 	text-align: center;
 	flex-wrap: wrap;

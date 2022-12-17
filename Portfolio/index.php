@@ -11,7 +11,12 @@ include 'php/master.php';
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
         <script src="js/animation.js"></script>
-	</head>
+        <script src="https://www.google.com/recaptcha/api.js">//handle captcha
+            function onSubmit(token) {
+                document.getElementById("demo-form").submit();
+            }
+        </script>
+    </head>
 	<body>
 		<header>
 			<ul id="menu">
@@ -131,9 +136,11 @@ include 'php/master.php';
                             Votre message :<br>
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir ici un message."></textarea>
                         </p>
-                        <?php
-
-                        ?>
+                        <button class="g-recaptcha"
+                                data-sitekey="reCAPTCHA_site_key"
+                                data-callback='onSubmit'
+                                data-action='submit'>Submit
+                        </button>
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">
                             <input class="envoyer_annuler" type="reset" value="Annuler">

@@ -133,15 +133,13 @@ include 'php/master.php';
                             Votre message :<br>
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>
                         </p>
+                        <p>
                         <?php
-                        echo '<p id="p_captcha">';
                         echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo $_SESSION["formulaire_resultat"];
                         }
-                        echo '</p>';
                         ?>
-                        <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">
                             <input class="envoyer_annuler" type="reset" value="Annuler">
                         </p>

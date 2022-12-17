@@ -535,8 +535,8 @@ ul{
 	width: 100%;
 }
 
-#p_captcha{
-	margin: 0 50%;
+.g-recaptcha{
+	margin: auto;
 }
 
 #separation_contact{

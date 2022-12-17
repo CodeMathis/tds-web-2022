@@ -136,7 +136,7 @@ include 'php/master.php';
                         </p>
                         <p>
                             Votre message :<br>
-                            <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir ici un message."></textarea>
+                            <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>
                         </p>
                         <?php
 

@@ -142,8 +142,11 @@ include 'php/master.php';
 
                         echo '<div class="g-recaptcha cadre_input_et_textarea" data-sitekey="'.$secret_data["site_key"].'" required="required"></div>';
 
-                        echo '<p><input class="envoyer_annuler" type="submit" value="Envoyer" disabled="disabled"><input class="envoyer_annuler" type="reset" value="Annuler"></p>';
-
+                        if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
+                            echo '<p><input class="envoyer_annuler" type="submit" value="Envoyer"><input class="envoyer_annuler" type="reset" value="Annuler"></p>';
+                        }else{
+                            echo '<p><input class="envoyer_annuler" type="submit" value="Envoyer" disabled="disabled"><input class="envoyer_annuler" type="reset" value="Annuler"></p>';
+                        }
                         ?>
                     </form>
                 </div>

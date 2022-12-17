@@ -547,6 +547,10 @@ ul{
 	border-radius: 25px;
 }
 
+#cadre_global_formulaire form{
+	width: 100%;
+}
+
 #cadre_global_formulaire p, .g-recaptcha{
 	display: flex;
 	align-self: center;

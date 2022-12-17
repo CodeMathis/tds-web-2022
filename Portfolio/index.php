@@ -138,7 +138,7 @@ include 'php/master.php';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo $_SESSION["formulaire_resultat"];
                         }
-                        echo '<span class="g-recaptcha cadre_input_et_textarea" data-sitekey="'.$secret_data["site_key"].'"></span></p>';
+                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span></p>';
                         ?>
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">

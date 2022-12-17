@@ -535,6 +535,10 @@ ul{
 	width: 100%;
 }
 
+.g-recaptcha{
+	margin: auto;
+}
+
 #separation_contact{
 	margin: 0 20%;
 	padding: 0;

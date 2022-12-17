@@ -11,11 +11,13 @@ include 'php/master.php';
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
         <script src="js/animation.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js">//handle captcha
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>//handle captcha
             function onSubmit(token) {
                 document.getElementById("demo-form").submit();
             }
         </script>
+
     </head>
 	<body>
 		<header>

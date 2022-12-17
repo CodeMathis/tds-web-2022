@@ -12,12 +12,6 @@ include 'php/master.php';
 		<link rel="stylesheet" href="css/font_import.css">
         <script src="js/animation.js"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
-        <script>//handle captcha
-            function onSubmit(token) {
-                document.getElementById("demo-form").submit();
-            }
-        </script>
-
     </head>
 	<body>
 		<header>
@@ -47,7 +41,7 @@ include 'php/master.php';
                     foreach($background1["logos"] AS $logo){
                         echo '<a href="'. $logo["link"] .'"><img src="' . $logo["src"] . '" alt="' . $logo["alt"] . '"></a>';
                     }
-					echo '<p id="boite_nouveaute"><img src="'.$background1["nouveaute_img"].'" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span>'.$background1["nouveaute"].'</p>';
+                    echo '<p id="boite_nouveaute"><img src="'.$background1["nouveaute_img"].'" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span>'.$background1["nouveaute"].'</p>';
                     ?>
 				</div>
 			</div>
@@ -57,7 +51,7 @@ include 'php/master.php';
 			<div id="numero_2">
                 <p class="numeros_alignes_gauche">2</p>
                 <?php
-				echo '<h2 class="titre_gauche reveal fade-left">'.$background2["titre"].'</h2>';
+                echo '<h2 class="titre_gauche reveal fade-left">'.$background2["titre"].'</h2>';
                 foreach ($background2["boites"] AS $contenu){
                     echo '<p class="boite_a_propos reveal fade-bottom"><img src="'.$contenu["img_boite"].'" alt="icon feuille"><span class="titre_des_boites">'.$contenu["titre_boite"].'</span><br>'.$contenu["texte_boite"].'</p>';
                 }

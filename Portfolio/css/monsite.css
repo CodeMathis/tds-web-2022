@@ -67,7 +67,6 @@ li{
 	flex-direction: row;
 	padding: 10px;
 	margin-top: -10px;
-	margin-left: auto;
 	align-items: center;
 }
 
@@ -97,8 +96,8 @@ ul{
 	overflow: hidden;
 }
 
-#aligne_droite_barmenu{
-
+.align_li{
+	margin-left: auto;
 }
 
 #titre_barmenu{

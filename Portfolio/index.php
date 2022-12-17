@@ -21,7 +21,7 @@ include 'php/master.php';
                 echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
                 echo '<span id="aligne_droite_barmenu">';
                 foreach($barmenu["text_barmenu"] AS $index=>$titre){
-                    echo '<li><a href="#background'.(1 + $index).'">'.$titre.'</a></li>';
+                    echo '<li class="align_li"><a href="#background'.(1 + $index).'">'.$titre.'</a></li>';
                 }
                 echo '</span>';
                 ?>

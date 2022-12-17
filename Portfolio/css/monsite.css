@@ -547,7 +547,7 @@ ul{
 	border-radius: 25px;
 }
 
-#cadre_global_formulaire>form>p, .g-recaptcha{
+#cadre_global_formulaire p, .g-recaptcha{
 	display: flex;
 	align-self: center;
 	align-items: center;

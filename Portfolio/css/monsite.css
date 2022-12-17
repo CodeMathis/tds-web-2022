@@ -17,7 +17,8 @@ body{	/*Valeurs de bases*/
 	background: black;	
 	background-size: 100%;
 	font-weight: 400;
-	margin: auto;
+	margin: 0;
+	padding: 0;
 }
 
 

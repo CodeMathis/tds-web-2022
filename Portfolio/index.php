@@ -135,10 +135,11 @@ include 'php/master.php';
                         </p>
                         <?php
                         echo '<p>';
+                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'">';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo $_SESSION["formulaire_resultat"];
                         }
-                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span></p>';
+                        echo '</span></p>';
                         ?>
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">

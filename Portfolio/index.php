@@ -139,18 +139,10 @@ include 'php/master.php';
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir ici un message."></textarea>
                         </p>
                         <?php
-                        $allowSubmit = false;
-                        function capcha_filled () {
-                            return $allowSubmit = true;
-                        }
-                        function capcha_filled () {
-                            return $allowSubmit = true;
-                        }
 
-                        echo '<div class="g-recaptcha cadre_input_et_textarea" data-callback="$allowSubmit = capcha_filled()" data-expired-callback="$allowSubmit = capcha_expired()" data-sitekey="'.$secret_data["site_key"].'" required="required"></div>';
+                        echo '<div class="g-recaptcha cadre_input_et_textarea" data-sitekey="'.$secret_data["site_key"].'" required="required"></div>';
 
                         echo '<p><input class="envoyer_annuler" type="submit" value="Envoyer" disabled="disabled"><input class="envoyer_annuler" type="reset" value="Annuler"></p>';
-
 
                         ?>
                     </form>

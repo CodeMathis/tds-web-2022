@@ -136,11 +136,9 @@ include 'php/master.php';
                             Votre message :<br>
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir ici un message."></textarea>
                         </p>
-                        <button class="g-recaptcha"
-                                data-sitekey="reCAPTCHA_site_key"
-                                data-callback='onSubmit'
-                                data-action='submit'>Submit
-                        </button>
+                        <?php
+                        echo '<button class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'" data-callback="onSubmit" data-action="submit">Submit</button>';
+                        ?>
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">
                             <input class="envoyer_annuler" type="reset" value="Annuler">

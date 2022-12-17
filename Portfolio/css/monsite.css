@@ -535,9 +535,8 @@ ul{
 	width: 100%;
 }
 
-.g-recaptcha{
+#p_captcha{
 	margin: auto;
-	border-radius: 25px;
 }
 
 #separation_contact{

@@ -537,6 +537,7 @@ ul{
 
 .g-recaptcha{
 	margin: auto;
+	border-radius: 25px;
 }
 
 #separation_contact{

@@ -134,11 +134,11 @@ include 'php/master.php';
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>
                         </p>
                         <?php
-                        echo '<div class="g-recaptcha cadre_input_et_textarea" data-sitekey="'.$secret_data["site_key"].'"><p>';
+                        echo '<div class="g-recaptcha cadre_input_et_textarea" data-sitekey="'.$secret_data["site_key"].'"><span><p>';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo $_SESSION["formulaire_resultat"];
                         }
-                        echo '</p></div>';
+                        echo '</p></span></div>';
                         ?>
                         <p>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">

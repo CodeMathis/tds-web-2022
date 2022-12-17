@@ -520,7 +520,8 @@ ul{
 }
 
 .cadre_input_et_textarea{
-	display: inline-flex;
+	display: flex;
+	align-self: center;
 	border-radius: 25px;
 	padding: 10px;
 	margin: 10px auto;

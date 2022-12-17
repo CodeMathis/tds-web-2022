@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once '../phpmailer/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -41,16 +42,16 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
 try{
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
         sendMail($secret_data["mail_cible"], $mail_user, $prenom, $objet, $message, $secret_data);
-        echo 'Message envoyé';
-        $test_captcha = "Envoi réussi";
+        $_SESSION["formulaire_resultat"] = "Envoi réussi";
         header('Location: ../index.php#background6');
     }else{
-        echo "<p>Vérifiez que vous n'êtes pas un robot avant de valider.</p>";
-        $test_captcha = "Vérifiez que vous n'êtes pas un robot avant de valider";
+        $_SESSION["formulaire_resultat"] = "Vérifiez que vous n'êtes pas un robot avant de valider";
         header('Location: ../index.php#background6');
     }
 
 }catch (\Exception $e){
-    echo "<p>Le serveur n'a pas réussi à envoyer le message!<br>Vérifiez votre adresse mail.</p>";
+    $_SESSION["formulaire_resultat"] = "Le serveur n'a pas réussi à envoyer le message!<br>Vérifiez votre adresse mail";
+    header('Location: ../index.php#background6');
+
 }
 ?>

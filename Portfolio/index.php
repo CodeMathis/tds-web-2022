@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'php/master.php';
 ?>
 
@@ -133,8 +134,8 @@ include 'php/master.php';
                             <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>
                         </p>
                         <?php
-                        if (isset($test_captcha)){
-                            echo $test_captcha;
+                        if (isset($_SESSION["formulaire_resultat"])){
+                            echo $_SESSION["formulaire_resultat"];
                         }
                         echo '<div class="g-recaptcha cadre_input_et_textarea" data-sitekey="'.$secret_data["site_key"].'"></div>';
                         ?>

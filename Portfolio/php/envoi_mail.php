@@ -43,6 +43,6 @@ try{
     echo 'Message envoyé';
     header('Location: ../index.php#background6');
 }catch (\Exception $e){
-    echo "Le serveur n'a pas réussi à envoyer le message!";
+    echo "<p>Le serveur n'a pas réussi à envoyer le message!<br>Vérifiez votre adresse mail.</p>";
 }
 ?>

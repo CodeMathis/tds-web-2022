@@ -39,9 +39,14 @@ function sendMail(string $to, string $from, string $from_name, string $subject, 
 }
 
 try{
-    sendMail($secret_data["mail_cible"], $mail_user, $prenom, $objet, $message, $secret_data);
-    echo 'Message envoyé';
-    header('Location: ../index.php#background6');
+    if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
+        sendMail($secret_data["mail_cible"], $mail_user, $prenom, $objet, $message, $secret_data);
+        echo 'Message envoyé';
+        header('Location: ../index.php#background6');
+    }else{
+        echo "<p>Vérifiez que vous n'êtes pas un robot avant de valider.</p>";
+    }
+
 }catch (\Exception $e){
     echo "<p>Le serveur n'a pas réussi à envoyer le message!<br>Vérifiez votre adresse mail.</p>";
 }

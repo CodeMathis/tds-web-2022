@@ -42,9 +42,12 @@ try{
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
         sendMail($secret_data["mail_cible"], $mail_user, $prenom, $objet, $message, $secret_data);
         echo 'Message envoyé';
+        $test_captcha = "Envoi réussi";
         header('Location: ../index.php#background6');
     }else{
         echo "<p>Vérifiez que vous n'êtes pas un robot avant de valider.</p>";
+        $test_captcha = "Vérifiez que vous n'êtes pas un robot avant de valider";
+        header('Location: ../index.php#background6');
     }
 
 }catch (\Exception $e){

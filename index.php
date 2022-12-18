@@ -29,12 +29,7 @@
         return $results;
     }
 
-    $fichier_pour_local = array_reverse((getDirContents('../tds-web-2022')));
-
-    $fichier_pour_serv = [];
-    foreach ($fichier_pour_local as $chaque_fichier){
-        $fichier_pour_serv[] = substr($chaque_fichier, 15);
-    }
+    $fichier = array_reverse((getDirContents('../tds-web-2022')));
 
     $random_color = [];
     function rand_color() {
@@ -43,7 +38,7 @@
 
     $log_dernier_slash = 1;
 
-    foreach ($fichier_pour_serv as $chaque_fichier){
+    foreach ($fichier as $chaque_fichier){
         $nombre_de_slash = substr_count($chaque_fichier,"/")-1;
 
         //calcul couleur
@@ -60,7 +55,7 @@
 
         if (is_dir($chaque_fichier)){
             echo "<details><summary>";
-            echo "<div style='display:flex'><img src='dir.png' alt='directory png' style='width: 30px; height: 30px'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold'>".$chaque_fichier."</p></div>";
+            echo "<div style='display:flex'><img src='dir.png' alt='directory png' style='width: 30px; height: 30px'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold'>".substr($chaque_fichier, 16)."</p></div>";
             echo "</summary><ul>";
 
         }else{

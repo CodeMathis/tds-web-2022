@@ -17,7 +17,7 @@
         }
 
         foreach ($files as $key => $value) {
-            $path = ($dir . "/" . $value);
+            $path = ($value);
             if (!is_dir($path)) {
                 $results[] = $path;
             } else if ($value != "." && $value != "..") {

@@ -134,7 +134,7 @@ include 'php/master.php';
                         </p>
                         <p>
                         <?php
-                        echo '<div id="captcha_separation"><span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span></div>';
+                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo $_SESSION["formulaire_resultat"];
                         }

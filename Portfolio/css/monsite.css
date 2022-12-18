@@ -98,11 +98,15 @@ header ul{
 }
 
 #img_barmenu{
-	width: 50px;
+	width: 40px;
 }
 
 #aligne_droite_barmenu{
 	margin-left: auto;
+}
+
+#aligne_droite_barmenu summary{
+	list-style: none;
 }
 
 #titre_barmenu{

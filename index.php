@@ -37,7 +37,7 @@
 
     $random_color = [];
     function rand_color() {
-        return sprintf('#%06X', mt_rand(0x333333, 0xCCCCCC));
+        return sprintf('#%06X', mt_rand(0x555555, 0xAAAAAA));
     }
 
     $log_dernier_slash = 1;

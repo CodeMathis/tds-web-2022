@@ -33,7 +33,7 @@
 
     $fichier_pour_serv = [];
     foreach ($fichier_pour_local as $chaque_fichier){
-        $fichier_pour_serv[] = substr($chaque_fichier, 13);
+        $fichier_pour_serv[] = substr($chaque_fichier, 15);
     }
 
     $random_color = [];

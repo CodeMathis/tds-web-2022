@@ -21,7 +21,7 @@
             if (!is_dir($path)) {
                 $results[] = $path;
             } else if ($value != "." && $value != "..") {
-                getDirContents($path, $results);
+                getDirContents($dir.$path, $results);
                 $results[] = $path;
             }
         }

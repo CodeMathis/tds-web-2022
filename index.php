@@ -17,11 +17,11 @@
         }
 
         foreach ($files as $key => $value) {
-            $path = ("/" . $value);
+            $path = ($dir . "/" . $value);
             if (!is_dir($path)) {
                 $results[] = $path;
             } else if ($value != "." && $value != "..") {
-                getDirContents($dir.$path, $results);
+                getDirContents($path, $results);
                 $results[] = $path;
             }
         }
@@ -30,7 +30,6 @@
     }
 
     $fichier = array_reverse((getDirContents('../tds-web-2022')));
-    var_dump($fichier);
 
     $random_color = [];
     function rand_color() {
@@ -47,19 +46,15 @@
             $random_color[] = rand_color();
         }
 
-        if ($nombre_de_slash > $log_fichier_ouvert) {
+        if ($nombre_de_slash > $log_fichier_ouvert){
             $log_fichier_ouvert += 1;
-        }elseif ($nombre_de_slash < $log_fichier_ouvert){
+        }
+        if ($nombre_de_slash < $log_fichier_ouvert){
             $log_fichier_ouvert -= 1;
-            echo "</ul></details>";
+            echo '</ul></details>';
         }
 
         if (is_dir($chaque_fichier)){
-
-            if ($nombre_de_slash = $log_fichier_ouvert) {
-                $log_fichier_ouvert += 1;
-            }
-
             echo "<details><summary>";
             echo "<div style='display:flex;'><img src='dir.png' style='width: 30px; height: 30px;'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold;'>".$chaque_fichier."</p></div>";
             echo "</summary><ul>";

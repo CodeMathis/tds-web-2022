@@ -30,6 +30,7 @@
     }
 
     $fichier = array_reverse((getDirContents('../tds-web-2022')));
+    var_dump($fichier);
 
     $random_color = [];
     function rand_color() {

@@ -6,29 +6,34 @@
 </head>
 <body bgcolor="#d3d3d3">
     <?php
-    function getDirContents($dir, &$results = array()) {
+    function fichier_en_invisible($files, $fichier_invisible){
+        foreach ($fichier_invisible as $chaque_fichier_invisible){
+            foreach (array_keys($files, $chaque_fichier_invisible) as $key) {
+                unset($files[$key]);
+            }
+        }
+        return $files;
+    }
+
+    function getDirContents($dir, $fichier_invisible, &$results = array()) {
         $files = scandir($dir);
 
-        foreach (array_keys($files, '.git') as $key) {
-            unset($files[$key]);
-        }
-        foreach (array_keys($files, '.idea') as $key) {
-            unset($files[$key]);
-        }
+        $files = fichier_en_invisible($files, $fichier_invisible); //function to remove specific name files or directory easily from $results
 
         foreach ($files as $key => $value) {
             $path = ($dir . "/" . $value);
             if (!is_dir($path)) {
                 $results[] = $path;
             } else if ($value != "." && $value != "..") {
-                getDirContents($path, $results);
+                getDirContents($path, $fichier_invisible, $results);
                 $results[] = $path;
             }
         }
         return $results;
     }
-
-    $fichier = array_reverse((getDirContents('../tds-web-2022')));
+    
+    $fichier_invisible = [".git",".idea"];
+    $fichier = array_reverse((getDirContents('../tds-web-2022', $fichier_invisible)));
 
     $random_color = [];
     function rand_color() {

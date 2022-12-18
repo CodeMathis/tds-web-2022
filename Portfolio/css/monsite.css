@@ -538,7 +538,6 @@ ul{
 
 .g-recaptcha{
 	margin: auto;
-	width: 100%;
 }
 
 #separation_contact{
@@ -550,7 +549,9 @@ ul{
 }
 
 #captcha_separation{
+	margin: auto;
 	width: 100%;
+	height: 10px;
 }
 
 #cadre_global_formulaire form{

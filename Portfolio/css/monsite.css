@@ -71,13 +71,13 @@ header li{
 	align-items: center;
 }
 
-header li a{
+header a{
 	color: white;
 	text-decoration: none;
 	margin: auto;
 }
 
-header li a:hover{
+header a:hover{
 	color: #80cacc;
 	transition: color .5s ease;
 }
@@ -98,15 +98,25 @@ header ul{
 }
 
 #img_barmenu{
+	display: flex;
 	width: 40px;
+	margin: 0px auto 5px auto;
 }
 
-#aligne_droite_barmenu{
+#menu details{
+	display: flex;
 	margin-left: auto;
+	border: solid 2px;
 }
 
-#aligne_droite_barmenu summary{
+#menu details a{
+	margin: 10px;
+}
+
+#menu details summary {
+	display: flex;
 	list-style: none;
+	margin: auto;
 }
 
 #titre_barmenu{
@@ -114,7 +124,7 @@ header ul{
 	font-weight: bold;
 }
 
-#menu li:nth-child(1) a:hover {
+#titre_barmenu:hover {
 	color: white;
 }
 

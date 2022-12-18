@@ -71,13 +71,13 @@ header li{
 	align-items: center;
 }
 
-header a{
+header li a{
 	color: white;
 	text-decoration: none;
 	margin: auto;
 }
 
-header a:hover{
+header li a:hover{
 	color: #80cacc;
 	transition: color .5s ease;
 }
@@ -98,25 +98,31 @@ header ul{
 }
 
 #img_barmenu{
-	display: flex;
+	display: inline-flex;
 	width: 40px;
-	margin: 0px auto 5px auto;
+	margin: 0 auto;
 }
 
-#menu details{
-	display: flex;
+#aligne_droite_barmenu{
 	margin-left: auto;
+	border: solid 2px;
+	display: inline-flex;
+}
+
+#aligne_droite_barmenu details{
+	display: inline-flex;
 	border: solid 2px;
 }
 
-#menu details a{
-	margin: 10px;
+#aligne_droite_barmenu summary{
+	display: inline-flex;
+	list-style: none;
+	border: solid 2px;
 }
 
-#menu details summary {
-	display: flex;
-	list-style: none;
-	margin: auto;
+#aligne_droite_barmenu p{
+	display: inline-flex;
+	border: solid 2px;
 }
 
 #titre_barmenu{

@@ -20,13 +20,14 @@ include 'php/master.php';
 				<?php
                 echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
                 ?>
-                    <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary><p>
+                <li id="aligne_droite_barmenu">
+                    <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary>
                 <?php
                 foreach($barmenu["text_barmenu"] AS $index=>$titre){
                     echo '<a href="#background'.(1 + $index).'">'.$titre.'</a>';
                 }
                 ?>
-                </p></details>
+                    </details>
 			</ul>
 			<hr>
 		</header>

@@ -23,7 +23,6 @@ include 'php/master.php';
                 foreach($barmenu["text_barmenu"] AS $index=>$titre){
                     echo '<li><a href="#background'.(1 + $index).'">'.$titre.'</a></li>';
                 }
-                echo '</li>';
                 ?>
 			</ul>
 			<hr>

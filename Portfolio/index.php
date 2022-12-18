@@ -19,11 +19,11 @@ include 'php/master.php';
 			<ul id="menu">
 				<?php
                 echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
-                echo '<div id="aligne_droite_barmenu">';
+                echo '<li><div id="aligne_droite_barmenu">';
                 foreach($barmenu["text_barmenu"] AS $index=>$titre){
                     echo '<li><a href="#background'.(1 + $index).'">'.$titre.'</a></li>';
                 }
-                echo '</div>';
+                echo '</div></li>';
                 ?>
 			</ul>
 			<hr>

@@ -537,6 +537,7 @@ ul{
 }
 
 .g-recaptcha{
+	display: flex;
 	margin: auto;
 }
 

@@ -1,5 +1,5 @@
 <?php
-session_destroy();
+session_start();
 include 'php/master.php';
 ?>
 

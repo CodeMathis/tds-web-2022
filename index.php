@@ -55,12 +55,12 @@
 
         if (is_dir($chaque_fichier)){
             echo "<details><summary>";
-            echo "<div style='display:inline-flex'><img src='index_img/dir.png' alt='directory png' style='width: 30px; height: 30px'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold'>".substr($chaque_fichier, 16)."</p></div>";
+            echo "<div style='display:inline-flex'><img src='index_img/dir.png' alt='directory png' style='margin: auto 5px; width: 30px; height: 30px'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold'>".substr($chaque_fichier, 16)."</p></div>";
             echo "</summary><ul>";
 
         }else{
             echo "<li>";
-            echo "<div style='display:inline-flex; margin: 0 0 9px 5px'><img src='index_img/file.png' alt='file png' style='width: 30px; height: 30px'><p><a href='".substr($chaque_fichier, 16)."' style='text-decoration:none; color:black'>".substr($chaque_fichier, 16)."</a></p></div>";
+            echo "<div style='display:inline-flex; margin-left: 9px'><img src='index_img/file.png' alt='file png' style='margin: auto 5px; width: 30px; height: 30px'><p><a href='".substr($chaque_fichier, 16)."' style='text-decoration:none; color:black'>".substr($chaque_fichier, 16)."</a></p></div>";
             echo "</li>";
         }
         $log_dernier_slash = $nombre_de_slash;

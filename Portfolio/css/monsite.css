@@ -548,6 +548,10 @@ ul{
 	border: none;
 }
 
+#captcha_separation{
+	width: 100%;
+}
+
 #cadre_global_formulaire form{
 	display: flex;
 	flex-direction: row;

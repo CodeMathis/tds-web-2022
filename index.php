@@ -53,8 +53,6 @@
             echo "</ul></details>";
         }
 
-        print_r($log_fichier_ouvert);
-
         if (is_dir($chaque_fichier)){
 
             if ($nombre_de_slash = $log_fichier_ouvert) {

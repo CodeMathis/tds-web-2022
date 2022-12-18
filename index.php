@@ -36,18 +36,39 @@
         return sprintf('#%06X', mt_rand(0x222222, 0xDDDDDD));
     }
 
+    $log_fichier_ouvert = 1;
+
     foreach ($fichier as $chaque_fichier){
         $nombre_de_slash = substr_count($chaque_fichier,"/")-1;
 
+        //calcul couleur
         if ($nombre_de_slash > count($random_color)){
             $random_color[] = rand_color();
         }
 
-        $espace = str_repeat("______", $nombre_de_slash);
+        if ($nombre_de_slash > $log_fichier_ouvert) {
+            $log_fichier_ouvert += 1;
+        }elseif ($nombre_de_slash < $log_fichier_ouvert){
+            $log_fichier_ouvert -= 1;
+            echo "</ul></details>";
+        }
+
+        print_r($log_fichier_ouvert);
+
         if (is_dir($chaque_fichier)){
-            echo "<div style='display:flex;'><img src='dir.png' style='width: 30px; height: 30px;'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold;'>".$espace.$chaque_fichier."</p></div>";
+
+            if ($nombre_de_slash = $log_fichier_ouvert) {
+                $log_fichier_ouvert += 1;
+            }
+
+            echo "<details><summary>";
+            echo "<div style='display:flex;'><img src='dir.png' style='width: 30px; height: 30px;'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold;'>".$chaque_fichier."</p></div>";
+            echo "</summary><ul>";
+
         }else{
-            echo "<div style='display:flex;'><img src='file.png' style='width: 30px; height: 30px;'><p style='color:black';><a href='$chaque_fichier' style='text-decoration:none; color:black;'>".$espace.$chaque_fichier."</a></p></div>";
+            echo "<li>";
+            echo "<div style='display:flex;'><img src='file.png' style='width: 30px; height: 30px;'><p style='color:black';><a href='$chaque_fichier' style='text-decoration:none; color:black;'>".$chaque_fichier."</a></p></div>";
+            echo "</li>";
         }
     }
     ?>

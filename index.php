@@ -36,7 +36,7 @@
         return sprintf('#%06X', mt_rand(0x222222, 0xDDDDDD));
     }
 
-    $log_fichier_ouvert = 1;
+    $log_dernier_slash = 1;
 
     foreach ($fichier as $chaque_fichier){
         $nombre_de_slash = substr_count($chaque_fichier,"/")-1;
@@ -46,12 +46,11 @@
             $random_color[] = rand_color();
         }
 
-        if ($nombre_de_slash > $log_fichier_ouvert){
-            $log_fichier_ouvert += 1;
-        }
-        if ($nombre_de_slash < $log_fichier_ouvert){
-            $log_fichier_ouvert -= 1;
-            echo '</ul></details>';
+        //calcul décalage
+        if ($nombre_de_slash < $log_dernier_slash){
+            for ($i = 1; $i <= $log_dernier_slash - $nombre_de_slash; $i++){
+                echo "</ul></details>";
+            }
         }
 
         if (is_dir($chaque_fichier)){
@@ -64,6 +63,7 @@
             echo "<div style='display:flex;'><img src='file.png' style='width: 30px; height: 30px;'><p style='color:black';><a href='$chaque_fichier' style='text-decoration:none; color:black;'>".$chaque_fichier."</a></p></div>";
             echo "</li>";
         }
+        $log_dernier_slash = $nombre_de_slash;
     }
     ?>
 </body>

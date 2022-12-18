@@ -55,12 +55,12 @@
 
         if (is_dir($chaque_fichier)){
             echo "<details><summary>";
-            echo "<div style='display:flex'><img src='dir.png' alt='directory png' style='width: 30px; height: 30px'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold'>".$chaque_fichier."</p></div>";
+            echo "<div style='display:flex'><img src='index_img/dir.png' alt='directory png' style='width: 30px; height: 30px'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold'>".$chaque_fichier."</p></div>";
             echo "</summary><ul>";
 
         }else{
             echo "<li>";
-            echo "<div style='display:flex'><img src='file.png' alt='file png' style='width: 30px; height: 30px'><p><a href='".substr($chaque_fichier, 16)."' style='text-decoration:none; color:black'>".$chaque_fichier."</a></p></div>";
+            echo "<div style='display:flex'><img src='index_img/file.png' alt='file png' style='width: 30px; height: 30px'><p><a href='".substr($chaque_fichier, 16)."' style='text-decoration:none; color:black'>".$chaque_fichier."</a></p></div>";
             echo "</li>";
         }
         $log_dernier_slash = $nombre_de_slash;

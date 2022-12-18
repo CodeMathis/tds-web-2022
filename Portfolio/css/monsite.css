@@ -63,7 +63,7 @@ header{
 	top: 0;
 }
 
-li{
+header li{
 	display: inline-flex;
 	flex-direction: row;
 	padding: 10px;
@@ -71,13 +71,13 @@ li{
 	align-items: center;
 }
 
-li a{
+header li a{
 	color: white;
 	text-decoration: none;
 	margin: auto;
 }
 
-li a:hover{
+header li a:hover{
 	color: #80cacc;
 	transition: color .5s ease;
 }
@@ -89,12 +89,16 @@ header hr{
 	margin-top: 5px;
 }
 
-ul{
+header ul{
 	display: flex;
 	list-style-type: none;
 	margin: 40px 0 0 0;
 	padding: 15px 15px 0 15px;
 	overflow: hidden;
+}
+
+#img_barmenu{
+	width: 50px;
 }
 
 #aligne_droite_barmenu{

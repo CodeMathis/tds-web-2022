@@ -60,7 +60,7 @@
 
         }else{
             echo "<li>";
-            echo "<div style='display:inline-flex; margin-left: 9px'><img src='index_img/file.png' alt='file png' style='width: 30px; height: 30px'><p><a href='".substr($chaque_fichier, 16)."' style='text-decoration:none; color:black'>".substr($chaque_fichier, 16)."</a></p></div>";
+            echo "<div style='display:inline-flex; margin: 0 0 9px 5px'><img src='index_img/file.png' alt='file png' style='width: 30px; height: 30px'><p><a href='".substr($chaque_fichier, 16)."' style='text-decoration:none; color:black'>".substr($chaque_fichier, 16)."</a></p></div>";
             echo "</li>";
         }
         $log_dernier_slash = $nombre_de_slash;

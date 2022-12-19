@@ -564,7 +564,6 @@ details[open] summary ~ * {
 }
 
 .g-recaptcha, #erreur_message_captcha{
-	display: flex;
 	margin: auto;
 	flex-direction: column;
 	border: solid 2px;

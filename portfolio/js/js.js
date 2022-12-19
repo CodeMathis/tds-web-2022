@@ -15,11 +15,20 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener("DOMContentLoaded", reveal);
+window.addEventListener("DOMContentLoaded", (event) => {
+    reveal()
+    header_problem()
+});
 
 //ajuste hauteur body
-let header = document.getElementById("header_id");
-let header_height = header.offsetHeight;
-let body = document.getElementById("body_id");
-body.style.marginTop = ((-45 - header_height).toString()) + "px";
-//header.style.marginBottom = ((40 - header_height).toString()) + "px";
+window.addEventListener("resize", (event) => {
+    header_problem()
+});
+
+function header_problem(){
+    let header = document.getElementById("header_id");
+    let header_height = header.offsetHeight;
+    let body = document.getElementById("body_id");
+    body.style.marginTop = ((-45 - header_height).toString()) + "px";
+    //header.style.marginBottom = ((40 - header_height).toString()) + "px";
+}

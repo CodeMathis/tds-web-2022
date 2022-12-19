@@ -55,7 +55,7 @@ body{	/*Valeurs de bases*/
 
 
 header{
-	margin: -40px 10% 0 10%;
+	margin: 0 10%;
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	background: rgba(0, 0, 0, 0.5);

@@ -563,7 +563,7 @@ details[open] summary ~ * {
 	width: 100%;
 }
 
-.g-recaptcha, erreur_message_captcha{
+.g-recaptcha, #erreur_message_captcha{
 	display: flex;
 	margin: auto;
 }

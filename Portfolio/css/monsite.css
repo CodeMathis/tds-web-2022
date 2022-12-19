@@ -566,7 +566,7 @@ details[open] summary ~ * {
 .g-recaptcha, #erreur_message_captcha{
 	display: inline-flex;
 	margin: auto;
-	width: 100%;
+	width: 50%;
 }
 
 #separation_contact{

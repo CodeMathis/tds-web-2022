@@ -157,6 +157,6 @@ include 'php/master.php';
 			echo '<p>'.$footer["copyright"].'</p>';
 			?>
 		</footer>
+        <script src="js/js.js"></script>
 	</body>
-    <script src="js/js.js"></script>
 </html>

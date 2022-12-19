@@ -1,1 +1,14 @@
 titre: 'Contact'
+
+zone_texte:
+  - pre_texte: "Votre nom et prénom :"
+    balise: '<input class="cadre_input_et_textarea" type="text" name="nom_prenom" value="" placeholder="John Doe">'
+
+  - pre_texte: "Adresse mail :"
+    balise: '<input class="cadre_input_et_textarea" required="required" type="text" name="mail" value="" placeholder="mail@mail.com">'
+
+  - pre_texte: "Objet du message :"
+    balise: '<input class="cadre_input_et_textarea" type="text" name="objet" value="" placeholder="Exemple : Important !">'
+
+  - pre_texte: "Votre message :"
+    balise: '<textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>'

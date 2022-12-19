@@ -120,27 +120,14 @@ include 'php/master.php';
                 ?>
                 <div id="cadre_global_formulaire">
                     <form name="envoi_mail" action="php/envoi_mail.php" method="post">
-                        <p>
-                            Votre nom et prénom :<br>
-                            <input class="cadre_input_et_textarea" type="text" name="nom_prenom" value="">
-                        </p>
-                        <p>
-                            Adresse mail :<br>
-                            <input class="cadre_input_et_textarea" required="required" type="text" name="mail" value="">
-                        </p>
-                        <p>
-                            Objet du message :<br>
-                            <input class="cadre_input_et_textarea" type="text" name="objet" value="">
-                        </p>
-                        <p>
-                            Votre message :<br>
-                            <textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>
-                        </p>
+                        <?php
+                        foreach ($background6["zone_texte"] as $chaque_zone){
+                            echo '<p>'.$chaque_zone["pre_texte"].'<br>'.$chaque_zone['balise'].'</p>';
+                        }
+                        ?>
                         <p>
                         <?php
-
-
-                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
+                        echo '<p><span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo '<span id="erreur_message_captcha">'.$_SESSION["formulaire_resultat"].'</span>';
                         }

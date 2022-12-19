@@ -539,7 +539,7 @@ details[open] summary ~ * {
 
 
 .envoyer_annuler{
-	display: flex;
+	display: inline-flex;
 	border-radius: 25px;
 	padding: 10px;
 	margin: 10px auto;

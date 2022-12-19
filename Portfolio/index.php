@@ -140,7 +140,7 @@ include 'php/master.php';
                         <?php
 
 
-                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
+                        echo '<span id="captcha_align"><span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span></span>';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo '<span id="erreur_message_captcha">'.$_SESSION["formulaire_resultat"].'</span>';
                         }

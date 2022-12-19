@@ -620,8 +620,8 @@ footer{
 	color: white;
 }
 
-footer p, footer a{
-	font-size: calc(2px + 1.2vw);
+footer p{
+	font-size: 22px;
 	opacity: 0.2;
 	margin-left: 5%;
 }
@@ -629,26 +629,27 @@ footer p, footer a{
 footer hr{
 	width: 90%;
 	opacity: 0.4;
+	margin: 10px auto;
 }
 
 .footer_boite_align{
-	display: flex;
+	display: inline-flex;
 	margin: auto 5% auto 5%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
 }
 
 .footer_boite{
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	margin: 0.5% 0 0.5% 0;
+	margin: 3% auto 0 auto;
 }
 
 .footer_boite p, .footer_boite a{
 	display: flex;
-	margin-top: -5px;
-	margin-left: 0;
-	margin-bottom: 10px;
-	font-size: calc(5px + 1.2vw);
+	margin: 2px auto;
+	font-size: 24px;
 	opacity: 1;
 	text-decoration: none;
 	color: white;
@@ -657,7 +658,6 @@ footer hr{
 
 .footer_boite hr{
 	width: 25%;
-	margin-left: 0;
 	color: #80cacc;
 	opacity: 1;
 }

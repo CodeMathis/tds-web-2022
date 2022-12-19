@@ -101,28 +101,20 @@ header ul{
 	display: inline-flex;
 	width: 40px;
 	margin: 0 auto;
+	transition: transform 1s;
+}
+
+#img_barmenu:hover{
+	transform: rotate(270deg);
 }
 
 #aligne_droite_barmenu{
+	border: solid 2px;
 	margin-left: auto;
-	border: solid 2px;
-	display: inline-flex;
-}
-
-#aligne_droite_barmenu details{
-	display: inline-flex;
-	border: solid 2px;
 }
 
 #aligne_droite_barmenu summary{
-	display: inline-flex;
 	list-style: none;
-	border: solid 2px;
-}
-
-#aligne_droite_barmenu p{
-	display: inline-flex;
-	border: solid 2px;
 }
 
 #titre_barmenu{

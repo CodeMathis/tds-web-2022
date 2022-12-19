@@ -605,6 +605,7 @@ details[open] summary ~ * {
 #boutton_align_form{
 	display: inline-flex;
 	width: 100%;
+	font-weight: lighter;
 }
 
 

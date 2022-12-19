@@ -100,7 +100,7 @@ header ul{
 #img_barmenu{
 	display: inline-flex;
 	width: 40px;
-	margin: 0 5px 0 auto;
+	margin: 0 10px 0 auto;
 	transition: transform .90s;
 	float: left;
 }
@@ -124,13 +124,14 @@ details[open] summary ~ * {
 
 #aligne_droite_barmenu a{
 	display: inline-flex;
-	margin-left: 10px;
+	margin: 0 15px 0 5px;
 	width: auto;
 }
 
 #titre_barmenu{
 	color: #80cacc;
 	font-weight: bold;
+	margin-right: 10px;
 }
 
 #titre_barmenu:hover {

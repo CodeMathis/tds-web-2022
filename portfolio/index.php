@@ -154,7 +154,7 @@ include 'php/master.php';
             </div>
             <hr>
 			<?php
-			echo '<p class="reveal fade-bottom">'.$footer["copyright"].'</p>';
+			echo '<p>'.$footer["copyright"].'</p>';
 			?>
 		</footer>
 	</body>

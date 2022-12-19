@@ -543,7 +543,7 @@ details[open] summary ~ * {
 	border-radius: 25px;
 	padding: 10px;
 	margin: 10px auto;
-	font-size: calc(10px + 1.01vw);
+	font-size: calc(18px + 1.01vw);
 	width: 48%;
 	border: 6px solid #4efcee;
 	background-color: rgba(222, 222, 222, 0.1);
@@ -601,6 +601,12 @@ details[open] summary ~ * {
 	text-align: center;
 	flex-wrap: wrap;
 	width: 100%;
+}
+
+#boutton_align_form{
+	display: inline-flex;
+	width: 100%;
+	height: 100px;
 }
 
 

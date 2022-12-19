@@ -568,6 +568,7 @@ details[open] summary ~ * {
 	margin: auto;
 	flex-direction: column;
 	flex: 1 1000px;
+	border: solid 2px;
 }
 
 #separation_contact{

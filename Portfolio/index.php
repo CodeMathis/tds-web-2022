@@ -143,11 +143,8 @@ include 'php/master.php';
                             echo $_SESSION["formulaire_resultat"];
                         }
                         ?>
-                            <div id="boutton_align_form">
                             <input class="envoyer_annuler" type="submit" value="Envoyer">
                             <input class="envoyer_annuler" type="reset" value="Annuler">
-                            </div>
-                        </p>
                     </form>
                 </div>
 			</div>

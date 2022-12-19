@@ -143,6 +143,7 @@ include 'php/master.php';
                             echo $_SESSION["formulaire_resultat"];
                         }
                         ?>
+                            <br>
                             <input class="envoyer_annuler" type="submit" value="Envoyer">
                             <input class="envoyer_annuler" type="reset" value="Annuler">
                     </form>

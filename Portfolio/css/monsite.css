@@ -111,19 +111,16 @@ header ul{
 #aligne_droite_barmenu{
 	margin-left: auto;
 	padding: 5px;
-	border: solid 2px;
 }
 
 #aligne_droite_barmenu summary{
 	display: inline-flex;
-	border: solid 2px;
 }
 
 #aligne_droite_barmenu a{
 	display: inline-flex;
 	margin-left: 10px;
 	width: auto;
-	border: solid 2px;
 }
 
 #titre_barmenu{

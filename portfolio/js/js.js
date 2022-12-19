@@ -22,4 +22,4 @@ let header = document.getElementById("header_id");
 let header_height = header.offsetHeight;
 let body = document.getElementById("body_id");
 body.style.marginTop = ((-45 - header_height).toString()) + "px";
-header.style.marginBottom = ((0 - header_height).toString()) + "px";
+header.style.marginBottom = ((20 - header_height).toString()) + "px";

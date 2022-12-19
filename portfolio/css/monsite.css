@@ -111,7 +111,7 @@ header ul{
 
 #aligne_droite_barmenu{
 	margin-left: auto;
-	padding: 5px;
+	padding: 0;
 }
 
 details[open] summary ~ * {
@@ -575,6 +575,10 @@ details[open] summary ~ * {
 	border: none;
 }
 
+#cadre_global_formulaire{
+	margin: 0 15% 0 10%;
+}
+
 #cadre_global_formulaire form{
 	display: flex;
 	flex-direction: row;
@@ -583,7 +587,6 @@ details[open] summary ~ * {
 	color: white;
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 0;
-	margin: 0 10%;
 	border-radius: 25px;
 }
 
@@ -605,7 +608,6 @@ details[open] summary ~ * {
 #boutton_align_form{
 	display: inline-flex;
 	width: 100%;
-	font-weight: 300;
 }
 
 
@@ -643,8 +645,9 @@ footer hr{
 
 .footer_boite{
 	display: flex;
+	flex: 25%;
 	flex-direction: column;
-	margin: 3% auto 0 auto;
+	margin: 2% auto 0 auto;
 }
 
 .footer_boite p, .footer_boite a{
@@ -653,6 +656,7 @@ footer hr{
 	font-size: 24px;
 	opacity: 1;
 	text-decoration: none;
+	text-align: center;
 	color: white;
 	line-height: 40px;
 }

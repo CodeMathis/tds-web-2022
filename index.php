@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>Un site</title>
+	<title>Index</title>
+    <link rel="icon" href=".index_img/dir.png">
 </head>
 <body bgcolor="#d3d3d3">
     <?php

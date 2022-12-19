@@ -1,5 +1,5 @@
 <?php
-session_destroy();
+session_start();
 include 'php/master.php';
 ?>
 
@@ -138,12 +138,11 @@ include 'php/master.php';
                         </p>
                         <p>
                         <?php
-                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'">';
+                        echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
                         if (isset($_SESSION["formulaire_resultat"])){
                             echo $_SESSION["formulaire_resultat"];
                         }
                         ?>
-                            </span>
                             <span id="boutton_align_form">
                                 <input class="envoyer_annuler" type="submit" value="Envoyer">
                                 <input class="envoyer_annuler" type="reset" value="Annuler">

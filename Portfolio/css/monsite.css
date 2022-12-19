@@ -567,7 +567,6 @@ details[open] summary ~ * {
 	display: flex;
 	margin: auto;
 	flex-direction: column;
-	flex: 1;
 	border: solid 2px;
 }
 

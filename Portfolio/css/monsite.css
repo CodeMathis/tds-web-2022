@@ -648,7 +648,7 @@ footer hr{
 
 .footer_boite p, .footer_boite a{
 	display: flex;
-	margin: 2px auto;
+	margin: 1px auto;
 	font-size: 24px;
 	opacity: 1;
 	text-decoration: none;

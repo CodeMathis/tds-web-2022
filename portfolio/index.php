@@ -11,11 +11,11 @@ include 'php/master.php';
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
-        <script src="js/animation.js"></script>
+        <script src="js/js.js"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
 	<body>
-		<header>
+		<header id="header_id">
 			<ul id="menu">
 				<?php
                 echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';

@@ -100,8 +100,8 @@ header ul{
 #img_barmenu{
 	display: inline-flex;
 	width: 40px;
-	margin: 0 auto;
-	transition: transform 1s;
+	margin: 0 5px 0 auto;
+	transition: transform .90s;
 }
 
 #img_barmenu:hover{
@@ -109,12 +109,21 @@ header ul{
 }
 
 #aligne_droite_barmenu{
-	border: solid 2px;
 	margin-left: auto;
+	padding: 5px;
+	border: solid 2px;
 }
 
 #aligne_droite_barmenu summary{
-	list-style: none;
+	display: inline-flex;
+	border: solid 2px;
+}
+
+#aligne_droite_barmenu a{
+	display: inline-flex;
+	margin-left: 10px;
+	width: auto;
+	border: solid 2px;
 }
 
 #titre_barmenu{

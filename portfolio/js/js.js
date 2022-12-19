@@ -18,8 +18,8 @@ window.addEventListener("scroll", reveal);
 window.addEventListener("DOMContentLoaded", reveal);
 
 //ajuste hauteur body
-let header_height = document.getElementById("header_id").offsetHeight;
+let header = document.getElementById("header_id");
+let header_height = header.offsetHeight;
 let body = document.getElementById("body_id");
-let ul = document.getElementById("menu");
 body.style.marginTop = ((-45 - header_height).toString()) + "px";
-ul.style.marginTop = ((40 + header_height).toString()) + "px";
+header.style.marginBottom = ((-45 - header_height).toString()) + "px";

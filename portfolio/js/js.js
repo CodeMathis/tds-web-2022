@@ -20,6 +20,6 @@ window.addEventListener("DOMContentLoaded", reveal);
 //ajuste hauteur body
 let header_height = document.getElementById("header_id").offsetHeight;
 let body = document.getElementById("body_id");
-body.style.marginTop = ((-40 - header_height).toString()) + "px";
+body.style.marginTop = ((-45 - header_height).toString()) + "px";
 
 console.log(body.style.marginTop);

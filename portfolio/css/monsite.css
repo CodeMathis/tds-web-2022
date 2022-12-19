@@ -60,7 +60,7 @@ header{
 	position: sticky;
 	background: rgba(0, 0, 0, 0.5);
 	animation: fade-top 1s ease;
-	top: 0;
+	top: 0px;
 }
 
 header li{

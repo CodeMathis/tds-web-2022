@@ -21,14 +21,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 //ajuste hauteur body
-window.addEventListener("resize", (event) => {
+let header = document.getElementById("header_id");
+let header_height = header.offsetHeight;
+let body = document.getElementById("body_id");
+header.addEventListener("change", (event) => {
     header_problem()
 });
 
 function header_problem(){
-    let header = document.getElementById("header_id");
-    let header_height = header.offsetHeight;
-    let body = document.getElementById("body_id");
     body.style.marginTop = ((-45 - header_height).toString()) + "px";
     //header.style.marginBottom = ((40 - header_height).toString()) + "px";
 }

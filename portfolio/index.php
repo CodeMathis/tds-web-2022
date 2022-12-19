@@ -11,10 +11,9 @@ include 'php/master.php';
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/monsite.css">
 		<link rel="stylesheet" href="css/font_import.css">
-        <script src="js/js.js"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
-	<body>
+	<body id="body_id">
 		<header id="header_id">
 			<ul id="menu">
 				<?php
@@ -122,10 +121,10 @@ include 'php/master.php';
                     <form name="envoi_mail" action="php/envoi_mail.php" method="post">
                         <?php
                         foreach ($background6["zone_texte"] as $chaque_zone){
-                            echo '<p>'.$chaque_zone["pre_texte"].'<br>'.$chaque_zone['balise'].'</p>';
+                            echo '<p class="reveal fade-bottom">'.$chaque_zone["pre_texte"].'<br>'.$chaque_zone['balise'].'</p>';
                         }
                         ?>
-                        <p>
+                        <p class="reveal fade-bottom">
                         <?php
                         echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
                         if (isset($_SESSION["formulaire_resultat"])){
@@ -145,7 +144,7 @@ include 'php/master.php';
             <div class="footer_boite_align">
                 <?php
                 foreach($footer["text_footer"] AS $colonne){
-                    echo '<div class="footer_boite">';
+                    echo '<div class="footer_boite reveal fade-bottom">';
                     foreach($colonne AS $valeur){
                         echo $valeur;
                     }
@@ -155,8 +154,9 @@ include 'php/master.php';
             </div>
             <hr>
 			<?php
-			echo '<p>'.$footer["copyright"].'</p>';
+			echo '<p class="reveal fade-bottom">'.$footer["copyright"].'</p>';
 			?>
 		</footer>
 	</body>
+    <script src="js/js.js"></script>
 </html>

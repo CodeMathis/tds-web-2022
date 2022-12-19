@@ -19,4 +19,7 @@ window.addEventListener("DOMContentLoaded", reveal);
 
 //ajuste hauteur body
 let header_height = document.getElementById("header_id").offsetHeight;
-console.log(header_height);
+let body = document.getElementById("body_id");
+body.style.marginTop = ((0 - header_height).toString()) + "px";
+
+console.log(body.style.marginTop);

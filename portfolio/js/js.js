@@ -15,20 +15,20 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener("DOMContentLoaded", (event) => {
-    reveal()
-    header_problem()
-});
+window.addEventListener("DOMContentLoaded", (event) => {reveal()});
 
 //ajuste hauteur body
-let header = document.getElementById("header_id");
-let header_height = header.offsetHeight;
-let body = document.getElementById("body_id");
-header.addEventListener("change", (event) => {
-    header_problem()
+const resize_ob = new ResizeObserver(function(entries) {
+    // since we are observing only a single element, so we access the first element in entries array
+    let rect = entries[0].contentRect;
+
+    // current width & height
+    let width = rect.width;
+    let height = rect.height;
+
+    let body = document.getElementById("body_id");
+    body.style.marginTop = ((-45 - height).toString()) + "px";
 });
 
-function header_problem(){
-    body.style.marginTop = ((-45 - header_height).toString()) + "px";
-    //header.style.marginBottom = ((40 - header_height).toString()) + "px";
-}
+// start observing for resize
+resize_ob.observe(document.querySelector("#header_id"));

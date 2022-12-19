@@ -23,7 +23,7 @@ include 'php/master.php';
                     <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary>
                 <?php
                 foreach($barmenu["text_barmenu"] AS $index=>$titre){
-                    echo '<a href="#background'.(1 + $index).'">'.$titre.'</a>';
+                    echo '<a id="id_a" href="#background'.(1 + $index).'">'.$titre.'</a>';
                 }
                 ?>
                     </details>

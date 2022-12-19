@@ -102,6 +102,7 @@ header ul{
 	width: 40px;
 	margin: 0 5px 0 auto;
 	transition: transform .90s;
+	float: left;
 }
 
 #img_barmenu:hover{
@@ -111,6 +112,10 @@ header ul{
 #aligne_droite_barmenu{
 	margin-left: auto;
 	padding: 5px;
+}
+
+details[open] summary ~ * {
+	animation: open .75s ease-in-out;
 }
 
 #aligne_droite_barmenu summary{
@@ -781,4 +786,11 @@ h2{
 	100%{
 		transform: translateX(0%) scaleX(100%);
 	}
+}
+
+
+
+@keyframes open {
+	0% {opacity: 0; margin-left: -100px}
+	100% {opacity: 1; margin-left: 10px}
 }

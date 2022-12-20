@@ -14,13 +14,6 @@ function reveal() {
     }
 }
 
-// commence à observer pour resize
-resize_ob.observe(document.querySelector("#header_id"));
-
-window.addEventListener("scroll", reveal);
-window.addEventListener("DOMContentLoaded", reveal);
-window.addEventListener("resize", reveal);
-
 //ajuste hauteur body
 const resize_ob = new ResizeObserver(function(entries) {
     // accède au premier élément de l'array
@@ -32,3 +25,11 @@ const resize_ob = new ResizeObserver(function(entries) {
     let body = document.getElementById("body_id");
     body.style.marginTop = ((-45 - height).toString()) + "px";
 });
+
+// commence à observer pour resize
+resize_ob.observe(document.querySelector("#header_id"));
+
+// check pour animations
+window.addEventListener("scroll", reveal);
+window.addEventListener("DOMContentLoaded", reveal);
+window.addEventListener("resize", reveal);

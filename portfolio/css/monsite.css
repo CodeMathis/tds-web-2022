@@ -526,7 +526,7 @@ details[open] summary ~ span * {
 }
 
 #align_travaux a{
-	margin: auto;
+	margin: 0 auto;
 	text-decoration:none;
 }
 

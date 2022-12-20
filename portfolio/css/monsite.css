@@ -525,6 +525,11 @@ details[open] summary ~ span * {
 	flex-wrap: wrap;
 }
 
+#align_travaux a{
+	margin: auto;
+	text-decoration:none;
+}
+
 #bouton_voir_tout{
 	display: flex;
 	align-items: center;

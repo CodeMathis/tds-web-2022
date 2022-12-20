@@ -86,7 +86,7 @@ include 'php/master.php';
 				echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div id="align_travaux">';
 
                 foreach($background4["images"] AS $valeur){
-                    echo '<div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div>';
+                    echo '<a href="'.$valeur["src"].'"><div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div></a>';
                 }
                 ?>
                 </div></div>

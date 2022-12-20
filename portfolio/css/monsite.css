@@ -648,6 +648,10 @@ details[open] summary ~ span * {
 	width: 100%;
 }
 
+#boutton_align_form input{
+	cursor: pointer;
+}
+
 
 
 main{

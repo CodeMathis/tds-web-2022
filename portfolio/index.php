@@ -83,15 +83,15 @@ include 'php/master.php';
 			<div id="numero_4">
                 <p class="numeros_alignes_gauche">4</p>
 				<?php
-				echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div id="align_travaux">';
+				echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div id="align_travaux">';
 
                 foreach($background4["images"] AS $valeur){
                     echo '<div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div>';
                 }
                 ?>
-                </div>
+                </div></div>
                 <form action="voir_tout.php">
-                    <button id="bouton_voir_tout" class="reveal fade-bottom">VOIR TOUT</button>
+                    <button id="bouton_voir_tout" class="decalage_gauche_travaux reveal fade-bottom">VOIR TOUT</button>
                 </form>
 			</div>
 			</div>

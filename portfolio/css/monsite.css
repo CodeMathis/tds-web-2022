@@ -515,6 +515,10 @@ details[open] summary ~ span * {
 	border-color: #2c3b4b;
 }
 
+.decalage_gauche_travaux{
+	margin-left: 40px;
+}
+
 #align_travaux{
 	display: flex;
 	flex-direction: row;
@@ -527,8 +531,8 @@ details[open] summary ~ span * {
     text-align: center;
 	border: 6px solid #4efcee;
 	border-radius: 10px;
-	padding: 20px 50px;
-	margin: 100px auto 10px auto;
+	padding: 20px 4%;
+	margin: 80px auto 10px auto;
 	font-weight: 500;
 	font-size: 24px;
 	color: white;

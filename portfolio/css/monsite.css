@@ -542,6 +542,7 @@ details[open] summary ~ span * {
 	font-size: 24px;
 	color: white;
 	background: none;
+	cursor: pointer;
 }
 
 

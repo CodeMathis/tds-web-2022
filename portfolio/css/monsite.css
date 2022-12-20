@@ -494,14 +494,12 @@ details[open] summary ~ span * {
 	font-size: 22px;
 	margin: 20px auto auto auto;
 	flex-wrap: wrap;
-	border: solid 2px;
 }
 
 .boite_travaux p{
 	display: flex;
 	margin: 10px auto auto auto;
 	font-size: 18px;
-	border: solid 2px;
 }
 
 .boite_travaux img{

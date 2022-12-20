@@ -102,7 +102,7 @@ header ul{
 	display: flex;
 	width: 40px;
 	margin: auto;
-	transition: transform .90s;
+	transition: transform .8s ease-in-out;
 }
 
 #img_barmenu:hover{
@@ -402,11 +402,12 @@ details[open] summary ~ span * {
 	min-width: 300px;
 	border-radius: 25px;
 	width: 80%;
+	transition: 1s ease-in-out;
 }
 
 .barre_competence:hover{
 	width: 50%;
-	transition: width 1s;
+	transition: width .75s;
 }
 
 .barre_competence_background_global{

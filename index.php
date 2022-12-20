@@ -9,8 +9,8 @@
             animation: open .1s ease-in-out;
         }
         @keyframes open {
-            0% {opacity: 0; margin-top: -50px}
-            100% {opacity: 1; margin-top: 0}
+            0% {opacity: 0; margin-top: -50px; margin-left: -20px}
+            100% {opacity: 1; margin-top: 0; margin-left: 0}
         }
     </style>
 </head>
@@ -45,10 +45,10 @@
     $fichier_invisible = [".git",".idea",".index_img"];
     $fichier = array_reverse((getDirContents('../tds-web-2022', $fichier_invisible)));
 
-    $random_color = [];
-    function rand_color() {
+    $random_color = ["#7800ff", "#0026ff", "#009bc2", "#00c288", "#3ec200"];
+    /*function rand_color() {
         return sprintf('#%06X', mt_rand(0x333333, 0x555555));
-    }
+    }*/
 
     $log_dernier_slash = 1;
 
@@ -56,9 +56,11 @@
         $nombre_de_slash = substr_count($chaque_fichier,"/")-1;
 
         //calcul couleur
-        if ($nombre_de_slash > count($random_color)){
-            $random_color[] = rand_color();
+        $random_color_choisi = $nombre_de_slash;
+        while (count($random_color) <= $random_color_choisi){
+            $random_color_choisi -= count($random_color);
         }
+        $random_color_choisi = $random_color[$random_color_choisi];
 
         //calcul décalage
         if ($nombre_de_slash < $log_dernier_slash){
@@ -69,7 +71,7 @@
 
         if (is_dir($chaque_fichier)){
             echo "<details><summary>";
-            echo "<div style='display:inline-flex'><img src='.index_img/dir.png' alt='directory png' style='margin: auto 5px; width: 30px; height: 30px'><p style='color:".$random_color[$nombre_de_slash-1]."; font-weight: bold'>".substr($chaque_fichier, 16)."</p></div>";
+            echo "<div style='display:inline-flex'><img src='.index_img/dir.png' alt='directory png' style='margin: auto 5px; width: 30px; height: 30px'><p style='color:".$random_color_choisi."; font-weight: bold'>".substr($chaque_fichier, 16)."</p></div>";
             echo "</summary><ul>";
         }else{
             echo "<li>";

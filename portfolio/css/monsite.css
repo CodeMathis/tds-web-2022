@@ -120,6 +120,7 @@ details[open] summary ~ span * {
 
 #aligne_droite_barmenu summary{
 	display: flex;
+	margin-right: 10px;
 	justify-content: center;
 	align-items: center;
 

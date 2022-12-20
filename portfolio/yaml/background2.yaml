@@ -14,7 +14,7 @@ boites:
     img_boite: 'img/brain-icon.png'
 
   - titre_boite: 'Goûts'
-    texte_boite: "Étant donné mes études, j’aime tout ce qui touche à l’informatique, même si j’ai une préférence pour le développement. Mes matières préférées au lycée étaient: la NSI, les mathématiques, l’anglais et la philosophie. Sinon le badminton, la pêche et les bonnes blagues me suffisent comme loisirs"
+    texte_boite: "Étant donné mes études, j’aime tout ce qui touche à l’informatique, même si j’ai une préférence pour le développement. Mes matières préférées au lycée étaient: la NSI, les mathématiques, l’anglais et la philosophie"
     img_boite: 'img/hearts.png'
 
   - titre_boite: 'Origines'
@@ -22,5 +22,5 @@ boites:
     img_boite: 'img/origines.png'
 
   - titre_boite: 'Loisirs'
-    texte_boite: '.................................'
+    texte_boite: "J'aime le badminton, la pêche, les bonnes blagues et se retrouver avec des amis pour jouer en ligne. De plus, j'aime passer du temps à coder quelques projets personnels"
     img_boite: 'img/loisirs.png'

@@ -4,6 +4,15 @@
 	<meta charset="utf-8">
 	<title>Index</title>
     <link rel="icon" href=".index_img/dir.png">
+    <style>
+        details[open] summary ~ * {
+            animation: open .1s ease-in-out;
+        }
+        @keyframes open {
+            0% {opacity: 0; margin-top: -50px}
+            100% {opacity: 1; margin-top: 0}
+        }
+    </style>
 </head>
 <body bgcolor="#d3d3d3">
     <?php

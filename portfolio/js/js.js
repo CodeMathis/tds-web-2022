@@ -15,7 +15,8 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener("DOMContentLoaded", (event) => {reveal()});
+window.addEventListener("DOMContentLoaded", reveal);
+window.addEventListener("resize", reveal);
 
 //ajuste hauteur body
 const resize_ob = new ResizeObserver(function(entries) {

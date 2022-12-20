@@ -98,11 +98,10 @@ header ul{
 }
 
 #img_barmenu{
-	display: inline-flex;
+	display: flex;
 	width: 40px;
-	margin: 0 10px 0 auto;
+	margin: auto;
 	transition: transform .90s;
-	float: left;
 }
 
 #img_barmenu:hover{
@@ -114,18 +113,31 @@ header ul{
 	padding: 0;
 }
 
-details[open] summary ~ * {
+details[open] summary ~ span * {
 	animation: open .75s ease-in-out;
 }
 
 #aligne_droite_barmenu summary{
-	display: inline-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
-#aligne_droite_barmenu a{
-	display: inline-flex;
+#align_a_barmenu{
+	display: flex;
 	margin: 0 15px 0 5px;
 	width: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#align_a_barmenu a{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto 5px;
 }
 
 #titre_barmenu{
@@ -801,6 +813,6 @@ h2{
 
 
 @keyframes open {
-	0% {opacity: 0; margin-left: -95px}
-	100% {opacity: 1; margin-left: 5px}
+	0% {opacity: 0; margin-left: -115px; margin-top: -40px}
+	100% {opacity: 1; margin-left: 5px; margin-top: 0px}
 }

@@ -398,9 +398,15 @@ details[open] summary ~ span * {
 .barre_competence{
 	display: flex;
 	border: 4px solid #6dada6;
-	margin: 45px calc(10% - 4px) auto calc(10% + 4px);
+	margin: 45px auto auto auto;
 	min-width: 300px;
 	border-radius: 25px;
+	width: 80%;
+}
+
+.barre_competence:hover{
+	width: 50%;
+	transition: width 1s;
 }
 
 .barre_competence_background_global{
@@ -485,26 +491,35 @@ details[open] summary ~ span * {
 	max-height: 425px;
 	font-weight: 500;
 	font-size: 22px;
-	margin: 40px -5% auto 10%;
+	margin: 20px auto auto auto;
 	flex-wrap: wrap;
+	border: solid 2px;
 }
 
 .boite_travaux p{
 	display: flex;
 	margin: 10px auto auto auto;
 	font-size: 18px;
+	border: solid 2px;
 }
 
 .boite_travaux img{
 	align-items: flex-start;
 	width: 95%;
 	height: auto;
+	margin: auto;
 	border: 4px solid #66fcf0;
 	border-radius: 25px;
 }
 
 .boite_travaux img:hover{
 	border-color: #2c3b4b;
+}
+
+#align_travaux{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 #bouton_voir_tout{

@@ -14,22 +14,21 @@ function reveal() {
     }
 }
 
+// commence à observer pour resize
+resize_ob.observe(document.querySelector("#header_id"));
+
 window.addEventListener("scroll", reveal);
 window.addEventListener("DOMContentLoaded", reveal);
 window.addEventListener("resize", reveal);
 
 //ajuste hauteur body
 const resize_ob = new ResizeObserver(function(entries) {
-    // since we are observing only a single element, so we access the first element in entries array
+    // accède au premier élément de l'array
     let rect = entries[0].contentRect;
 
-    // current width & height
     let width = rect.width;
     let height = rect.height;
 
     let body = document.getElementById("body_id");
     body.style.marginTop = ((-45 - height).toString()) + "px";
 });
-
-// start observing for resize
-resize_ob.observe(document.querySelector("#header_id"));

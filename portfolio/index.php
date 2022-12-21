@@ -15,20 +15,22 @@ include 'php/master.php';
     </head>
 	<body id="body_id">
 		<header id="header_id">
-			<ul id="menu">
-				<?php
-                echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
-                ?>
-                <li id="aligne_droite_barmenu">
-                    <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary><span id="align_a_barmenu">
-                <?php
-                foreach($barmenu["text_barmenu"] AS $index=>$titre){
-                    echo '<a href="#background'.(1 + $index).'">'.$titre.'</a>';
-                }
-                ?>
-                    </span></details>
-			</ul>
-			<hr>
+            <div id="test">
+                <ul id="menu">
+                    <?php
+                    echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
+                    ?>
+                    <li id="aligne_droite_barmenu">
+                        <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary><span id="align_a_barmenu">
+                    <?php
+                    foreach($barmenu["text_barmenu"] AS $index=>$titre){
+                        echo '<a href="#background'.(1 + $index).'">'.$titre.'</a>';
+                    }
+                    ?>
+                        </span></details>
+                </ul>
+                <hr>
+            </div>
 		</header>
 		
 		<main>

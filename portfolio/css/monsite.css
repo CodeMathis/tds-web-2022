@@ -575,7 +575,7 @@ details[open] summary ~ span * {
 #formation{
 	display: inline-flex;
 	flex-flow: row wrap;
-	margin: 0 10%;
+	margin: 0 5%;
 }
 
 #formation img{

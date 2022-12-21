@@ -555,7 +555,7 @@ details[open] summary ~ span * {
 	padding: 20px;
 	border-radius: 25px;
 	margin: 0px auto 20px auto;
-	width: 80%;
+	width: 70%;
 	min-width: 250px;
 	text-align: center;
 }
@@ -567,7 +567,7 @@ details[open] summary ~ span * {
 	padding: 20px;
 	border-radius: 25px;
 	margin: 0px auto 20px auto;
-	width: 30%;
+	width: 20%;
 	min-width: 250px;
 	text-align: center;
 }
@@ -575,13 +575,19 @@ details[open] summary ~ span * {
 #formation{
 	display: inline-flex;
 	flex-flow: row wrap;
+	margin: 0 10%;
+}
+
+#formation img{
+	width: 120px;
+	margin-top: 10px;
 }
 
 #formation_autre{
 	display: flex;
 	flex-flow: row wrap;
 	margin: auto;
-	width: 60%;
+	width: 50%;
 	min-width: 365px;
 	align-items: center;
 }
@@ -592,7 +598,7 @@ details[open] summary ~ span * {
 	background-color: #6dada6;
 	border-radius: 25px;
 	margin: 20px auto;
-	width: calc(15% + 225px);
+	height: 200%;
 	min-width: 330px;
 }
 

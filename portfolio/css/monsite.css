@@ -116,6 +116,7 @@ header ul{
 
 details[open] summary ~ span * {
 	animation: open .75s ease-in-out;
+	-webkit-animation: open .75s ease-in-out;
 }
 
 #aligne_droite_barmenu summary{

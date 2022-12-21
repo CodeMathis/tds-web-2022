@@ -98,10 +98,6 @@ header ul{
 	overflow: hidden;
 }
 
-#test{
-	margin-bottom: -80px;
-}
-
 #img_barmenu{
 	display: flex;
 	width: 40px;

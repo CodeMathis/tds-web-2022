@@ -596,6 +596,7 @@ details[open] summary ~ span * {
 	border-radius: 25px;
 	margin: 40px auto;
 	height: auto;
+	max-height: 650px;
 	min-width: 400px;
 	background: linear-gradient(90deg, #6dada6 50%, transparent 50%), linear-gradient(90deg, #6dada6 50%, transparent 50%), linear-gradient(0deg, #6dada6 50%, transparent 50%), linear-gradient(0deg, #6dada6 50%, transparent 50%);
 	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;

@@ -555,7 +555,7 @@ details[open] summary ~ span * {
 	padding: 20px;
 	border-radius: 25px;
 	margin: 0px auto 20px auto;
-	width: 70%;
+	width: 80%;
 	min-width: 250px;
 	text-align: center;
 }
@@ -567,7 +567,7 @@ details[open] summary ~ span * {
 	padding: 20px;
 	border-radius: 25px;
 	margin: 0px auto 20px auto;
-	width: 20%;
+	width: 40%;
 	min-width: 250px;
 	text-align: center;
 }
@@ -592,14 +592,16 @@ details[open] summary ~ span * {
 	align-items: center;
 }
 
-#photo_gauche_formation{
-	border: solid 4px;
-	color: #6dada6;
-	background-color: #6dada6;
+#photo_gauche_formation {
 	border-radius: 25px;
-	margin: 20px auto;
-	height: 200%;
-	min-width: 330px;
+	margin: 40px auto;
+	height: auto;
+	min-width: 400px;
+	background: linear-gradient(90deg, #6dada6 50%, transparent 50%), linear-gradient(90deg, #6dada6 50%, transparent 50%), linear-gradient(0deg, #6dada6 50%, transparent 50%), linear-gradient(0deg, #6dada6 50%, transparent 50%);
+	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+	padding: 3px;
+	animation: border-dance 5s infinite linear;
 }
 
 
@@ -872,4 +874,15 @@ h2{
 @keyframes open {
 	0% {opacity: 0; margin-left: -115px; margin-top: -40px}
 	100% {opacity: 1; margin-left: 5px; margin-top: 0px}
+}
+
+
+
+@keyframes border-dance {
+	0% {
+		background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+	}
+	100% {
+		background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+	}
 }

@@ -548,15 +548,27 @@ details[open] summary ~ span * {
 
 
 
-.cadre_formation{
+.cadre_formation_1{
 	border: solid 4px #6dada6;
 	color: white;
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 20px;
 	border-radius: 25px;
-	margin: 10px;
-	width: 20%;
-	min-width: 300px;
+	margin: 0px auto 20px auto;
+	width: 80%;
+	min-width: 250px;
+	text-align: center;
+}
+
+.cadre_formation_2{
+	border: solid 4px #6dada6;
+	color: white;
+	background-color: rgba(63, 91, 101, 0.85);
+	padding: 20px;
+	border-radius: 25px;
+	margin: 0px auto 20px auto;
+	width: 30%;
+	min-width: 250px;
 	text-align: center;
 }
 
@@ -565,13 +577,22 @@ details[open] summary ~ span * {
 	flex-flow: row wrap;
 }
 
+#formation_autre{
+	display: flex;
+	flex-flow: row wrap;
+	margin: auto;
+	width: 60%;
+	min-width: 365px;
+	align-items: center;
+}
+
 #photo_gauche_formation{
 	border: solid 4px;
 	color: #6dada6;
 	background-color: #6dada6;
 	border-radius: 25px;
-	margin: 10px;
-	width: 30%;
+	margin: 20px auto;
+	width: calc(15% + 225px);
 	min-width: 330px;
 }
 

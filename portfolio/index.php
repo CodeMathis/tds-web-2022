@@ -102,13 +102,18 @@ include 'php/master.php';
 				<?php
                 echo '<h2 class="titre_droite reveal fade-right">'.$background5["titre"].'</h2>';
                 ?>
-                <div id="#formation">
+                <div id="formation">
                     <?php
-                    echo '<img id="photo_gauche_formation" src="'.$background5["img"].'" alt="'.$background5["img_alt"].'">';
+                    echo '<img class="reveal fade-left" id="photo_gauche_formation" src="'.$background5["img"].'" alt="'.$background5["img_alt"].'">';
                     ?>
-                    <p class="cadre_formation">test</p>
-                    <p class="cadre_formation">test</p>
-                    <p class="cadre_formation">test</p>
+                    <div id="formation_autre">
+                        <p class="cadre_formation_1 reveal fade-bottom">test</p>
+                        <p class="cadre_formation_1 reveal fade-bottom">test</p>
+                        <p class="cadre_formation_2 reveal fade-bottom">test</p>
+                        <p class="cadre_formation_2 reveal fade-bottom">test</p>
+                        <p class="cadre_formation_1 reveal fade-bottom">test</p>
+                        <p class="cadre_formation_1 reveal fade-bottom">test</p>
+                    </div>
                 </div>
 			</div>
 			</div>

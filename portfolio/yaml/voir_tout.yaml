@@ -23,7 +23,7 @@ images:
 
   - src: 'img/index_img.PNG'
     alt: 'image index'
-    texte: '— Index de ce site totalement automatisé ave la possibilité de ne pas afficher certains fichier —'
+    texte: '— Index de ce site totalement automatisé avec la possibilité de ne pas afficher certains fichier —'
 
   - src: 'img/nonogram.PNG'
     alt: 'image jeu nonogram'

@@ -685,19 +685,31 @@ details[open] summary ~ span * {
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 0;
 	border-radius: 25px;
-	width: 300px;
-	margin: 40px auto 0 auto;
+	width: calc(20% + 270px);
+	min-width: 375px;
+	margin: 0 auto 40px auto;
+	box-shadow: 0 0 10px white;
 }
 
 #formulaire_liste_contact{
 	display: flex;
 	margin: auto;
 	color: white;
-	padding-left: 10px;
-	flex-direction: column;
-	width: 300px;
+	padding: 10px 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: calc(12% + 300px);
+	min-width: 375px;
 	border-left: solid 2px;
+	border-radius: 25px;
 	line-height: 50px;
+	box-shadow: 0 0 10px #6dada6;
+}
+
+#formulaire_liste_contact img{
+	width: 30px;
+	height: 30px;
+	margin: 0 4px -7px 4px;
 }
 
 #cadre_global_formulaire form p{

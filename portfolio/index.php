@@ -148,13 +148,13 @@ include 'php/master.php';
                     </form>
                     <div id="contact_autre">
                         <div class="formulaire_liste_contact reveal fade-bottom">
-                            <p class="reveal fade-bottom">[📧] Email : mathis.ravier@orange.fr</p>
-                            <p class="reveal fade-bottom">[📞] Téléphone : 06 19 81 84 25</p>
+                            <p class="reveal fade-bottom">[📧] Email: mathis.ravier@orange.fr</p>
+                            <p class="reveal fade-bottom">[📞] Téléphone: 06 19 81 84 25</p>
                         </div>
                         <div class="formulaire_liste_contact reveal fade-bottom">
-                            <p class="reveal fade-bottom">[<img src="img/instagram.png" alt="image instagram">] Instagram : met_meza</p>
-                            <p class="reveal fade-bottom">[<img src="img/fbk.png" alt="image facebook">] Facebook : met_meza</p>
-                            <p class="reveal fade-bottom">[<img src="img/discord.png" alt="image discord">] Discord : met_meza#6393</p>
+                            <p class="reveal fade-bottom">[<img src="img/instagram.png" alt="image instagram">] Instagram: met_meza</p>
+                            <p class="reveal fade-bottom">[<img src="img/fbk.png" alt="image facebook">] Facebook: met_meza</p>
+                            <p class="reveal fade-bottom">[<img src="img/discord.png" alt="image discord">] Discord: met_meza#6393</p>
                         </div>
                         <div class="formulaire_liste_contact reveal fade-bottom">
                             <p class="reveal fade-bottom">[💻] Github: <a href="https://github.com/CodeMathis" target="_blank">https://github.com/...</a></p>

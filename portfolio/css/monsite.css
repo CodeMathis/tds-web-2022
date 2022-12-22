@@ -649,6 +649,32 @@ details[open] summary ~ span * {
 	margin: auto;
 }
 
+.formulaire_liste_contact{
+	display: flex;
+	margin: 20px 0;
+	color: white;
+	padding: 5px 15px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	min-width: 350px;
+	border-left: solid 2px;
+	border-radius: 25px;
+	line-height: 50px;
+	box-shadow: 0 0 10px #6dada6;
+	text-align: center;
+}
+
+.formulaire_liste_contact p{
+	margin: auto;
+}
+
+.formulaire_liste_contact img{
+	width: 30px;
+	height: 30px;
+	margin: 0 4px -7px 4px;
+}
+
 #separation_contact{
 	margin: 0 20%;
 	padding: 0;
@@ -672,42 +698,17 @@ details[open] summary ~ span * {
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 0;
 	border-radius: 25px;
-	width: 45%;
+	width: 50%;
 	min-width: 375px;
 	margin: 0 auto 40px auto;
 	box-shadow: 0 0 10px white;
-}
-
-.formulaire_liste_contact{
-	display: flex;
-	margin: 20px 0;
-	color: white;
-	padding: 10px 20px;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 100%;
-	min-width: 350px;
-	border-left: solid 2px;
-	border-radius: 25px;
-	line-height: 50px;
-	box-shadow: 0 0 10px #6dada6;
-}
-
-.formulaire_liste_contact p{
-	margin: auto;
-}
-
-.formulaire_liste_contact img{
-	width: 30px;
-	height: 30px;
-	margin: 0 4px -7px 4px;
 }
 
 #contact_autre{
 	display: flex;
 	flex-flow: row wrap;
 	margin: auto;
-	width: 40%;
+	width: 45%;
 	align-items: center;
 }
 
@@ -953,5 +954,13 @@ h2{
 	#formation_autre{
 		width: auto;
 		max-width: 90%;
+	}
+
+	#contact_autre{
+		width: auto;
+	}
+
+	#cadre_global_formulaire form{
+		width: auto;
 	}
 }

@@ -57,3 +57,11 @@ images_a_venir:
   - src: 'img/a_venir_2.png'
     alt: 'image à venir'
     texte: "— [en travaux] —"
+
+  - src: 'img/a_venir_3.png'
+    alt: 'image à venir'
+    texte: "— [en travaux] —"
+
+  - src: 'img/a_venir_4.png'
+    alt: 'image à venir'
+    texte: "— [en travaux] —"

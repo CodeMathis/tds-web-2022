@@ -181,52 +181,39 @@ details[open] summary ~ span * {
 	font-size: 30px;
 }
 
-#numero_1{
-	border-right: 8px solid #1c9c94;
-	border-bottom: 24px solid #1c9c94;
+.numeros_parametre_commun{
 	border-image-slice: 1;
 	margin: 0 5%;
 	padding-bottom: 60px;
 	min-height: 128px;
+}
+
+#numero_1{
+	border-right: 8px solid #1c9c94;
+	border-bottom: 24px solid #1c9c94;
 }
 
 #numero_2{
 	border-top: 4px solid #1c9c94;
 	border-left: 8px solid #6dada6;
-	border-image-slice: 1;
-	margin: 0 5%;
-	padding-bottom: 60px;
 	margin-top: -20px;
-	min-height: 128px;
 }
 
 #numero_3{
 	border-top: 8px solid #6dada6;
 	border-right: 8px solid #1c9c94;
-	border-image-slice: 1;
-	margin: 0 5%;
-	padding-bottom: 60px;
-	min-height: 128px;
 }
 
 #numero_4{
 	border-top: 8px solid #1c9c94;
 	border-left: 8px solid #6dada6;
-	border-image-slice: 1;
-	margin: 0 5%;
-	padding-bottom: 60px;
 	margin-top: -20px;
-	min-height: 128px;
 }
 
 #numero_5{
 	border-top: 8px solid #6dada6;
 	border-right: 8px solid #6e8b7f;
-	border-image-slice: 1;
-	margin: 0 5%;
-	padding-bottom: 60px;
 	margin-top: -20px;
-	min-height: 128px;
 }
 
 
@@ -757,7 +744,7 @@ details[open] summary ~ span * {
 
 
 main{
-	
+
 }
 
 

@@ -33,7 +33,7 @@ include 'php/master.php';
 		
 		<main>
 			<div id="background1">
-			<div id="numero_1">
+			<div id="numero_1" class="numeros_parametre_commun">
                 <p class="numeros_alignes_droite">1</p>
 				<?php
                 echo '<h1>'.$background1["titre_principal"].'</h1>';
@@ -51,7 +51,7 @@ include 'php/master.php';
 			</div>
 			
 			<div id="background2">
-			<div id="numero_2">
+			<div id="numero_2" class="numeros_parametre_commun">
                 <p class="numeros_alignes_gauche">2</p>
                 <?php
                 echo '<h2 class="titre_gauche reveal fade-left">'.$background2["titre"].'</h2><div class="decalage_gauche_propos"><div id="align_propos">';
@@ -64,7 +64,7 @@ include 'php/master.php';
 			</div>
 
             <div id="background3">
-                <div id="numero_3">
+                <div id="numero_3" class="numeros_parametre_commun">
                     <p class="numeros_alignes_droite">3</p>
                     <?php
                     echo '<h2 class="titre_droite reveal fade-right">'.$background3["titre"].'</h2>';
@@ -81,7 +81,7 @@ include 'php/master.php';
             </div>
 			
 			<div id="background4">
-			<div id="numero_4">
+			<div id="numero_4" class="numeros_parametre_commun">
                 <p class="numeros_alignes_gauche">4</p>
 				<?php
 				echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div id="align_travaux">';
@@ -98,7 +98,7 @@ include 'php/master.php';
 			</div>
 
 			<div id="background5">
-			<div id="numero_5">
+			<div id="numero_5" class="numeros_parametre_commun">
                 <p class="numeros_alignes_droite">5</p>
 				<?php
                 echo '<h2 class="titre_droite reveal fade-right">'.$background5["titre"].'</h2>';

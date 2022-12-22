@@ -273,9 +273,7 @@ details[open] summary ~ span * {
 }
 
 #boite_nouveaute:hover{
-	border: 4px solid;
-	border-color: #66fcf0;
-	padding: 16px;
+	outline: 4px solid #66fcf0;
 }
 
 #boite_nouveaute img{
@@ -324,25 +322,25 @@ details[open] summary ~ span * {
 
 
 .boite_a_propos{
-	display: inline-flex;
+	display: flex;
+	flex: 0 0 23%;
 	text-align: center;
 	color: #6dada6;
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 20px;
 	border-radius: 25px;
-	width: 20%;
+	width: 350px;
 	min-width: 320px;
 	min-height: 350px;
 	font-weight: 600;
 	font-size: 22px;
-	margin: 40px -5% auto 10%;
+	margin: 20px auto;
 	flex-wrap: wrap;
 	box-shadow: 3px 3px 5px #4efcee;
 }
 
 .boite_a_propos:hover{
-	border: 4px solid #66fcf0;
-	padding: 16px;
+	outline: 4px solid #66fcf0;
 }
 
 .boite_a_propos img{
@@ -351,6 +349,16 @@ details[open] summary ~ span * {
 	margin: 10px 0 10px 10px;
 	width: 70px;
 	height: 70px;
+}
+
+.decalage_gauche_propos{
+	margin-left: 40px;
+}
+
+#align_propos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 
@@ -509,13 +517,13 @@ details[open] summary ~ span * {
 	width: 95%;
 	height: auto;
 	margin: auto;
-	border: 4px solid #66fcf0;
+	outline: 4px solid #66fcf0;
 	border-radius: 25px;
 	box-shadow: 0 0 1em #2c3b4b;
 }
 
 .boite_travaux img:hover{
-	border-color: #2c3b4b;
+	outline: #2c3b4b;
 }
 
 .decalage_gauche_travaux{
@@ -787,8 +795,8 @@ h2{
 	display: flex;
 	font-size: 32px;
 	font-weight: 600;
-	padding-top: 20px;
-	margin: 0 3px 0 20px;
+	padding-top: 30px;
+	margin: 0 auto;
 	color: white;
 	text-align: center;
 }

@@ -54,11 +54,12 @@ include 'php/master.php';
 			<div id="numero_2">
                 <p class="numeros_alignes_gauche">2</p>
                 <?php
-                echo '<h2 class="titre_gauche reveal fade-left">'.$background2["titre"].'</h2>';
+                echo '<h2 class="titre_gauche reveal fade-left">'.$background2["titre"].'</h2><div class="decalage_gauche_propos"><div id="align_propos">';
                 foreach ($background2["boites"] AS $contenu){
                     echo '<p class="boite_a_propos reveal fade-bottom"><img src="'.$contenu["img_boite"].'" alt="icon feuille"><span class="titre_des_boites">'.$contenu["titre_boite"].'</span><br>'.$contenu["texte_boite"].'</p>';
                 }
                 ?>
+                </div></div>
 			</div>
 			</div>
 

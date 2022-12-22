@@ -13,14 +13,14 @@ boites:
     texte_boite: 'Les interfaces c’est bien joli, tout le monde peut les utiliser mais qui peut les créer. J’aime faciliter la tâche pour les autres et découvrir de nouvelles choses par la même occasion. Voilà pourquoi j’ai fait ces choix de vie'
     img_boite: 'img/brain-icon.png'
 
-  - titre_boite: 'Goûts'
+  - titre_boite: 'Mes goûts'
     texte_boite: "Étant donné mes études, j’aime tout ce qui touche à l’informatique, même si j’ai une préférence pour le développement. Mes matières préférées au lycée étaient: la NSI, les mathématiques, l’anglais et la philosophie"
     img_boite: 'img/hearts.png'
 
-  - titre_boite: 'Origines'
+  - titre_boite: 'Les origines'
     texte_boite: 'À 11 ans, avec mon premier ordinateur portable je regardais majoritairement des vidéos Youtube et je jouais à Minecraft. Même si je bidouillais dessus, je ne comprenais pas trop ce que je faisais. C’est uniquement depuis mes 15 ans, grâce à mon nouvel ordinateur fixe et la NSI au lycée, que j’ai commencé à m’intéresser plus profondément à tout ce qui se passe derrière les interfaces'
     img_boite: 'img/origines.png'
 
-  - titre_boite: 'Loisirs'
-    texte_boite: "J'aime le badminton, la pêche, les bonnes blagues et se retrouver avec des amis pour jouer en ligne. De plus, j'aime passer du temps à coder quelques projets personnels"
+  - titre_boite: 'Mes loisirs'
+    texte_boite: "J'aime le badminton que j'ai pratiqué pendant 5 ans. J'aime aussi la pêche, les bonnes blagues et se retrouver avec des amis pour jouer en ligne. De plus, j'apprécie passer du temps à coder quelques projets personnels quand j'ai le temps"
     img_boite: 'img/loisirs.png'

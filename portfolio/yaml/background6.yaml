@@ -11,7 +11,7 @@ zone_texte:
     balise: '<input class="cadre_input_et_textarea" type="text" name="objet" value="" placeholder="Exemple : Important !">'
 
   - pre_texte: "Votre message :"
-    balise: '<textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>'
+    balise: '<textarea id="textarea_resize" class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>'
 
 liste_contact:
   - bulle:

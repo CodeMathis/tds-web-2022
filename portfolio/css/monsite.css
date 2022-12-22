@@ -656,7 +656,6 @@ details[open] summary ~ span * {
 	color: #1c9c94;
 	width: 100%;
 	box-shadow: 0 0 .3em #6dada6;
-	resize: none;
 }
 
 .g-recaptcha, #erreur_message_captcha{
@@ -739,6 +738,10 @@ details[open] summary ~ span * {
 	text-align: center;
 	flex-wrap: wrap;
 	width: 100%;
+}
+
+#textarea_resize{
+	resize: none;
 }
 
 #boutton_align_form{

@@ -110,9 +110,9 @@ include 'php/master.php';
                         <?php
                         foreach ($background5["boites"] as $boite){
                             if ($boite["1_ou_2_par_ligne"] == "1"){
-                                echo '<p class="cadre_formation_1 reveal fade-bottom">'.$boite["texte"].'</p>';
+                                echo '<p class="cadre_formation cadre_formation_1 reveal fade-bottom">'.$boite["texte"].'</p>';
                             }else{
-                                echo '<div class="cadre_formation_2 reveal fade-bottom"><p>'.$boite["texte"].'</p><a href="'.$boite["fichier_chemin"].'" download="'.$boite["fichier_chemin"].'"><img src="'.$boite["img_chemin"].'" alt="'.$boite["img_chemin"].'"></a></div>';
+                                echo '<div class="cadre_formation cadre_formation_2 reveal fade-bottom"><p>'.$boite["texte"].'</p><a href="'.$boite["fichier_chemin"].'" download="'.$boite["fichier_chemin"].'"><img src="'.$boite["img_chemin"].'" alt="'.$boite["img_chemin"].'"></a></div>';
                             }
                         }
                         ?>

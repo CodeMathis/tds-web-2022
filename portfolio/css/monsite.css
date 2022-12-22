@@ -1010,6 +1010,7 @@ h2{
 	}
 
 	#logo_moove{
-		width: 375px;
+		width: 400px;
+		border: solid 2px;
 	}
 }

@@ -1,6 +1,10 @@
 titre: 'Expérience'
 
 images:
+  - src: 'img/dane.png'
+    alt: 'image dane normandie'
+    texte: '— Stage de 3ème à la délégation au numérique éducatif du rectorat de l’académie de Caen en 2018 —'
+
   - src: 'img/prime.png'
     alt: 'image prime nuit du code'
     texte: '— Primé nuit du c0de 2022 —'

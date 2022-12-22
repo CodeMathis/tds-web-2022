@@ -147,19 +147,15 @@ include 'php/master.php';
                             </span>
                     </form>
                     <div id="contact_autre">
-                        <div class="formulaire_liste_contact reveal fade-bottom">
-                            <p class="reveal fade-bottom">[📧] Email: mathis.ravier@orange.fr</p>
-                            <p class="reveal fade-bottom">[📞] Téléphone: 06 19 81 84 25</p>
-                        </div>
-                        <div class="formulaire_liste_contact reveal fade-bottom">
-                            <p class="reveal fade-bottom">[<img src="img/instagram.png" alt="image instagram">] Instagram: met_meza</p>
-                            <p class="reveal fade-bottom">[<img src="img/fbk.png" alt="image facebook">] Facebook: met_meza</p>
-                            <p class="reveal fade-bottom">[<img src="img/discord.png" alt="image discord">] Discord: met_meza#6393</p>
-                        </div>
-                        <div class="formulaire_liste_contact reveal fade-bottom">
-                            <p class="reveal fade-bottom">[💻] Github: <a href="https://github.com/CodeMathis" target="_blank">https://github.com/...</a></p>
-                            <p class="reveal fade-bottom">[🌐] LinkedIn: <a href="https://www.linkedin.com/in/mathis-ravier-46a680257" target="_blank">https://www.linkedin.com/...</a></p>
-                        </div>
+                        <?php
+                        foreach ($background6["liste_contact"] as $bulle){
+                            echo '<div class="formulaire_liste_contact reveal fade-bottom">';
+                            foreach ($bulle["bulle"] as $bulle_element){
+                                echo $bulle_element;
+                            }
+                            echo '</div>';
+                        }
+                        ?>
                     </div>
                 </div>
 			</div>

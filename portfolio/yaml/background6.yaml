@@ -12,3 +12,17 @@ zone_texte:
 
   - pre_texte: "Votre message :"
     balise: '<textarea class="cadre_input_et_textarea" required="required" name="message" rows="6" cols="40" placeholder="Vous pouvez saisir un message ici."></textarea>'
+
+liste_contact:
+  - bulle:
+    - '<p class="reveal fade-bottom">[📧] Email: mathis.ravier@orange.fr</p>'
+    - '<p class="reveal fade-bottom">[📞] Téléphone: 06 19 81 84 25</p>'
+
+  - bulle:
+    - '<p class="reveal fade-bottom">[<img src="img/instagram.png" alt="image instagram">] Instagram: met_meza</p>'
+    - '<p class="reveal fade-bottom">[<img src="img/fbk.png" alt="image facebook">] Facebook: met_meza</p>'
+    - '<p class="reveal fade-bottom">[<img src="img/discord.png" alt="image discord">] Discord: met_meza#6393</p>'
+
+  - bulle:
+    - '<p class="reveal fade-bottom">[💻] Github: <a href="https://github.com/CodeMathis" target="_blank">https://github.com/...</a></p>'
+    - '<p class="reveal fade-bottom">[🌐] LinkedIn: <a href="https://www.linkedin.com/in/mathis-ravier-46a680257" target="_blank">https://www.linkedin.com/...</a></p>'

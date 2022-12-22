@@ -14,7 +14,7 @@ html {
 body{	/*Valeurs de bases*/
 	font-family: 'Montserrat';
 	font-size: 24px;
-	background: black;	
+	background: rgba(64,92,102);
 	background-size: 100%;
 	font-weight: 400;
 	margin: 0;

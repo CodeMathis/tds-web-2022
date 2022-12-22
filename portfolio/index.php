@@ -128,6 +128,15 @@ include 'php/master.php';
                 echo '<h2 class="titre_gauche reveal fade-left">'.$background6["titre"].'</h2>';
                 ?>
                 <div id="cadre_global_formulaire">
+                    <div id="formulaire_liste_contact">
+                        <p>[📧] Email : mathis.ravier@orange.fr</p>
+                        <p>[☎] Téléphone : 06 19 81 84 25<br></p>
+                        <p>[🌐] LinkedIn : <a href="https://www.linkedin.com/in/mathis-ravier-46a680257" target="_blank">https://www.linkedin.com/in/mathis-ravier-46a680257</a><br></p>
+                        <p>[💻] Github : <a href="https://github.com/CodeMathis" target="_blank">https://github.com/CodeMathis</a><br></p>
+                        <p>Instagram : met_meza<br></p>
+                        <p>Facebook : met_meza<br></p>
+                        <p>Discord : met_meza#6393<br></p>
+                    </div>
                     <form name="envoi_mail" action="php/envoi_mail.php" method="post">
                         <?php
                         foreach ($background6["zone_texte"] as $chaque_zone){

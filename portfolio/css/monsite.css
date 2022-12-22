@@ -24,7 +24,6 @@ body{	/*Valeurs de bases*/
 
 
 #background1{
-	display: box;
 	background: url("../img/background1.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -567,7 +566,7 @@ details[open] summary ~ span * {
 
 
 .cadre_formation{
-	border: solid 4px #6dada6;
+	outline: solid 4px #6dada6;
 	color: white;
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 10px;
@@ -575,7 +574,7 @@ details[open] summary ~ span * {
 	margin: 0px auto 20px auto;
 	min-width: 250px;
 	text-align: center;
-	box-shadow: 3px 3px 5px #4efcee;
+	box-shadow: 5px 5px 5px #4efcee;
 }
 
 .cadre_formation_1{
@@ -672,7 +671,9 @@ details[open] summary ~ span * {
 }
 
 #cadre_global_formulaire{
-	margin: 0 10% 0 10%;
+	display: inline-flex;
+	flex-flow: row wrap;
+	margin: 0 10%;
 }
 
 #cadre_global_formulaire form{
@@ -684,9 +685,22 @@ details[open] summary ~ span * {
 	background-color: rgba(63, 91, 101, 0.85);
 	padding: 0;
 	border-radius: 25px;
+	width: 300px;
+	margin: 40px auto 0 auto;
 }
 
-#cadre_global_formulaire p{
+#formulaire_liste_contact{
+	display: flex;
+	margin: auto;
+	color: white;
+	padding-left: 10px;
+	flex-direction: column;
+	width: 300px;
+	border-left: solid 2px;
+	line-height: 50px;
+}
+
+#cadre_global_formulaire form p{
 	display: flex;
 	align-self: center;
 	align-items: center;
@@ -882,19 +896,19 @@ h2{
 
 @keyframes fade-right-bar{
 	0%{
-		transform: translateX(-50%) scaleX(0%);
+		transform: translateX(-50%) scaleX(0);
 	}
 	100%{
-		transform: translateX(0%) scaleX(100%);
+		transform: translateX(0%) scaleX(1);
 	}
 }
 
 @keyframes fade-left-bar{
 	0%{
-		transform: translateX(50%) scaleX(0%);
+		transform: translateX(50%) scaleX(0);
 	}
 	100%{
-		transform: translateX(0%) scaleX(100%);
+		transform: translateX(0%) scaleX(1);
 	}
 }
 

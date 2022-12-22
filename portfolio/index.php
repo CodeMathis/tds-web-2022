@@ -151,9 +151,9 @@ include 'php/master.php';
                         <p>[☎] Téléphone : 06 19 81 84 25</p>
                         <p>[🌐] LinkedIn:<a href="https://www.linkedin.com/in/mathis-ravier-46a680257" target="_blank">https://www.linkedin.com/in/mathis-ravier-46a680257</a></p>
                         <p>[💻] Github:<a href="https://github.com/CodeMathis" target="_blank">https://github.com/CodeMathis</a></p>
-                        <p>[<img src="img/instagram.png">] Instagram : met_meza</p>
-                        <p>[<img src="img/fbk.png">] Facebook : met_meza</p>
-                        <p>[<img src="img/discord.png">] Discord : met_meza#6393</p>
+                        <p>[<img src="img/instagram.png" alt="image instagram">] Instagram : met_meza</p>
+                        <p>[<img src="img/fbk.png" alt="image facebook">] Facebook : met_meza</p>
+                        <p>[<img src="img/discord.png" alt="image discord">] Discord : met_meza#6393</p>
                     </div>
                 </div>
 			</div>

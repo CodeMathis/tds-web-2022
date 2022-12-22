@@ -146,14 +146,14 @@ include 'php/master.php';
                                 <input class="envoyer_annuler" type="reset" value="Annuler">
                             </span>
                     </form>
-                    <div id="formulaire_liste_contact">
-                        <p>[📧] Email : mathis.ravier@orange.fr</p>
-                        <p>[📞] Téléphone : 06 19 81 84 25</p>
-                        <p>[🌐] LinkedIn:<a href="https://www.linkedin.com/in/mathis-ravier-46a680257" target="_blank">https://www.linkedin.com/in/mathis-ravier-46a680257</a></p>
-                        <p>[💻] Github:<a href="https://github.com/CodeMathis" target="_blank">https://github.com/CodeMathis</a></p>
-                        <p>[<img src="img/instagram.png" alt="image instagram">] Instagram : met_meza</p>
-                        <p>[<img src="img/fbk.png" alt="image facebook">] Facebook : met_meza</p>
-                        <p>[<img src="img/discord.png" alt="image discord">] Discord : met_meza#6393</p>
+                    <div id="formulaire_liste_contact" class="reveal fade-bottom">
+                        <p class="reveal fade-bottom">[📧] Email : mathis.ravier@orange.fr</p>
+                        <p class="reveal fade-bottom">[📞] Téléphone : 06 19 81 84 25</p>
+                        <p class="reveal fade-bottom">[🌐] LinkedIn:<a href="https://www.linkedin.com/in/mathis-ravier-46a680257" target="_blank">https://www.linkedin.com/in/mathis-ravier-46a680257</a></p>
+                        <p class="reveal fade-bottom">[💻] Github:<a href="https://github.com/CodeMathis" target="_blank">https://github.com/CodeMathis</a></p>
+                        <p class="reveal fade-bottom">[<img src="img/instagram.png" alt="image instagram">] Instagram : met_meza</p>
+                        <p class="reveal fade-bottom">[<img src="img/fbk.png" alt="image facebook">] Facebook : met_meza</p>
+                        <p class="reveal fade-bottom">[<img src="img/discord.png" alt="image discord">] Discord : met_meza#6393</p>
                     </div>
                 </div>
 			</div>

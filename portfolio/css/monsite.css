@@ -245,7 +245,7 @@ details[open] summary ~ span * {
 }
 
 #logo_aligne a{
-	display: flex;
+	display: inline-flex;
 	padding: 0;
 	margin: auto 30px 30px 0px;
 }
@@ -258,6 +258,14 @@ details[open] summary ~ span * {
 	animation: fade-bottom 2s ease;
 }
 
+#logo_moove{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 0;
+	width: 50%;
+}
+
 #boite_nouveaute{
 	display: flex;
 	text-align: center;
@@ -267,6 +275,7 @@ details[open] summary ~ span * {
 	border-radius: 25px;
 	width: 25%;
 	min-width: 300px;
+	max-width: 390px;
 	min-height: 350px;
 	font-weight: 600;
 	font-size: 22px;
@@ -998,5 +1007,9 @@ h2{
 
 	#cadre_global_formulaire form{
 		width: auto;
+	}
+
+	#logo_moove{
+		width: 375px;
 	}
 }

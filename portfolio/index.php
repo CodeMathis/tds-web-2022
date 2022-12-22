@@ -39,12 +39,12 @@ include 'php/master.php';
                 echo '<h1>'.$background1["titre_principal"].'</h1>';
                 echo '<p id="citation">'.$background1["citation"].'</p>';
                 ?>
-				<div id="logo_aligne">
+				<div id="logo_aligne"><div id="logo_moove">
                     <?php
                     foreach($background1["logos"] AS $logo){
                         echo '<a href="'. $logo["link"] .'" target="_blank"><img src="' . $logo["src"] . '" alt="' . $logo["alt"] . '"></a>';
                     }
-                    echo '<p id="boite_nouveaute"><img src="'.$background1["nouveaute_img"].'" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span>'.$background1["nouveaute"].'</p>';
+                    echo '</div><p id="boite_nouveaute"><img src="'.$background1["nouveaute_img"].'" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span>'.$background1["nouveaute"].'</p>';
                     ?>
 				</div>
 			</div>

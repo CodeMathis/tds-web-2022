@@ -552,7 +552,7 @@ details[open] summary ~ span * {
 	border: solid 4px #6dada6;
 	color: white;
 	background-color: rgba(63, 91, 101, 0.85);
-	padding: 20px;
+	padding: 10px;
 	border-radius: 25px;
 	margin: 0px auto 20px auto;
 	width: 80%;
@@ -564,7 +564,7 @@ details[open] summary ~ span * {
 	border: solid 4px #6dada6;
 	color: white;
 	background-color: rgba(63, 91, 101, 0.85);
-	padding: 20px;
+	padding: 10px;
 	border-radius: 25px;
 	margin: 0px auto 20px auto;
 	width: 40%;
@@ -588,21 +588,33 @@ details[open] summary ~ span * {
 	flex-flow: row wrap;
 	margin: auto;
 	width: 50%;
-	min-width: 365px;
 	align-items: center;
 }
 
-#photo_gauche_formation {
+#photo_gauche_formation{
 	border-radius: 25px;
 	margin: 40px auto;
 	height: auto;
 	max-height: 650px;
-	min-width: 400px;
+	min-width: 425px;
 	background: linear-gradient(90deg, #6dada6 50%, transparent 50%), linear-gradient(90deg, #6dada6 50%, transparent 50%), linear-gradient(0deg, #6dada6 50%, transparent 50%), linear-gradient(0deg, #6dada6 50%, transparent 50%);
 	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
 	background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
 	padding: 3px;
 	animation: border-dance 5s infinite linear;
+}
+
+@media (max-width: 1050px){
+	#photo_gauche_formation{
+		min-width: calc(30% + 200px);
+	}
+}
+
+@media (max-width: 1100px){
+	#formation_autre{
+		width: auto;
+		max-width: 90%;
+	}
 }
 
 

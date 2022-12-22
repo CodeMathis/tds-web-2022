@@ -250,7 +250,7 @@ details[open] summary ~ span * {
 
 #logo_aligne{
 	display: inline-flex;
-	margin: auto 10%;
+	margin: auto 0 auto 10%;
 	padding: 0;
 	flex-wrap: wrap;
 	animation: fade-bottom 2s ease;

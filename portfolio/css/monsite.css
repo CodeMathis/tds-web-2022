@@ -543,6 +543,7 @@ details[open] summary ~ span * {
 	font-size: 24px;
 	color: white;
 	background: none;
+	box-shadow: 0 0 1.2em #6dada6;
 	cursor: pointer;
 }
 
@@ -693,6 +694,7 @@ details[open] summary ~ span * {
 
 #boutton_align_form input{
 	cursor: pointer;
+	box-shadow: 5px 5px 5px #6dada6;
 }
 
 

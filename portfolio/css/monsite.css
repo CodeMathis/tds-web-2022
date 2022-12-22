@@ -47,7 +47,9 @@ body{	/*Valeurs de bases*/
 }
 
 #background6{
-	background: #21303D;
+	background: linear-gradient(-45deg, rgba(44,59,75), rgba(33,48,61), rgba(33,48,61), rgba(44,59,75));
+	background-size: 400% 400%;
+	animation: gradient 15s ease-in-out infinite;
 	padding-bottom: 60px;
 }
 
@@ -695,7 +697,7 @@ details[open] summary ~ span * {
 	flex-wrap: wrap;
 	border: solid 4px;
 	color: white;
-	background-color: rgba(63, 91, 101, 0.85);
+	background-color: rgba(63, 91, 101, 0.25);
 	padding: 0;
 	border-radius: 25px;
 	width: 50%;
@@ -718,7 +720,7 @@ details[open] summary ~ span * {
 	align-items: center;
 	border: solid 2px;
 	color: #6dada6;
-	background-color: rgba(33, 48, 61, 1);
+	background-color: rgba(33, 48, 61, 0.5);
 	margin: 0 auto;
 	padding: 10px 15px;
 	border-radius: 25px;
@@ -934,11 +936,43 @@ h2{
 
 
 @keyframes border-dance {
-	0% {
+	0%{
 		background-position: 0 0, 100% 100%, 0 100%, 100% 0;
 	}
-	100% {
+	100%{
 		background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+	}
+}
+
+
+
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%;
+		}
+
+	20%{
+		background-position: 50% 50%;
+		}
+
+	30%{
+		background-position: 50% 50%;
+	}
+
+	50%{
+		background-position: 100% 50%;
+	}
+
+	70%{
+		background-position: 50% 50%;
+	}
+
+	80%{
+		background-position: 50% 50%;
+	}
+
+	100%{
+		background-position: 0% 50%;
 	}
 }
 

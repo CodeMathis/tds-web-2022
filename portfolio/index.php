@@ -90,7 +90,7 @@ include 'php/master.php';
                 }
                 ?>
                 </div></div>
-                <form action="voir_tout.php" target="_blank">
+                <form action="voir_tout.php">
                     <button id="bouton_voir_tout" class="decalage_gauche_travaux reveal fade-bottom">VOIR TOUT</button>
                 </form>
 			</div>
@@ -112,7 +112,7 @@ include 'php/master.php';
                             if ($boite["1_ou_2_par_ligne"] == "1"){
                                 echo '<p class="cadre_formation_1 reveal fade-bottom">'.$boite["texte"].'</p>';
                             }else{
-                                echo '<div class="cadre_formation_2 reveal fade-bottom"><p>'.$boite["texte"].'</p><a href="'.$boite["fichier_chemin"].'" download="'.$boite["fichier_chemin"].'"><img src="'.$boite["img_chemin"].'"></a></div>';
+                                echo '<div class="cadre_formation_2 reveal fade-bottom"><p>'.$boite["texte"].'</p><a href="'.$boite["fichier_chemin"].'" download="'.$boite["fichier_chemin"].'"><img src="'.$boite["img_chemin"].'" alt="'.$boite["img_chemin"].'"></a></div>';
                             }
                         }
                         ?>

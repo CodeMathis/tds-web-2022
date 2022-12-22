@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'php/master.php';
 ?>
 
@@ -10,47 +11,55 @@ include 'php/master.php';
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/monsite.css">
     <link rel="stylesheet" href="css/font_import.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
-<div>
-    <header>
-        <ul id="menu">
-            <?php
-            foreach($barmenu["text_barmenu"] AS $index=>$titre){
-                echo '<li><a href="index.php#background'.count($barmenu["text_barmenu"]) - $index.'">'.$titre.'</a></li>';
-            }
-            ?>
-        </ul>
-        <hr>
-    </header>
+<body id="body_id">
+<header id="header_id">
+    <ul id="menu">
+        <?php
+        echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
+        ?>
+        <li id="aligne_droite_barmenu">
+            <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary><span id="align_a_barmenu">
+                <?php
+                foreach($barmenu["text_barmenu"] AS $index=>$titre){
+                    echo '<a href="index.php#background'.(1 + $index).'">'.$titre.'</a>';
+                }
+                ?>
+                    </span></details>
+    </ul>
+    <hr>
+</header>
 
-    <main>
-        <div id="background4">
+<main>
+    <div id="background4">
             <?php
-            echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2>';
+            echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div id="align_travaux">';
 
             foreach($background4["images"] AS $valeur){
-                echo '<div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div>';
+                echo '<a href="'.$valeur["src"].'" target="_blank"><div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div></a>';
             }
             ?>
-        </div>
-    </main>
-    <footer>
-        <div class="footer_boite_align">
-            <?php
-            foreach($footer["text_footer"] AS $colonne){
-                echo '<div class="footer_boite">';
-                foreach($colonne AS $valeur){
-                    echo $valeur;
-                }
-                echo '</div>';
-            }
-            ?>
-        </div>
-        <hr>
+        </div></div>
+    </div>
+</main>
+<footer>
+    <div class="footer_boite_align">
         <?php
-        echo '<p>'.$footer["copyright"].'</p>';
+        foreach($footer["text_footer"] AS $colonne){
+            echo '<div class="footer_boite reveal fade-bottom">';
+            foreach($colonne AS $valeur){
+                echo $valeur;
+            }
+            echo '</div>';
+        }
         ?>
-    </footer>
-    </body>
-    <script src="js/animation.js"></script>
+    </div>
+    <hr>
+    <?php
+    echo '<p>'.$footer["copyright"].'</p>';
+    ?>
+</footer>
+<script src="js/js.js"></script>
+</body>
 </html>

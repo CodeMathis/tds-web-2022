@@ -148,7 +148,7 @@ include 'php/master.php';
                     </form>
                     <div id="formulaire_liste_contact">
                         <p>[📧] Email : mathis.ravier@orange.fr</p>
-                        <p>[☎] Téléphone : 06 19 81 84 25</p>
+                        <p>[📞] Téléphone : 06 19 81 84 25</p>
                         <p>[🌐] LinkedIn:<a href="https://www.linkedin.com/in/mathis-ravier-46a680257" target="_blank">https://www.linkedin.com/in/mathis-ravier-46a680257</a></p>
                         <p>[💻] Github:<a href="https://github.com/CodeMathis" target="_blank">https://github.com/CodeMathis</a></p>
                         <p>[<img src="img/instagram.png" alt="image instagram">] Instagram : met_meza</p>

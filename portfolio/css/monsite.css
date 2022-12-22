@@ -708,7 +708,7 @@ details[open] summary ~ span * {
 	display: flex;
 	flex-flow: row wrap;
 	margin: auto;
-	width: 45%;
+	width: 40%;
 	align-items: center;
 }
 

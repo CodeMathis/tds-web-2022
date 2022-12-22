@@ -49,7 +49,7 @@ try{
         header('Location: ../index.php#background6');
     }
 
-}catch (\Exception $e){
+}catch (Exception $e){
     $_SESSION["formulaire_resultat"] = "Le serveur n'a pas réussi à envoyer le message!<br>Vérifiez votre adresse mail";
     header('Location: ../index.php#background6');
 

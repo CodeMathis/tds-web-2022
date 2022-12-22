@@ -17,7 +17,7 @@ include 'php/master.php';
 <header id="header_id">
     <ul id="menu">
         <?php
-        echo '<li><a href="#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
+        echo '<li><a href="index.php#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
         ?>
         <li id="aligne_droite_barmenu">
             <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary><span id="align_a_barmenu">
@@ -36,7 +36,7 @@ include 'php/master.php';
             <?php
             echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div id="align_travaux">';
 
-            foreach($background4["images"] AS $valeur){
+            foreach($voir_tout["images"] AS $valeur){
                 echo '<a href="'.$valeur["src"].'" target="_blank"><div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div></a>';
             }
             ?>
@@ -44,17 +44,6 @@ include 'php/master.php';
     </div>
 </main>
 <footer>
-    <div class="footer_boite_align">
-        <?php
-        foreach($footer["text_footer"] AS $colonne){
-            echo '<div class="footer_boite reveal fade-bottom">';
-            foreach($colonne AS $valeur){
-                echo $valeur;
-            }
-            echo '</div>';
-        }
-        ?>
-    </div>
     <hr>
     <?php
     echo '<p>'.$footer["copyright"].'</p>';

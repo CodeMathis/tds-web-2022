@@ -2,3 +2,20 @@ titre: 'Formation'
 
 img: "img/moi.png"
 img_alt: "photo de moi"
+
+boites:
+  - texte: "Diplômé du baccalauréat général 2021/2022, mention assez bien"
+    1_ou_2_par_ligne: "1"
+
+  - texte: "Mon CV en travaux:"
+    1_ou_2_par_ligne: "2"
+    fichier_chemin: "fichier/CV.pdf"
+    img_chemin: "img/pdf-icon.png"
+
+  - texte: "Certification MOOC de l'ANSI:"
+    1_ou_2_par_ligne: "2"
+    fichier_chemin: "fichier/Certification_mooc_anssi.pdf"
+    img_chemin: "img/ANSSI_Logo.png"
+
+  - texte: "Actuellement en 1re année de BTS SIO à CaenSup Sainte-Ursule, Caen"
+    1_ou_2_par_ligne: "1"

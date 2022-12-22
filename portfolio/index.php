@@ -107,10 +107,15 @@ include 'php/master.php';
                     echo '<img class="reveal fade-left" id="photo_gauche_formation" src="'.$background5["img"].'" alt="'.$background5["img_alt"].'">';
                     ?>
                     <div id="formation_autre">
-                        <p class="cadre_formation_1 reveal fade-bottom"> Diplômé du baccalauréat général 2021/2022, mention assez bien</p>
-                        <div class="cadre_formation_2 reveal fade-bottom"><p>Mon CV en travaux:</p><a href="fichier/CV.pdf" download="fichier/CV.pdf"><img src="img/pdf-icon.png"></a></div>
-                        <div class="cadre_formation_2 reveal fade-bottom"><p>Certification MOOC ANSI:</p><a href="fichier/Certification_mooc_anssi.pdf" download="fichier/Certification_mooc_anssi.pdf"><img src="img/ANSSI_Logo.png"></a></div>
-                        <p class="cadre_formation_1 reveal fade-bottom">Actuellement en 1re année de BTS SIO à CaenSup Sainte-Ursule, Caen</p>
+                        <?php
+                        foreach ($background5["boites"] as $boite){
+                            if ($boite["1_ou_2_par_ligne"] == "1"){
+                                echo '<p class="cadre_formation_1 reveal fade-bottom">'.$boite["texte"].'</p>';
+                            }else{
+                                echo '<div class="cadre_formation_2 reveal fade-bottom"><p>'.$boite["texte"].'</p><a href="'.$boite["fichier_chemin"].'" download="'.$boite["fichier_chemin"].'"><img src="'.$boite["img_chemin"].'"></a></div>';
+                            }
+                        }
+                        ?>
                     </div>
                 </div>
 			</div>

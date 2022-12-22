@@ -247,7 +247,7 @@ details[open] summary ~ span * {
 #logo_aligne a{
 	display: inline-flex;
 	padding: 0;
-	margin: auto 30px 15px 0px;
+	margin: auto 30px 30px 0px;
 }
 
 #logo_aligne{
@@ -1011,5 +1011,8 @@ h2{
 
 	#logo_moove{
 		width: 400px;
+	}
+	#logo_aligne a{
+		margin: auto 15px;
 	}
 }

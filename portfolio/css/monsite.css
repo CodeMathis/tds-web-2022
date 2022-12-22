@@ -494,7 +494,7 @@ details[open] summary ~ span * {
 	max-height: 425px;
 	font-weight: 500;
 	font-size: 22px;
-	margin: 20px auto auto auto;
+	margin: 20px auto 10px auto;
 	flex-wrap: wrap;
 }
 
@@ -547,6 +547,13 @@ details[open] summary ~ span * {
 	background: none;
 	box-shadow: 0 0 1.2em #6dada6;
 	cursor: pointer;
+}
+
+#cliffhanger{
+	margin: 20px 10% auto 10%;
+	font-size: calc(32px + 2vw);
+	color: white;
+	font-weight: 600;
 }
 
 

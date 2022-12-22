@@ -12,3 +12,48 @@ images:
   - src: 'img/jeu_de_nim.PNG'
     alt: 'image jeu de nim'
     texte: '— Jeu de nim, 2 joueurs ou 1 joueur avec difficultés ajustables —'
+
+  - src: 'img/morpion.PNG'
+    alt: 'image jeu de morpion'
+    texte: "— Jeu de morpion, 1 ou 2 joueurs même si le mode 1 joueur n'est pas complet —"
+
+  - src: 'img/threading.PNG'
+    alt: 'image chat en ligne'
+    texte: '— Chat en ligne créé avec python pour experimenter le multithreading —'
+
+  - src: 'img/index_img.PNG'
+    alt: 'image index'
+    texte: '— Index de ce site totalement automatisé ave la possibilité de ne pas afficher certains fichier —'
+
+  - src: 'img/nonogram.PNG'
+    alt: 'image jeu nonogram'
+    texte: '— Recréation du processus de pixélisation du jeux Nonogram en python pour le rendre plus complexe [en travaux] —'
+
+  - src: 'img/morse.PNG'
+    alt: 'image convertisseur morse'
+    texte: "— Un programme python permettant de convertir n'importe quel message en morse —"
+
+  - src: 'img/demineur.PNG'
+    alt: 'image démineur'
+    texte: "— Démineur sans réel interface mais qui fonctionne —"
+
+  - src: 'img/outil_reseau.PNG'
+    alt: 'image outil réseau'
+    texte: "— Des fonctions permettant d'automatiser certains calculs que l'on doit faire en réseau [en travaux] —"
+
+  - src: 'img/serv_mc.PNG'
+    alt: 'image .jar serveur minecraft'
+    texte: "— Un serveur minecraft pour jouer avec mes amis —"
+
+  - src: 'img/nas.png'
+    alt: 'image non fournie'
+    texte: "— Un NAS héberger sur ma raspberry pi avec OpenMediaVault —"
+
+images_a_venir:
+  - src: 'img/a_venir_1.png'
+    alt: 'image à venir'
+    texte: "— [en travaux] —"
+
+  - src: 'img/a_venir_2.png'
+    alt: 'image à venir'
+    texte: "— [en travaux] —"

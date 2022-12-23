@@ -34,7 +34,7 @@ include 'php/master.php';
 <main>
     <div id="background4">
         <?php
-        echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div id="align_travaux">';
+        echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div class="align_travaux">';
 
         foreach($voir_tout["images"] AS $valeur){
             echo '<a href="'.$valeur["src"].'" target="_blank"><div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div></a>';
@@ -42,7 +42,7 @@ include 'php/master.php';
         ?>
         </div></div>
         <?php
-        echo "<h2 class='titre_gauche reveal fade-left'>Et d'autres à venir</h2><div class='decalage_gauche_travaux'><div id='align_travaux'>";
+        echo "<h2 class='titre_gauche reveal fade-left'>Et d'autres à venir</h2><div class='decalage_gauche_travaux'><div class='align_travaux'>";
 
         foreach($voir_tout["images_a_venir"] AS $valeur){
             echo '<a href="'.$valeur["src"].'" target="_blank"><div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div></a>';

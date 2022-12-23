@@ -84,7 +84,7 @@ include 'php/master.php';
 			<div id="numero_4" class="numeros_parametre_commun">
                 <p class="numeros_alignes_gauche">4</p>
 				<?php
-				echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div id="align_travaux">';
+				echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div class="align_travaux">';
 
                 foreach($background4["images"] AS $valeur){
                     echo '<a href="'.$valeur["src"].'" target="_blank"><div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div></a>';

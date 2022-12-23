@@ -529,13 +529,13 @@ details[open] summary ~ span * {
 	margin-left: 40px;
 }
 
-#align_travaux{
+.align_travaux{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-#align_travaux a{
+.align_travaux a{
 	margin: 0 auto;
 	text-decoration:none;
 }

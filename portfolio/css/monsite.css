@@ -990,6 +990,13 @@ h2{
 
 
 
+
+@media (max-width: 1080px){
+	.titre_des_boites{
+		font-size: 32px;
+	}
+}
+
 @media (max-width: 1050px){
 	#photo_gauche_formation{
 		min-width: calc(30% + 200px);

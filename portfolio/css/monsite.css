@@ -745,7 +745,7 @@ details[open] summary ~ span * {
 
 #boutton_align_form{
 	display: inline-flex;
-	width: auto;
+	width: 80%;
 	border: solid 4px;
 	margin: auto;
 }

@@ -1030,6 +1030,12 @@ h2{
 		margin-top: 20px;
 		margin-left: -5px;
 	}
+	.boite_a_propos img{
+		width: 50px;
+		height: 50px;
+		margin-top: 20px;
+		margin-left: -5px;
+	}
 
 	#formation_autre{
 		width: auto;

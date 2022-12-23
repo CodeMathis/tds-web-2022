@@ -1021,7 +1021,7 @@ h2{
 		font-size: calc(12px + 1.5vw);
 	}
 	.g-recaptcha {
-		transform: scale(0.5);
+		
 	}
 	#contact_autre{
 		width: auto;

@@ -1046,7 +1046,7 @@ h2{
 
 @media (max-width: 540px){
 	.g-recaptcha {
-		transform: scale(80%);
+		transform: scale(.5);
 	}
 	.envoyer_annuler{
 		border: solid 4px;

@@ -740,6 +740,7 @@ details[open] summary ~ span * {
 	display: inline-flex;
 	width: auto;
 	border: solid 4px;
+	margin: auto;
 }
 
 #boutton_align_form input{

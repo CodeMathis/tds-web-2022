@@ -45,12 +45,12 @@ try{
         $_SESSION["formulaire_resultat"] = "Envoi réussi";
         header('Location: ../index.php#background6');
     }else{
-        $_SESSION["formulaire_resultat"] = "Vérifiez que vous n'êtes pas un robot avant de valider";
+        $_SESSION["formulaire_resultat"] = "Prouvez que vous n'êtes pas un robot avant de valider";
         header('Location: ../index.php#background6');
     }
 
 }catch (Exception $e){
-    $_SESSION["formulaire_resultat"] = "Le serveur n'a pas réussi à envoyer le message!<br>Vérifiez votre adresse mail";
+    $_SESSION["formulaire_resultat"] = "Le serveur n'a pas réussi à envoyer le message!<br>Vérifiez que votre adresse mail est valide";
     header('Location: ../index.php#background6');
 
 }

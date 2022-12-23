@@ -1038,6 +1038,7 @@ h2{
 		margin: auto;
 	}
 	.envoyer_annuler{
+		border: solid 2px;
 		width: 40%;
 	}
 }

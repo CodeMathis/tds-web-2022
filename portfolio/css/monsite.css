@@ -262,7 +262,7 @@ details[open] summary ~ span * {
 	padding: 20px;
 	border-radius: 25px;
 	width: 25%;
-	min-width: 300px;
+	min-width: 240px;
 	max-width: 390px;
 	min-height: 350px;
 	font-weight: 600;
@@ -334,7 +334,7 @@ details[open] summary ~ span * {
 	padding: 20px;
 	border-radius: 25px;
 	width: 350px;
-	min-width: 320px;
+	min-width: 240px;
 	min-height: 350px;
 	font-weight: 600;
 	font-size: 22px;
@@ -413,7 +413,7 @@ details[open] summary ~ span * {
 	display: flex;
 	border: 4px solid #6dada6;
 	margin: 45px auto auto auto;
-	min-width: 300px;
+	min-width: 275px;
 	border-radius: 25px;
 	width: 80%;
 	transition: 1s ease-in-out;
@@ -552,7 +552,7 @@ details[open] summary ~ span * {
 	border: 6px solid #4efcee;
 	border-radius: 10px;
 	padding: 20px 4%;
-	margin: 80px auto 10px auto;
+	margin: 60px auto 10px auto;
 	font-weight: 500;
 	font-size: 24px;
 	color: white;
@@ -662,7 +662,7 @@ details[open] summary ~ span * {
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
-	min-width: 350px;
+	min-width: 250px;
 	border-left: solid 2px;
 	border-radius: 25px;
 	line-height: 50px;
@@ -704,7 +704,7 @@ details[open] summary ~ span * {
 	padding: 0;
 	border-radius: 25px;
 	width: 50%;
-	min-width: 375px;
+	min-width: 275px;
 	margin: 0 auto 40px auto;
 	box-shadow: 0 0 10px white;
 }
@@ -992,23 +992,45 @@ h2{
 }
 
 @media (max-width: 1100px){
-	#formation_autre{
-		width: auto;
-		max-width: 90%;
+	h1{
+		font-size: calc(2vw + 36px);
 	}
-
-	#contact_autre{
-		width: auto;
+	h2{
+		font-size: calc(32px + 1.4vw);
 	}
-
-	#cadre_global_formulaire form{
-		width: auto;
-	}
-
 	#logo_moove{
 		width: 400px;
 	}
 	#logo_aligne a{
 		margin: 15px auto;
+	}
+
+	.titre_des_boites{
+		font-size: calc(0.8vw + 23px);
+	}
+	.titre_droite:after{
+		width: calc(2vw + 10px);
+	}
+
+	#formation_autre{
+		width: auto;
+		max-width: 90%;
+	}
+
+	.formulaire_liste_contact{
+		font-size: calc(12px + 1.5vw);
+	}
+	.g-recaptcha {
+		transform: scale(0.5);
+	}
+	#contact_autre{
+		width: auto;
+		margin-left: 0;
+		margin-right: 20%;
+	}
+	#cadre_global_formulaire form{
+		width: auto;
+		margin-left: 0;
+		margin-right: 20%;
 	}
 }

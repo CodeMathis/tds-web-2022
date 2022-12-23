@@ -1056,6 +1056,22 @@ h2{
 }
 
 @media (max-width: 540px){
+	.numeros_alignes_droite{
+		margin: 25% -26px;
+		padding: 9px;
+		height: 28px;
+		width: 28px;
+		font-size: 23px;
+	}
+
+	.numeros_alignes_gauche{
+		margin: 25% -26px;
+		padding: 9px;
+		height: 28px;
+		width: 28px;
+		font-size: 23px;
+	}
+
 	.g-recaptcha {
 		transform: scale(0.8);
 	}

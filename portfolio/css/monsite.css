@@ -966,7 +966,7 @@ h2{
 
 @keyframes gradient{
 	0%{
-		background-position: 0% 50%;
+		background-position: 0% 0%;
 		}
 	20%{
 		background-position: 50% 50%;
@@ -975,7 +975,7 @@ h2{
 		background-position: 50% 50%;
 	}
 	50%{
-		background-position: 100% 50%;
+		background-position: 100% 100%;
 	}
 	70%{
 		background-position: 50% 50%;
@@ -984,7 +984,7 @@ h2{
 		background-position: 50% 50%;
 	}
 	100%{
-		background-position: 0% 50%;
+		background-position: 0% 0%;
 	}
 }
 
@@ -1046,7 +1046,7 @@ h2{
 
 @media (max-width: 540px){
 	.g-recaptcha {
-		transform: scale(0.77);
+		transform: scale(80%);
 	}
 	.envoyer_annuler{
 		border: solid 4px;

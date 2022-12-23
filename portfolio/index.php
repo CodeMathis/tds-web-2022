@@ -137,10 +137,10 @@ include 'php/master.php';
                         <?php
                         echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
                         if (isset($_SESSION["formulaire_resultat"])){
-                            echo '<span id="erreur_message_captcha">'.$_SESSION["formulaire_resultat"].'</span>';
+                            echo '<span id="erreur_message_captcha" class="reveal fade-bottom">'.$_SESSION["formulaire_resultat"].'</span>';
                         }
                         ?>
-                            <span id="boutton_align_form">
+                            <span id="boutton_align_form" class="reveal fade-bottom">
                                 <input class="envoyer_annuler" type="submit" value="Envoyer">
                                 <input class="envoyer_annuler" type="reset" value="Annuler">
                             </span>

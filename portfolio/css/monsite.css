@@ -1035,7 +1035,6 @@ h2{
 @media (max-width: 540px){
 	.g-recaptcha {
 		transform:scale(0.77);
-		transform-origin:0 0;
 		margin: auto;
 	}
 }

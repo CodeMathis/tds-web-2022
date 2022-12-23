@@ -134,7 +134,6 @@ include 'php/master.php';
                             echo '<p class="reveal fade-bottom">'.$chaque_zone["pre_texte"].'<br>'.$chaque_zone['balise'].'</p>';
                         }
                         ?>
-                        <p class="reveal fade-bottom">
                         <?php
                         echo '<span class="g-recaptcha" data-sitekey="'.$secret_data["site_key"].'"></span>';
                         if (isset($_SESSION["formulaire_resultat"])){

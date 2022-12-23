@@ -652,7 +652,7 @@ details[open] summary ~ span * {
 }
 
 .g-recaptcha, #erreur_message_captcha{
-	margin: auto;
+	margin: 20px auto 10px auto;
 }
 
 .formulaire_liste_contact{
@@ -705,7 +705,7 @@ details[open] summary ~ span * {
 	padding: 0;
 	border-radius: 25px;
 	width: 50%;
-	min-width: 325px;
+	min-width: 275px;
 	margin: 0 auto 40px auto;
 	box-shadow: 0 0 10px white;
 }
@@ -740,8 +740,7 @@ details[open] summary ~ span * {
 #boutton_align_form{
 	display: inline-flex;
 	width: auto;
-	border: solid 4px;
-	margin: auto;
+	margin: 10px auto 20px auto;
 }
 
 #boutton_align_form input{
@@ -939,8 +938,16 @@ h2{
 
 
 @keyframes open {
-	0% {opacity: 0; margin-left: -115px; margin-top: -40px}
-	100% {opacity: 1; margin-left: 5px; margin-top: 0px}
+	0% {
+		opacity: 0;
+		margin-left: -115px;
+		margin-top: -40px;
+	}
+	100% {
+		opacity: 1;
+		margin-left: 5px;
+		margin-top: 0px;
+	}
 }
 
 
@@ -960,27 +967,21 @@ h2{
 	0%{
 		background-position: 0% 50%;
 		}
-
 	20%{
 		background-position: 50% 50%;
 		}
-
 	30%{
 		background-position: 50% 50%;
 	}
-
 	50%{
 		background-position: 100% 50%;
 	}
-
 	70%{
 		background-position: 50% 50%;
 	}
-
 	80%{
 		background-position: 50% 50%;
 	}
-
 	100%{
 		background-position: 0% 50%;
 	}
@@ -1038,13 +1039,14 @@ h2{
 @media (max-width: 540px){
 	.g-recaptcha {
 		transform: scale(0.77);
-		margin: auto;
+		margin: 20px auto 10px auto;
 	}
 	.envoyer_annuler{
 		border: solid 4px;
-		width: 40%;
 	}
 	#boutton_align_form{
 		display: inline-flex;
+		border: solid 2px;
+		margin: 10px auto 20px auto
 	}
 }

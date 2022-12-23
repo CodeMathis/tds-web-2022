@@ -154,16 +154,6 @@ details[open] summary ~ span * {
 	color: white;
 }
 
-#titre_barmenu_special{
-	color: #80cacc;
-	font-weight: bold;
-	margin-right: 10px;
-	margin-top: 80px;
-}
-
-#titre_barmenu_special:hover {
-	color: white;
-}
 
 
 .numeros_alignes_droite{
@@ -327,6 +317,10 @@ details[open] summary ~ span * {
 	padding-left: 100%;
 	margin-bottom: 50px;
 	margin-top: 25px;
+}
+
+#titre_voir_tout{
+	margin-top: 80px;
 }
 
 

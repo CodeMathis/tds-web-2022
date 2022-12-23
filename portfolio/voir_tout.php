@@ -17,7 +17,7 @@ include 'php/master.php';
 <header id="header_id">
     <ul id="menu">
         <?php
-        echo '<li><a href="index.php#background1" id="titre_barmenu_special">'.$barmenu["titre"].'</a></li>';
+        echo '<li><a href="index.php#background1" id="titre_barmenu">'.$barmenu["titre"].'</a></li>';
         ?>
         <li id="aligne_droite_barmenu">
             <details><summary><img src="img/3_lignes.png" alt="logo 3 lignes" id="img_barmenu"></summary><span id="align_a_barmenu">
@@ -34,7 +34,7 @@ include 'php/master.php';
 <main>
     <div id="background4">
         <?php
-        echo '<h2 class="titre_gauche reveal fade-left">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div class="align_travaux">';
+        echo '<h2 class="titre_gauche reveal fade-left" id="titre_voir_tout">'.$background4["titre"].'</h2><div class="decalage_gauche_travaux"><div class="align_travaux">';
 
         foreach($voir_tout["images"] AS $valeur){
             echo '<a href="'.$valeur["src"].'" target="_blank"><div class="boite_travaux reveal fade-bottom"><img src="'.$valeur["src"].'" alt="'.$valeur["alt"].'"><p>'.$valeur["texte"].'</p></div></a>';

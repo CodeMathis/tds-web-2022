@@ -705,7 +705,7 @@ details[open] summary ~ span * {
 	padding: 0;
 	border-radius: 25px;
 	width: 50%;
-	min-width: 275px;
+	min-width: 540px;
 	margin: 0 auto 40px auto;
 	box-shadow: 0 0 10px white;
 }

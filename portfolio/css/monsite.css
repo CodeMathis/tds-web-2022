@@ -1048,19 +1048,16 @@ h2{
 	#contact_autre{
 		width: auto;
 		margin-left: 0;
-		margin-right: 10%;
 	}
 	#cadre_global_formulaire form{
 		width: auto;
 		margin-left: 0;
-		margin-right: 10%;
 	}
 }
 
 @media (max-width: 540px){
 	.g-recaptcha {
 		transform: scale(0.8);
-		margin-left: 0;
 	}
 	.envoyer_annuler{
 		border: solid 4px;

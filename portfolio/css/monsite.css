@@ -991,7 +991,7 @@ h2{
 
 
 
-@media (max-width: 1080px){
+@media (min-width: 1080px){
 	.titre_des_boites{
 		font-size: 32px;
 	}

@@ -42,7 +42,7 @@ include 'php/master.php';
 				<div id="logo_aligne"><div id="logo_moove">
                     <?php
                     foreach($background1["logos"] AS $logo){
-                        echo '<a href="'. $logo["link"] .'" target="_blank"><img src="' . $logo["src"] . '" alt="' . $logo["alt"] . '"></a>';
+                        echo '<a href="'. $logo["link"] .'"><img src="' . $logo["src"] . '" alt="' . $logo["alt"] . '"></a>';
                     }
                     echo '</div><p id="boite_nouveaute"><img src="'.$background1["nouveaute_img"].'" alt="icon feuille"><span class="titre_des_boites">Nouveautés</span>'.$background1["nouveaute"].'</p>';
                     ?>

@@ -13,11 +13,11 @@ logos:
 
   - src: 'img/discord.png'
     alt: 'logo discord'
-    link: 'https://discord.com'
+    link: '#background5'
 
   - src: 'img/mail.png'
     alt: 'logo mail'
-    link: 'https://mail.google.com'
+    link: '#background5'
 
 nouveaute: "- Recherche d'un stage de 5 semaines<br>- Mise à jour de la page 'Voir tout' pour mes expériences et travaux<br>- Recherche d'hébergeur pour le site"
 nouveaute_img: "img/news.png"

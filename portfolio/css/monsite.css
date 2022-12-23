@@ -628,12 +628,19 @@ details[open] summary ~ span * {
 	display: flex;
 	border-radius: 25px;
 	padding: 10px 35px 10px 10px;
-	margin: 10px auto;
 	font-size: calc(18px + 1.01vw);
 	width: 48%;
 	border: 6px solid #4efcee;
 	background-color: rgba(222, 222, 222, 0.1);
 	color: #66fcf0;
+}
+
+.envoyer_annuler:nth-child(1){
+	margin: 10px calc(10px + 2vw) 10px 0;
+}
+
+.envoyer_annuler:nth-child(2){
+	margin: 10px 0 10px calc(10px + 2vw);
 }
 
 .cadre_input_et_textarea{

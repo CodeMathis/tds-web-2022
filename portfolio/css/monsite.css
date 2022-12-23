@@ -629,17 +629,19 @@ details[open] summary ~ span * {
 	border-radius: 25px;
 	padding: 10px 35px 10px 10px;
 	font-size: calc(18px + 1.01vw);
+	text-align: center;
+	margin: auto;
 	width: 48%;
 	border: 6px solid #4efcee;
 	background-color: rgba(222, 222, 222, 0.1);
 	color: #66fcf0;
 }
 
-.envoyer_annuler:nth-child(1){
+.envoyer_annuler:first-child{
 	margin: 10px calc(10px + 2vw) 10px 0;
 }
 
-.envoyer_annuler:nth-child(2){
+.envoyer_annuler:nth-child(1){
 	margin: 10px 0 10px calc(10px + 2vw);
 }
 

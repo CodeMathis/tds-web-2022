@@ -1057,7 +1057,7 @@ h2{
 
 @media (max-width: 540px){
 	.numeros_alignes_droite{
-		margin: 25% -26px;
+		margin: 30% -26px;
 		padding: 9px;
 		height: 28px;
 		width: 28px;
@@ -1065,7 +1065,7 @@ h2{
 	}
 
 	.numeros_alignes_gauche{
-		margin: 25% -26px;
+		margin: 30% -26px;
 		padding: 9px;
 		height: 28px;
 		width: 28px;

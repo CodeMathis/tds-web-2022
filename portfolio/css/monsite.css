@@ -1037,7 +1037,8 @@ h2{
 
 @media (max-width: 540px){
 	.g-recaptcha {
-		transform:scale(0.77);
+		transform: scale(0.77);
+		transform-origin: 0 0;
 		margin: auto;
 	}
 	.envoyer_annuler{
@@ -1045,6 +1046,6 @@ h2{
 		width: 40%;
 	}
 	#boutton_align_form{
-		width: 50%;
+		display: flex;
 	}
 }

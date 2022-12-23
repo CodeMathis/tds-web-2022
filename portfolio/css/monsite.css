@@ -637,14 +637,6 @@ details[open] summary ~ span * {
 	color: #66fcf0;
 }
 
-.envoyer_annuler:first-child{
-	margin: 10px calc(10px + 2vw) 10px 0;
-}
-
-.envoyer_annuler:nth-child(1){
-	margin: 10px 0 10px calc(10px + 2vw);
-}
-
 .cadre_input_et_textarea{
 	display: flex;
 	align-self: center;
@@ -1051,5 +1043,8 @@ h2{
 	.envoyer_annuler{
 		border: solid 4px;
 		width: 40%;
+	}
+	#boutton_align_form{
+		width: 50%;
 	}
 }

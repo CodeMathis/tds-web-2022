@@ -1022,7 +1022,7 @@ h2{
 	}
 
 	.titre_des_boites{
-		font-size: calc(0.6vw + 20px);
+		font-size: calc(0.55vw + 20px);
 	}
 	#boite_nouveaute img{
 		width: 50px;

@@ -653,6 +653,7 @@ details[open] summary ~ span * {
 
 .g-recaptcha, #erreur_message_captcha{
 	margin: 20px auto 10px auto;
+	text-align: center;
 }
 
 .formulaire_liste_contact{

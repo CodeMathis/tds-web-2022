@@ -1037,4 +1037,7 @@ h2{
 		transform:scale(0.77);
 		margin: auto;
 	}
+	.envoyer_annuler{
+		width: 40%;
+	}
 }

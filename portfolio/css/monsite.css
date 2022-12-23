@@ -831,7 +831,7 @@ h2{
 
 .titre_des_boites{
 	display: flex;
-	font-size: 32px;
+	font-size: calc(1vw + 14px);
 	font-weight: 600;
 	padding-top: 30px;
 	margin: 0 auto;
@@ -1007,14 +1007,21 @@ h2{
 		width: 400px;
 	}
 	#logo_aligne a{
-		margin: 15px auto;
+		margin: 0 15px 30px 0;
+	}
+
+	.titre_droite:after{
+		width: calc(2vw + 10px);
 	}
 
 	.titre_des_boites{
-		font-size: calc(0.8vw + 23px);
+		font-size: calc(0.6vw + 22px);
 	}
-	.titre_droite:after{
-		width: calc(2vw + 10px);
+	#boite_nouveaute img{
+		width: 50px;
+		height: 50px;
+		margin-top: 20px;
+		margin-left: -5px;
 	}
 
 	#formation_autre{

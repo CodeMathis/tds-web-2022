@@ -831,7 +831,7 @@ h2{
 
 .titre_des_boites{
 	display: flex;
-	font-size: calc(1vw + 14px);
+	font-size: calc(1vw + 12px);
 	font-weight: 600;
 	padding-top: 30px;
 	margin: 0 auto;
@@ -1022,7 +1022,7 @@ h2{
 	}
 
 	.titre_des_boites{
-		font-size: calc(0.5vw + 19px);
+		font-size: calc(0.5vw + 18px);
 	}
 	#boite_nouveaute img{
 		width: 50px;

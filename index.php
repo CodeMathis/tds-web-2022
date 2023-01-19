@@ -42,7 +42,7 @@
         return $results;
     }
 
-    $fichier_invisible = [".git",".idea",".index_img"];
+    $fichier_invisible = [".git",".idea",".index_img",".github","README.md"];
     $fichier = array_reverse((getDirContents('../tds-web-2022', $fichier_invisible)));
 
     $random_color = ["#7800ff", "#0026ff", "#009bc2", "#00c288", "#3ec200"];

@@ -473,7 +473,7 @@ details[open] summary ~ span * {
 #barre_java{
 	background: linear-gradient(90deg, rgba(249,176,61,1) 0%, rgba(212,21,91,1) 100%);
 	width: 100%;
-	margin-left: calc(40% - 115px);
+	margin-left: calc(60% - 115px);
 }
 
 #barre_linux_background{

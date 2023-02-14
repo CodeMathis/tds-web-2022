@@ -463,7 +463,7 @@ details[open] summary ~ span * {
 #barre_php{
 	background: linear-gradient(90deg, rgba(76,75,154,1) 0%, rgba(99,49,138,1) 100%);
 	width: 100%;
-	margin-left: calc(60% - 145px);
+	margin-left: calc(60% - 135px);
 }
 
 #barre_java_background{
